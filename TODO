@@ -1,3 +1,36 @@
+// `Additional info`
+
+
+Commit message:
+
+
+
+Todos:
+  New:
+    Current:
+
+  Future:
+
+  Scheduled:
+
+  Done:
+
+  Canceled:
+
+
+
+Info:
+
+
+
+
+
+
+
+
+
+// ------ TODO from previous project ------
+
 // C:\Windows\System32\cmd.exe /k "C:\Program Files\nodejs\nodevars.bat" // To start from VSC terminal node env
 // `ng test --sourceMap=false` // To get the right error messages while testing the app (in NG6+)
 
