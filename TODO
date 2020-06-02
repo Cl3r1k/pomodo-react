@@ -1,4 +1,11 @@
 // `Additional info`
+GitHub Flow Rules:
+  #1 - anything in the master branch is deployable
+  #2 - create descriptive branches off of master (you can prefix branch names with @hotfix/, @feature/, @post/ )
+  #3 - push to named branches constantly
+  #4 - open a pull request at any time
+  #5 - merge only after pull request review
+  #6 - deploy immediately after review
 
 
 Commit message:
@@ -17,7 +24,7 @@ Technics to use:
 Todos:
   New:
     Current:
-      ☐ Choose one of the branching model of Git (git-flow or github-flow)
+      ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
 
 
   Future:
