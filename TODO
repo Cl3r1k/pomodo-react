@@ -1,4 +1,4 @@
-// `Additional info`
+` Additional info `
 GitHub Flow Rules:
   #1 - anything in the master branch is deployable
   #2 - create descriptive branches off of master (you can prefix branch names with @hotfix/, @feature/, @post/ )
@@ -17,8 +17,8 @@ docs: update TODO file
 Code StyleGuide: 
 
 Technics to use:
-  ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`)
-  ☐ Autotest for master branch???
+  ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
+  ☐ Autotest for master branch ???
 
 
 Todos:
