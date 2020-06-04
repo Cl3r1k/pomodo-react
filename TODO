@@ -26,11 +26,23 @@ Todos:
   New:
     Current:
       ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
+
+      ☐ Add scss, eslint, prettier, husky and lint-staged
+
       ☐ Add autoincrement build
 
       ☐ Add login/auth/sign-in page
         ☐ Sign-in page should have possibility to generate strong passwords
+      
+      ☐ TODO part
 
+      ☐ POMO part
+
+      ☐ Reports part
+
+      ☐ Settings part
+
+      ☐ Landing page
 
   Future:
 
@@ -78,7 +90,7 @@ feat: Update in 'TagsPieChartComponent' (code, template, styles, test)
 refactor: Minor changes
 
 Todos:
-    New:
+  New:
         Current:
 
             ☐ Change UI to prototype view
@@ -639,7 +651,7 @@ Todos:
             `https://www.sitepoint.com/mean-stack-angular-2-angular-cli/`
             `https://www.sitepoint.com/user-authentication-mean-stack/`
 
-    Future:
+  Future:
         ☐ Options window:
             ☐ Add in options value for Multiple/Single adding todo (use `http://dexie.org/docs/Table/Table.bulkAdd()`)
             ☐ Add in options value for support spec symbols (like ☐ and ✔) in new todo
@@ -649,11 +661,11 @@ Todos:
             ☐ Add docs to methods in services like in IndexedDbService createTodo
         ☐ In IndexedDB parse next events `IDBOpenDBRequest.onblocked` and `IDBOpenDBRequest.onupgradeneeded` (look here `https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest`)
 
-    Scheduled:
+  Scheduled:
         ☐ Rewrite dynamic components with NgComponentOutlet (look here `https://angular.io/api/common/NgComponentOutlet` and here `https://github.com/angular/angular/pull/19713`) (return to this point after 01.01.2018)
             look example here `https://github.com/thekiba/ngx-component-outlet` and here `https://gist.github.com/thekiba/9b7fc4e32c92353e26890320f255f712`
 
-    Done:
+  Done:
         ✔ Update unit tests for part-2
         ✔ Update e2e tests for part-3
         ✔ Update unit tests for part-3
@@ -866,7 +878,7 @@ Todos:
 
         ✔ Fix warning ([Deprecation] Using unescaped '#' characters in a data URI body is deprecated and will be removed in M67, around May 2018. Please use '%23' instead. See `https://www.chromestatus.com/features/5656049583390720` for more details.) (User `https://github.com/stylus/stylus/issues/2379` -> changed color for SVG elemnts in styles) @done(18-05-09 10:10)
 
-    Canceled:
+  Canceled:
         ✘ Combine two storing data method (HTTP and InMemory) -> Not necessarily anymore (Consider this point later)
         ✘ Find out how stored todos (probably browser store (LocalStorage)) in the example `http://todomvc.com/examples/angularjs/#/` @cancelled(17-11-11 09:36) -> Not applicable, and to simple for a future
         ✘ Fix saving in db.json data algoritm (previously saved with order Id->title->complete, now saves title->complete->Id) @cancelled(17-12-02 09:48)
@@ -875,5 +887,5 @@ Todos:
         ✘ Change console color for services from `Salmon` to `Seagreen` (Canceled - similar color used for components) @cancelled(18-09-16 09:38)
 
 Info:
-    ☐ If count of todos is over 10k, performance of the app is very degradate (for example use db.json in db.zip file)
-        ☐ Or create testing method, to add 10k todos in IndexedDb
+  ☐ If count of todos is over 10k, performance of the app is very degradate (for example use db.json in db.zip file)
+    ☐ Or create testing method, to add 10k todos in IndexedDb
