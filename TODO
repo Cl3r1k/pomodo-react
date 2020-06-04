@@ -14,17 +14,22 @@ docs: update TODO file
 
 
 
-Code StyleGuide: 
+Code StyleGuide:
 
 Technics to use:
   ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
-  ☐ Autotest for master branch ???
+  ☐ Autotest for master branch (bunch of unit tests, or regression tests, accessibility tests) ???
+    ☐ Consider to code coverage tests over 90%, to successfull branch merge to `master`
 
 
 Todos:
   New:
     Current:
       ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
+      ☐ Add autoincrement build
+
+      ☐ Add login/auth/sign-in page
+        ☐ Sign-in page should have possibility to generate strong passwords
 
 
   Future:
