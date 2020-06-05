@@ -14,12 +14,15 @@ docs: update TODO file
 
 
 
-Code StyleGuide:
+
+Code StyleGuide / Rules:
+  @high - For react styles use modules
 
 Technics to use:
   ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
   ☐ Autotest for master branch (bunch of unit tests, or regression tests, accessibility tests) ???
-    ☐ Consider to code coverage tests over 90%, to successfull branch merge to `master`
+    ☐ Consider to code coverage tests over 90%, to successfull merge to `master` branch
+    ☐ Autocheck modules vulnerabilites (audit, dependabot???) to successfull merge to `master` branch
 
 
 Todos:
@@ -28,6 +31,8 @@ Todos:
       ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
 
       ☐ Add scss, eslint, prettier, husky and lint-staged
+        ✔ Add scss support @done(20-06-05 08:37)
+        ☐ Implement absolute path imports
 
       ☐ Add autoincrement build
 
@@ -43,6 +48,8 @@ Todos:
       ☐ Settings part
 
       ☐ Landing page
+
+      ☐ Migrate to TS
 
   Future:
 
