@@ -9,8 +9,7 @@ GitHub Flow Rules:
 
 
 Commit message:
-docs: update TODO file
-
+  
 
 
 
@@ -32,13 +31,14 @@ Todos:
 
       ☐ Add scss, eslint, prettier, husky and lint-staged
         ✔ Add scss support @done(20-06-05 08:37)
-        ☐ Implement absolute path imports
+        ✔ Implement absolute path imports @done(20-06-05 08:53)
+        ☐ Implement eslint, prettier, husky, lint-staged
 
       ☐ Add autoincrement build
 
       ☐ Add login/auth/sign-in page
         ☐ Sign-in page should have possibility to generate strong passwords
-      
+
       ☐ TODO part
 
       ☐ POMO part
@@ -97,86 +97,85 @@ feat: Update in 'TagsPieChartComponent' (code, template, styles, test)
 refactor: Minor changes
 
 Todos:
-  New:
-        Current:
+New:
+Current:
+  ☐ Change UI to prototype view
+    ☐ Change 'Header' (Should be like [AppName---Updgrade---------------------------------SyncState---SyncIcon---ProfileMenu])
+      ✔ 'Onhover' on 'AppName' should show current build @done(18-11-15 10:11)
+        ✔ Submenu should be closed, if clicks outside it @done(18-11-24 10:56)
+          ✔ Add tests for submenu close in 'TodosComponent' @done(18-12-14 09:13)
+          ✔ Add tests for submenu in 'TodoTitleComponent' @done(18-12-16 10:19)
+            ✔ Move 'Sign out' part from 'TodosComponent' to 'TodoTitleComponent' @done(18-11-24 09:18)
+            ✔ Update style for 'profile-name' arrow @done(18-11-26 09:30)
+            ✔ Add icons for 'sync-status' @done(19-07-02 10:04)
+              ✔ Fix bug -> click on 'sync-icons' sometime (when icon not anymore in template) calls error @done(19-07-01 10:11)
+              ✔ Improve part when 'profile-menu' is opened and click on 'sync-icon' (all of the sync-icons) should close the menu @done(19-07-02 09:33)
+              ✔ Add animation for 'syncing-sync' icon @done(19-07-02 10:00)
 
-            ☐ Change UI to prototype view
-                ☐ Change 'Header' (Should be like [AppName---Updgrade---------------------------------SyncState---SyncIcon---ProfileMenu])
-                    ✔ 'Onhover' on 'AppName' should show current build @done(18-11-15 10:11)
-                    ✔ Submenu should be closed, if clicks outside it @done(18-11-24 10:56)
-                        ✔ Add tests for submenu close in 'TodosComponent' @done(18-12-14 09:13)
-                        ✔ Add tests for submenu in 'TodoTitleComponent' @done(18-12-16 10:19)
-                    ✔ Move 'Sign out' part from 'TodosComponent' to 'TodoTitleComponent' @done(18-11-24 09:18)
-                    ✔ Update style for 'profile-name' arrow @done(18-11-26 09:30)
-                    ✔ Add icons for 'sync-status' @done(19-07-02 10:04)
-                        ✔ Fix bug -> click on 'sync-icons' sometime (when icon not anymore in template) calls error @done(19-07-01 10:11)
-                        ✔ Improve part when 'profile-menu' is opened and click on 'sync-icon' (all of the sync-icons) should close the menu @done(19-07-02 09:33)
-                        ✔ Add animation for 'syncing-sync' icon @done(19-07-02 10:00)
+              ✔ Add dialog for 'account-item' @done(18-12-19 10:02)
+                ✔ Add 'Account' tab and elements @done(18-12-02 09:36)
+                  ✔ For 'Name' and 'Email' fields use reactive forms @done(18-12-11 09:10)
+                  ✔ Add validation for 'email' field @done(18-12-11 09:23)
+                    ✔ Add 'Security' tab and elements @done(18-12-02 09:37)
+                      ✔ For passwords fields and 'Save' button use reactive forms @done(18-12-10 10:00)
+                        ✔ Add validation length for password field @done(18-12-11 09:27)
+                        ✔ Use 'suffix' for passwords fields (look example `https://material.angular.io/components/form-field/overview#prefix-amp-suffix`) @done(18-12-11 09:59)
+                    ✔ Add tests for 'MatchValidation' @done(18-12-12 10:16)
+                    ✔ Add tests for 'DialogAccountComponent' @done(18-12-19 09:38)
+                    ☐ Consider to use 'mat-tab' for tabs in 'account-item' dialog `(Delayed for some time)`
+                ✔ Update tests for 'SessionStorageService' @done(18-12-17 10:43)
+                ✔ Fix all tests with new code ('account-item' + change 'Header') @done(18-12-19 10:00)
 
-                    ✔ Add dialog for 'account-item' @done(18-12-19 10:02)
-                        ✔ Add 'Account' tab and elements @done(18-12-02 09:36)
-                            ✔ For 'Name' and 'Email' fields use reactive forms @done(18-12-11 09:10)
-                            ✔ Add validation for 'email' field @done(18-12-11 09:23)
-                        ✔ Add 'Security' tab and elements @done(18-12-02 09:37)
-                            ✔ For passwords fields and 'Save' button use reactive forms @done(18-12-10 10:00)
-                                ✔ Add validation length for password field @done(18-12-11 09:27)
-                                ✔ Use 'suffix' for passwords fields (look example `https://material.angular.io/components/form-field/overview#prefix-amp-suffix`) @done(18-12-11 09:59)
-                        ✔ Add tests for 'MatchValidation' @done(18-12-12 10:16)
-                        ✔ Add tests for 'DialogAccountComponent' @done(18-12-19 09:38)
-                        ☐ Consider to use 'mat-tab' for tabs in 'account-item' dialog `(Delayed for some time)`
-                    ✔ Update tests for 'SessionStorageService' @done(18-12-17 10:43)
-                    ✔ Fix all tests with new code ('account-item' + change 'Header') @done(18-12-19 10:00)
-
-                    ✔ Add dialog for 'settings-item' @done(18-12-28 10:00)
-                        ✔ Add tab 'Settings' @done(18-12-26 10:35)
-                        ✔ Add tab 'Goal' @done(18-12-26 10:35)
-                            ✔ For inputs use reactive forms and update state on change @done(18-12-26 10:35)
-                        ✔ Add tab 'Pomo' @done(18-12-26 10:35)
-                        ✔ Add tab 'Subscribe' @done(18-12-26 10:35)
-                            ✔ Add tests for 'DialogSettingsComponent' @done(18-12-28 09:59)
+                ✔ Add dialog for 'settings-item' @done(18-12-28 10:00)
+                  ✔ Add tab 'Settings' @done(18-12-26 10:35)
+                  ✔ Add tab 'Goal' @done(18-12-26 10:35)
+                    ✔ For inputs use reactive forms and update state on change @done(18-12-26 10:35)
+                  ✔ Add tab 'Pomo' @done(18-12-26 10:35)
+                  ✔ Add tab 'Subscribe' @done(18-12-26 10:35)
+                    ✔ Add tests for 'DialogSettingsComponent' @done(18-12-28 09:59)
 
                     ✔ Settings should be saved in 'localStorage' and used in 'pomos' part (e.g. 'pomo-time', 'rest-time' etc) @done(19-07-22 09:31)
-                        ✔ Add 'SettingsService' @done(19-07-03 09:49)
-                            ✔ Add 'SettingsData' class @done(19-07-05 10:32)
-                                ✔ Add tests for 'SettingsData' class @done(19-07-19 09:30)
-                            ✔ Store setting in 'localStorage' through 'SettingsService' @done(19-07-17 09:31)
-                            ✔ Load settings from 'localStorage' when called 'settings-window' @done(19-07-18 09:35)
-                                ✔ Fix loading prefs from service (values for 'dailyGoal' and other fields are empty) @done(19-07-08 10:13)
-                            ✔ Fix case when there is no 'settings_data' in 'localStorage' @done(19-07-09 09:18)
-                            ✔ Consider to save settings not every time, but use timer for saving and save at once all changed settings @done(19-07-17 09:31)
-                                ✔ Info state for changed values, should write 'Saving' for each changed value and write 'Save' untill all changes saved @done(19-07-17 09:31)
-                            ✔ Add tests for 'SettingsService' @done(19-07-22 09:31)
+                    ✔ Add 'SettingsService' @done(19-07-03 09:49)
+                      ✔ Add 'SettingsData' class @done(19-07-05 10:32)
+                        ✔ Add tests for 'SettingsData' class @done(19-07-19 09:30)
+                      ✔ Store setting in 'localStorage' through 'SettingsService' @done(19-07-17 09:31)
+                      ✔ Load settings from 'localStorage' when called 'settings-window' @done(19-07-18 09:35)
+                        ✔ Fix loading prefs from service (values for 'dailyGoal' and other fields are empty) @done(19-07-08 10:13)
+                        ✔ Fix case when there is no 'settings_data' in 'localStorage' @done(19-07-09 09:18)
+                      ✔ Consider to save settings not every time, but use timer for saving and save at once all changed settings @done(19-07-17 09:31)
+                        ✔ Info state for changed values, should write 'Saving' for each changed value and write 'Save' untill all changes saved @done(19-07-17 09:31)
+                      ✔ Add tests for 'SettingsService' @done(19-07-22 09:31)
 
-                ✔ Add component 'TodoCurrentComponent' @done(19-01-04 09:58)
-                    ✔ In 'TodosComponent' get most top todo for 'TodoCurrentComponent' @done(18-12-29 10:02)
+                      ✔ Add component 'TodoCurrentComponent' @done(19-01-04 09:58)
+                      ✔ In 'TodosComponent' get most top todo for 'TodoCurrentComponent' @done(18-12-29 10:02)
                         ✔ Fix bug, when todo dragged upper @done(18-12-30 09:20)
                         ✔ Check behaviour when todo pinned/unpinned @done(18-12-30 09:20)
-                    ✔ Complete UI for 'TodoCurrentComponent' @done(19-01-04 09:58)
+                      ✔ Complete UI for 'TodoCurrentComponent' @done(19-01-04 09:58)
                         ✔ Onhover 'icon-checkmark' shoud be changed color @done(19-01-02 09:39)
                         ✔ Change title color @done(19-01-02 09:51)
                         ✔ With large text title should be showed only part of it @done(19-01-02 10:13)
                         ✔ Improve and check view for 'currentTodo' with priority/tag/link @done(19-01-03 09:58)
-                    ✔ Add tests for 'TodoCurrentComponent' @done(19-01-04 09:58)
+                      ✔ Add tests for 'TodoCurrentComponent' @done(19-01-04 09:58)
 
-                ☐ Reorganize 'MainContent' part, where view should be like [PomoList-----TodoList]
-                    ✔ Update view for TodoList with new updates @done(19-06-26 10:21)
-                        ✔ Update view for todo-view @done(19-01-09 09:52)
-                        ✔ Update view for completed-todos @done(19-01-09 10:26)
-                        ✔ Update view for todo-header @done(19-01-10 10:28)
-                            ✔ Reorganize part for 'new-todo' and 'icon-keyboard_return' (instead position: absolute; for icon use grid) @done(19-01-11 09:50)
-                            ✔ Fix header, when there is no any todo in list (width collapse) @done(19-06-27 09:44)
-                            ✔ Fix 'todo-header' 'border-bottom' styles (not in full field) @done(19-06-27 09:57)
-                        ✔ Update view for todo-footer @done(19-01-11 10:10)
-                            ✔ Fix '.footer:before' style @done(19-01-11 10:25)
-                            ✔ Reorganize todo-list-footer part, and consider to remove it @done(19-01-13 09:38)
-                                ✔ Update tests for app with removed todo-footer @done(19-01-14 09:59)
+                      ☐ Reorganize 'MainContent' part, where view should be like [PomoList-----TodoList]
+                      ✔ Update view for TodoList with new updates @done(19-06-26 10:21)
+                          ✔ Update view for todo-view @done(19-01-09 09:52)
+                          ✔ Update view for completed-todos @done(19-01-09 10:26)
+                          ✔ Update view for todo-header @done(19-01-10 10:28)
+                              ✔ Reorganize part for 'new-todo' and 'icon-keyboard_return' (instead position: absolute; for icon use grid) @done(19-01-11 09:50)
+                              ✔ Fix header, when there is no any todo in list (width collapse) @done(19-06-27 09:44)
+                              ✔ Fix 'todo-header' 'border-bottom' styles (not in full field) @done(19-06-27 09:57)
+                          ✔ Update view for todo-footer @done(19-01-11 10:10)
+                              ✔ Fix '.footer:before' style @done(19-01-11 10:25)
+                              ✔ Reorganize todo-list-footer part, and consider to remove it @done(19-01-13 09:38)
+                                  ✔ Update tests for app with removed todo-footer @done(19-01-14 09:59)
                     ✔ Move all part for Todo-App in separate component @done(19-06-18 10:33)
                         ✔ Move all parts from 'TodosComponent' to 'MainComponent' @done(19-01-16 09:57)
                             ✔ Move styles from 'TodosComponent' to 'MainComponent' @done(19-01-16 09:45)
                             ✔ Move template from 'TodosComponent' to 'MainComponent' @done(19-01-16 09:45)
                             ✔ Move code from 'TodosComponent' to 'MainComponent' @done(19-01-16 09:45)
                             ✔ Move tests from 'TodosComponent' to 'MainComponent' @done(19-01-16 09:57)
-                        ✔ Move part for 'todo' from 'MainComponent' to 'TodosComponent' @done(19-01-25 09:34)
+                            ✔ Move part for 'todo' from 'MainComponent' to 'TodosComponent' @done(19-01-25 09:34)
                             ✔ Moved code and template for 'todo' part from 'MainComponent' to 'TodosComponent' @done(19-01-19 10:32)
                             ✔ Fix issue with 'update-todo' @done(19-01-20 09:37)
                             ✔ Fix issue with 'onMoreTodo' @done(19-01-20 09:38)
@@ -227,56 +226,56 @@ Todos:
                                                 ✔ Added 'DialogCancelComponent' @done(19-03-03 10:07)
                                                     ✔ Add tests for 'DialogCancelComponent' @done(19-03-04 09:32)
 
-                            ✔ Complete UI and functionality for 'save-pomo' part @done(19-06-26 10:15)
-                                ✔ Add styled 'textarea.pomo-save-field' @done(19-03-29 10:13)
-                                    ✔ Improve check when on epmty 'save-pomo' field 'Enter' pressed (shouldn't write enter key in field) @done(19-03-06 09:25)
-                                    ✔ The 'textarea.pomo-save-field' vertical size shouldn't be changed manually @done(19-03-07 09:54)
-                                    ✔ The 'textarea.pomo-save-field' size should be changed according to it's text @done(19-03-08 09:23)
-                                    ✔ The 'textarea.pomo-save-field' should be styled when focused @done(19-03-09 09:23)
-                                    ✔ The 'textarea.pomo-save-field' should have 'icon-enter' icon and save pomo 'onClick' @done(19-03-11 10:40)
-                                        ✔ Fix error for 'icon-enter' click (when 'save-pomo' field is empty) @done(19-03-11 10:45)
-                                    ✔ The 'textarea.pomo-save-field' should have 'icon-cancel' icon and cancel/interrupt pomo @done(19-03-11 11:05)
-                                    ✔ Inner 'pomo' name in 'textarea.pomo-save-field' should be changed according selected 'todo' @done(19-03-29 10:13)
-                                        ✔ Add 'PomoTitleService' for 'textarea.pomo-save-field' value @done(19-03-13 10:05)
-                                        ✔ The 'PomoTitleService' should store own current 'pomo-state' for 'pomo-title' @done(19-03-14 10:55)
-                                        ✔ The 'PomoTitleService' should store list of selected 'todos' @done(19-03-16 09:59)
-                                        ✔ The selected 'todo' should change 'pomo-title' @done(19-03-19 09:21)
-                                            ✔ Selected 'todo' should follow order in 'todo-list' @done(19-03-18 10:47)
-                                            ✔ Selected 'todo' should be used in 'pomo-title' according to 'todo-list' @done(19-03-19 09:11)
-                                        ✔ The 'prioirity' symbol shouldn't be used in 'pomoTitle' @done(19-03-21 10:15)
-                                        ✔ Combine 'pomoTitleTodosPart' and 'pomoTitleManualPart' to 'pomoTitle' @done(19-03-22 09:30)
-                                            ✔ If 'pomoTitle' changed manually, 'pomoTitleManualPart' should be updated and contain all text @done(19-03-22 09:30)
-                                        ✘ Use 'reactive forms' for 'textarea.pomo-save-field' to handle changes with delay (insted used template-driven approach <- the final data should be stored in service, not in component) @cancelled(19-03-24 09:43)
-                                        ✔ The 'PomoTitleService' should be used in 'view-todo' component @done(19-03-24 09:42)
-                                        ✔ The 'PomoTitleService' should be used to pick first 'todo' when app reloaded @done(19-03-28 09:26)
-                                            ✔ After page reload should be selected first todo @done(19-03-29 09:50)
-                                        ✔ The selected 'todo' should be changed visually @done(19-03-15 09:38)
-                                            ✔ Change 'border-top' for selected 'todo' @done(19-03-15 09:38)
-                                        ✔ After 'pomo-save' state changed (saved/canceled) 'todo-list' view should be changed to normal state @done(19-03-28 09:41)
-                                        ☐ If app reloaded -> started pomo and after 'pomo-progress' should be selected first todo `(Delayed for some time)`
-                                            ☐ How to check test case  - pomo started -> page reloaded -> 'progress' finished -> in this case should be selected first todo `(Delayed for some time)` <- The reason of the delay - is dynamical component for 'todo-view' currently just can't update view in runtime for 'todo-item'
-                                                ☐ Check behaviuor when before 'progress' ends, current todo is changed (pin todo) `(Delayed for some time)`
-                                        ✔ If 'pomo-save' will be shown in next time (without page reload) after 'pomo-progress' -> 'pomo-title' should cointain list of selected 'todos' and 'todo-list' should show previously selected 'todos' @done(19-06-19 09:49)
-                                        ✔ Fix bug - if 'pomo-save' canceled and page reloaded - shouldn't start 'pomo-rest' timer @done(19-06-24 09:51)
-                                        ✔ Shouldn't add 'canceled' pomo in pomo list after 'cancel' click @done(19-06-25 09:47)
-                                            ✔ Update test for 'PomoStateService' @done(19-06-26 10:07)
-                                        ✘ Should be saved selected 'todos' and 'textarea.pomo-save-field' content in the localStorage (Nope actually) @cancelled(19-03-29 09:48)
-                                        ✔ Todo selected state should be canceled selection, if 'pomoState' changed @done(19-03-29 09:48)
-                                        ✔ Fix issue, when 'todo' selected and 'icon-enter' clicked -> 'pomo' not saved (empty field???) @done(19-03-29 10:00)
-                                        ✔ Fix issue, when 'pomo' started and page reloaded -> a lot errors in console @done(19-03-29 10:08)
-                                            ✔ Fix behavior in incognito -> start pomo - should be error on dialogs @done(19-03-29 10:11)
-                                    ✔ Consider to 'trim' 'pomo-title' @done(19-03-30 09:16)
+                                                    ✔ Complete UI and functionality for 'save-pomo' part @done(19-06-26 10:15)
+                                                    ✔ Add styled 'textarea.pomo-save-field' @done(19-03-29 10:13)
+                                                        ✔ Improve check when on epmty 'save-pomo' field 'Enter' pressed (shouldn't write enter key in field) @done(19-03-06 09:25)
+                                                        ✔ The 'textarea.pomo-save-field' vertical size shouldn't be changed manually @done(19-03-07 09:54)
+                                                        ✔ The 'textarea.pomo-save-field' size should be changed according to it's text @done(19-03-08 09:23)
+                                                        ✔ The 'textarea.pomo-save-field' should be styled when focused @done(19-03-09 09:23)
+                                                        ✔ The 'textarea.pomo-save-field' should have 'icon-enter' icon and save pomo 'onClick' @done(19-03-11 10:40)
+                                                            ✔ Fix error for 'icon-enter' click (when 'save-pomo' field is empty) @done(19-03-11 10:45)
+                                                        ✔ The 'textarea.pomo-save-field' should have 'icon-cancel' icon and cancel/interrupt pomo @done(19-03-11 11:05)
+                                                        ✔ Inner 'pomo' name in 'textarea.pomo-save-field' should be changed according selected 'todo' @done(19-03-29 10:13)
+                                                            ✔ Add 'PomoTitleService' for 'textarea.pomo-save-field' value @done(19-03-13 10:05)
+                                                            ✔ The 'PomoTitleService' should store own current 'pomo-state' for 'pomo-title' @done(19-03-14 10:55)
+                                                            ✔ The 'PomoTitleService' should store list of selected 'todos' @done(19-03-16 09:59)
+                                                            ✔ The selected 'todo' should change 'pomo-title' @done(19-03-19 09:21)
+                                                                ✔ Selected 'todo' should follow order in 'todo-list' @done(19-03-18 10:47)
+                                                                ✔ Selected 'todo' should be used in 'pomo-title' according to 'todo-list' @done(19-03-19 09:11)
+                                                            ✔ The 'prioirity' symbol shouldn't be used in 'pomoTitle' @done(19-03-21 10:15)
+                                                            ✔ Combine 'pomoTitleTodosPart' and 'pomoTitleManualPart' to 'pomoTitle' @done(19-03-22 09:30)
+                                                                ✔ If 'pomoTitle' changed manually, 'pomoTitleManualPart' should be updated and contain all text @done(19-03-22 09:30)
+                                                                ✘ Use 'reactive forms' for 'textarea.pomo-save-field' to handle changes with delay (insted used template-driven approach <- the final data should be stored in service, not in component) @cancelled(19-03-24 09:43)
+                                                                ✔ The 'PomoTitleService' should be used in 'view-todo' component @done(19-03-24 09:42)
+                                                                ✔ The 'PomoTitleService' should be used to pick first 'todo' when app reloaded @done(19-03-28 09:26)
+                                                                    ✔ After page reload should be selected first todo @done(19-03-29 09:50)
+                                                                ✔ The selected 'todo' should be changed visually @done(19-03-15 09:38)
+                                                                    ✔ Change 'border-top' for selected 'todo' @done(19-03-15 09:38)
+                                                                ✔ After 'pomo-save' state changed (saved/canceled) 'todo-list' view should be changed to normal state @done(19-03-28 09:41)
+                                                                ☐ If app reloaded -> started pomo and after 'pomo-progress' should be selected first todo `(Delayed for some time)`
+                                                                    ☐ How to check test case  - pomo started -> page reloaded -> 'progress' finished -> in this case should be selected first todo `(Delayed for some time)` <- The reason of the delay - is dynamical component for 'todo-view' currently just can't update view in runtime for 'todo-item'
+                                                                        ☐ Check behaviuor when before 'progress' ends, current todo is changed (pin todo) `(Delayed for some time)`
+                                                                ✔ If 'pomo-save' will be shown in next time (without page reload) after 'pomo-progress' -> 'pomo-title' should cointain list of selected 'todos' and 'todo-list' should show previously selected 'todos' @done(19-06-19 09:49)
+                                                                ✔ Fix bug - if 'pomo-save' canceled and page reloaded - shouldn't start 'pomo-rest' timer @done(19-06-24 09:51)
+                                                                ✔ Shouldn't add 'canceled' pomo in pomo list after 'cancel' click @done(19-06-25 09:47)
+                                                                    ✔ Update test for 'PomoStateService' @done(19-06-26 10:07)
+                                                                ✘ Should be saved selected 'todos' and 'textarea.pomo-save-field' content in the localStorage (Nope actually) @cancelled(19-03-29 09:48)
+                                                                ✔ Todo selected state should be canceled selection, if 'pomoState' changed @done(19-03-29 09:48)
+                                                                ✔ Fix issue, when 'todo' selected and 'icon-enter' clicked -> 'pomo' not saved (empty field???) @done(19-03-29 10:00)
+                                                                ✔ Fix issue, when 'pomo' started and page reloaded -> a lot errors in console @done(19-03-29 10:08)
+                                                                    ✔ Fix behavior in incognito -> start pomo - should be error on dialogs @done(19-03-29 10:11)
+                                                            ✔ Consider to 'trim' 'pomo-title' @done(19-03-30 09:16)
+                        
+                                                            ✔ Check 'recentPomoList' with new pomo 'time' (create/updated/started/ended), seems time is not correct @done(19-03-31 10:24)
 
-                                    ✔ Check 'recentPomoList' with new pomo 'time' (create/updated/started/ended), seems time is not correct @done(19-03-31 10:24)
-
-                            ✔ Fix broken tests according to new 'Pomo' code @done(19-04-21 10:11)
-                            ✔ Add tests for 'PomoHeaderComponent' @done(19-04-18 10:20)
-                            ✔ Add tests for 'PomoStateService' @done(19-04-09 11:34)
-                            ✔ Add tests for 'PomoTitleService' @done(19-04-06 10:15)
-                            ✔ Add tests for 'PomoState' class @done(19-04-10 11:39)
-                            ✔ Add tests for 'Pomo' class @done(19-04-10 11:39)
-                            ✔ Add tests for 'PomosComponent' @done(19-04-19 09:57)
-                            ✔ After 'pomo-header' part completed bump 'patch' version @done(19-04-21 10:17)
+                                                            ✔ Fix broken tests according to new 'Pomo' code @done(19-04-21 10:11)
+                                                            ✔ Add tests for 'PomoHeaderComponent' @done(19-04-18 10:20)
+                                                            ✔ Add tests for 'PomoStateService' @done(19-04-09 11:34)
+                                                            ✔ Add tests for 'PomoTitleService' @done(19-04-06 10:15)
+                                                            ✔ Add tests for 'PomoState' class @done(19-04-10 11:39)
+                                                            ✔ Add tests for 'Pomo' class @done(19-04-10 11:39)
+                                                            ✔ Add tests for 'PomosComponent' @done(19-04-19 09:57)
+                                                            ✔ After 'pomo-header' part completed bump 'patch' version @done(19-04-21 10:17)
 
                         ✔ Complete 'pomo-list' component @done(19-06-18 10:22)
                             ✔ Complete code and UI for 'PomoListComponent' @done(19-06-18 10:22)
@@ -331,39 +330,39 @@ Todos:
                         ✔ Deploy updated build on GH-Pages @done(19-07-23 09:30)
 
 
-                ☐ Add component 'StatsComponent'
-                    ☐ Add separate component for 'stats'
-                        ☐ For each 'stat' should be separate component
-                            ✔ Create chart for 'Stat' card @done(19-10-04 09:28)
-                                ✔ Improve 'weekly-cummulation' Pomo chart when there is no data for last week @done(19-11-02 09:03)
-                                ✔ Fix bug for 'Weekly cummulation' chart/data on first app load (data is empty) @done(19-11-03 09:11)
-                                ☐ Create child component for 'Stat' card
-                                    ✔ Create 'StatDetailsComponent' @done(19-11-12 09:03)
-                                        ☐ Complete UI and functionality for 'StatDetailsComponent'
-                                            ✔ Complete UI and functionality for 'Best workday' part @done(19-12-12 09:06)
-                                            ✔ Complete UI and functionality for 'Top tags' part @done(20-03-03 08:56)
-                                            ✔ Complete UI and functionality for 'Best worktime' part @done(20-05-14 08:59)
-                                                ✔ 'Best worktime' chart should be updated with selected #hashtag @done(20-05-20 08:58)
-                                            ☐ Complete UI and functionality for 'stat-chart-header' part
-                                            ☐ Complete UI and functionality for 'stat-chart-block' part
-                                        ☐ Add tests for 'StatDetailsComponent'
-                            ✔ Create chart for 'Stat' card @done(19-10-12 08:56)
-                                ☐ Create child component for 'Goal' card
-                            ☐ Create chart for 'Pomo history' card
-                                ✔ Period for chart for 'Pomo history' card should be over last month @done(19-11-02 08:54)
-                                ✔ Shoudn't count interrupted pomos @done(19-10-12 09:03)
-                                ✔ Fix bug for 'Pomo history' chart/data on first app load (data is empty) @done(19-11-03 09:11)
-                                ✔ Improve 'Pomo history' chart when there is no data for the period @done(19-11-04 10:15)
-                                ✔ Make chart for 'Pomo history' responsive @done(19-11-11 08:58)
-                                ☐ Fix view for 'Pomo history' chart (for the chart should be taken data for only last month)
-                                ☐ Create child component for 'Pomo history' card
-                            ☐ Create chart for 'Todo history' card
-                                ✔ Period for chart for 'Todo history' card should be over last month @done(19-11-02 08:54)
-                                ✔ Improve 'Todo history' chart when there is no data for the period @done(19-11-04 10:15)
-                                ✔ Make chart for 'Todo history' responsive @done(19-11-11 08:58)
-                                ☐ Fix view for 'Todo history' chart (for the chart should be taken data for only last month)
-                                ☐ Create child component for 'Todo history' card
-                            ☐ Change behavior of 'onClearCompleted()' method (all completed todos should be marked as 'cleaned' = true, not delete todo)
+                        ☐ Add component 'StatsComponent'
+                        ☐ Add separate component for 'stats'
+                            ☐ For each 'stat' should be separate component
+                                ✔ Create chart for 'Stat' card @done(19-10-04 09:28)
+                                    ✔ Improve 'weekly-cummulation' Pomo chart when there is no data for last week @done(19-11-02 09:03)
+                                    ✔ Fix bug for 'Weekly cummulation' chart/data on first app load (data is empty) @done(19-11-03 09:11)
+                                    ☐ Create child component for 'Stat' card
+                                        ✔ Create 'StatDetailsComponent' @done(19-11-12 09:03)
+                                            ☐ Complete UI and functionality for 'StatDetailsComponent'
+                                                ✔ Complete UI and functionality for 'Best workday' part @done(19-12-12 09:06)
+                                                ✔ Complete UI and functionality for 'Top tags' part @done(20-03-03 08:56)
+                                                ✔ Complete UI and functionality for 'Best worktime' part @done(20-05-14 08:59)
+                                                    ✔ 'Best worktime' chart should be updated with selected #hashtag @done(20-05-20 08:58)
+                                                ☐ Complete UI and functionality for 'stat-chart-header' part
+                                                ☐ Complete UI and functionality for 'stat-chart-block' part
+                                            ☐ Add tests for 'StatDetailsComponent'
+                                ✔ Create chart for 'Stat' card @done(19-10-12 08:56)
+                                    ☐ Create child component for 'Goal' card
+                                ☐ Create chart for 'Pomo history' card
+                                    ✔ Period for chart for 'Pomo history' card should be over last month @done(19-11-02 08:54)
+                                    ✔ Shoudn't count interrupted pomos @done(19-10-12 09:03)
+                                    ✔ Fix bug for 'Pomo history' chart/data on first app load (data is empty) @done(19-11-03 09:11)
+                                    ✔ Improve 'Pomo history' chart when there is no data for the period @done(19-11-04 10:15)
+                                    ✔ Make chart for 'Pomo history' responsive @done(19-11-11 08:58)
+                                    ☐ Fix view for 'Pomo history' chart (for the chart should be taken data for only last month)
+                                    ☐ Create child component for 'Pomo history' card
+                                ☐ Create chart for 'Todo history' card
+                                    ✔ Period for chart for 'Todo history' card should be over last month @done(19-11-02 08:54)
+                                    ✔ Improve 'Todo history' chart when there is no data for the period @done(19-11-04 10:15)
+                                    ✔ Make chart for 'Todo history' responsive @done(19-11-11 08:58)
+                                    ☐ Fix view for 'Todo history' chart (for the chart should be taken data for only last month)
+                                    ☐ Create child component for 'Todo history' card
+                                ☐ Change behavior of 'onClearCompleted()' method (all completed todos should be marked as 'cleaned' = true, not delete todo)
 
                 ✔ Change 'Footer' (Should be like [©AppName---LanguageBox---ThemeSwitcher---------------------------------Pro Applications Help Developer Press Terms]) @done(19-08-27 08:56)
 
@@ -380,7 +379,7 @@ Todos:
             ✔ Fix `Top tags` 'percent labels' positions @done(20-05-17 09:08)
 
             ✔ Implement ESLint, with Prettier, Husky and lint-staged @done(20-05-27 08:57)
-                ☐ Fix `lint` script   <========================================================= CURRENT TASK
+                ☐ Fix `lint` script
 
             ☐ Update CLI to latest version (8.*.*) `(Delayed for some time) - Package "@beyerleinf/ngx-dnd" has an incompatible peer dependency to "@angular/core" (requires "^6.0.0-rc.0 || ^6.0.0" (extended), would install "8.2.2").`
 
@@ -401,7 +400,7 @@ Todos:
             ✔ Change variables names in models to one case standart (Camel/Snake) depending on it's functionality @done(19-08-01 08:28)
 
             ✔ Fix labels on modal for 'costed pomos' and 'estimated pomos' and use only number fields (start from 'onMoreTodo()' in 'AppMainComponent') @done(19-08-03 08:47)
-            
+
             ✔ Fix App-title on SignIn page @done(19-08-04 09:29)
             ✔ Fix view for 'todos' when only one todo left (at bottom there is some white-space after todo) @done(19-08-04 09:17)
 
@@ -425,53 +424,52 @@ Todos:
             ☐ Add posibility to save list as CSV on local PC, GDrive, Yandex.Disk (with OAuth), DropBox
 
             ☐ Remove part related to 'todos/active' and 'todos/completed' (Routes, resolvers, etc)
-
+            
             ✔ Add tags support (for example #tagName) @done(18-08-05 09:17)
                 ✔ In 'todo Title' show tags as blocks with colors @done(18-07-22 09:48)
                     ✔ Colors for tags should be random, but for the same tag is the same color (tags should be stored in DB with color) @done(18-07-22 09:48)
-                        ☐ Add possibility to change #hashtag  color (by right click on tag)
-                        ☐ Add behaviour autosuggest #hashtag when typing
-                    ✔ Rewrite part with tag list @done(18-07-21 09:51)
-                        ✔ Fill tags array in 'TagService' when list of todo is loaded @done(18-06-04 10:19)
-                        ✔ Use tags array from 'TagService' in 'ParseTagPipe' when todo showed @done(18-06-05 09:39)
-                        ✔ Update tags array in 'TagService', when todo added/updated/deleted @done(18-06-05 10:30)
-                            ✔ Add logic to check if tag is not in use anymore (not todos with the tag - check all todos in delete/update and process in 'parseTag()'), then marked as ready to delete @done(18-06-09 09:54)
-                        ✔ Update 'clearCompleted()' with new logic with #hashtags (e.g. check if tag is not in use anymore, then marked as ready to delete) @done(18-07-21 09:49)
-                            ✔ Use 'cleanHashtags()' method in 'clearCompleted()' @done(18-07-21 09:49)
-                        ✔ Fix tags when they deleted in IndexedDb directly @done(18-06-11 10:23)
-                        ✔ Fix add new todo with tag @done(18-07-21 09:51)
-                            ✔ Fix add new todo with tag and after page refresh color is different (if page updated immediately) @done(18-07-22 09:12)
+                    ☐ Add possibility to change #hashtag  color (by right click on tag)
+                    ☐ Add behaviour autosuggest #hashtag when typing
+                ✔ Rewrite part with tag list @done(18-07-21 09:51)
+                    ✔ Fill tags array in 'TagService' when list of todo is loaded @done(18-06-04 10:19)
+                    ✔ Use tags array from 'TagService' in 'ParseTagPipe' when todo showed @done(18-06-05 09:39)
+                    ✔ Update tags array in 'TagService', when todo added/updated/deleted @done(18-06-05 10:30)
+                      ✔ Add logic to check if tag is not in use anymore (not todos with the tag - check all todos in delete/update and process in 'parseTag()'), then marked as ready to delete @done(18-06-09 09:54)
+                    ✔ Update 'clearCompleted()' with new logic with #hashtags (e.g. check if tag is not in use anymore, then marked as ready to delete) @done(18-07-21 09:49)
+                      ✔ Use 'cleanHashtags()' method in 'clearCompleted()' @done(18-07-21 09:49)
+                    ✔ Fix tags when they deleted in IndexedDb directly @done(18-06-11 10:23)
+                    ✔ Fix add new todo with tag @done(18-07-21 09:51)
+                        ✔ Fix add new todo with tag and after page refresh color is different (if page updated immediately) @done(18-07-22 09:12)
                     ✔ Add transparency to hashtags background-color @done(18-07-21 10:22)
-                    ✔ Use proper colors for tagBlock in header @done(18-07-22 09:44)
-                ✔ Click on tag should add 'tag-block' to 'header' and filter list @done(18-05-23 10:05)
-                    ✔ Fix filtering with similar tags (example #tagged1 and #tagged) @done(18-07-23 10:27)
-                    ✔ Fix filter, when app reload page with filtered route -> #hashtags are not from IndexedDb @done(18-07-23 09:44)
-                    ✔ Check filter with tag #another (if the tag placed in the beginning of title) @done(18-07-23 09:27)
-                ✔ Add URL support in 'todo Title' @done(18-05-23 10:06)
-                ✔ Consider to not show filter route (e.g. use { skipLocationChange: false } in navigate) @done(18-08-02 10:15)
-                    ✔ Now 'getTodosWithHashtag()' is redundant @done(18-05-27 09:08)
-                ✔ Fix bug when #hashtag title changed, in db old tag not marked as 'readyToDelete' (add tag and change name multiple times adding some num at end) @done(18-08-11 10:01)
-                    ✔ Add tooltip for #hashtag ('Click on tag to filter') @done(18-08-31 10:12)
-                        ✔ Fix click on #hashtag when tooltip showed (the issue -> if click on it, tooltip not hides) @done(18-08-31 10:12)
-                ☐ Fix color for tag when direct link for list of todo used (for example paste http://localhost:4200/todos/active and go -> color for #hashtag not from base) `(Delayed for some time) - possibly won't be necessarily, after changed some part with All/Active/Completed)`
-
-            ✔ Write tests for 'Utils' class @done(18-07-24 10:42)
-            ✔ Write tests for 'Tag' model @done(18-07-24 10:54)
-            ✔ Write tests for 'ParseTagPipe' @done(18-07-26 10:11)
-            ✔ Write tests for 'SafePipe' @done(18-07-27 09:29)
-            ✔ Write tests for 'FilterTagPipe' @done(18-07-27 09:42)
-            ✔ Write tests for 'DynamicContentDirective' @done(18-08-02 09:48)
-            ✔ Update all broken tests @done(18-07-31 10:29)
-
-            ✔ Rewrite part with resolvers, and return from resolver Object/Class like {activeRouteState, params, todos} @done(18-05-26 11:00)
-            ✔ Update styles for 'completed-todos' span (hover and active looks not proper - inactive?) @done(18-08-05 09:18)
-
-            ✔ Update CLI to version 6 (look here `https://blog.codewithdan.com/2018/05/03/upgrading-an-application-to-angular-6-step-by-step/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more`) @done(18-08-07 10:16)
-                ✔ And here `https://habr.com/company/ispsystem/blog/358696/` @done(18-08-07 10:16)
-                    ✔ Use `https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md` @done(18-08-07 10:16)
-                    ✔ Observable.throw replace by the throwError() function. (`https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md#dep-methods`) @done(18-08-07 10:16)
-                    ✔ Use `https://github.com/reactivex/rxjs-tslint` @done(18-08-07 10:16)
-                    ✔ Use `https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md#deprecations` @done(18-08-07 10:16)
+                      ✔ Use proper colors for tagBlock in header @done(18-07-22 09:44)
+                    ✔ Click on tag should add 'tag-block' to 'header' and filter list @done(18-05-23 10:05)
+                      ✔ Fix filtering with similar tags (example #tagged1 and #tagged) @done(18-07-23 10:27)
+                      ✔ Fix filter, when app reload page with filtered route -> #hashtags are not from IndexedDb @done(18-07-23 09:44)
+                      ✔ Check filter with tag #another (if the tag placed in the beginning of title) @done(18-07-23 09:27)
+                    ✔ Add URL support in 'todo Title' @done(18-05-23 10:06)
+                    ✔ Consider to not show filter route (e.g. use { skipLocationChange: false } in navigate) @done(18-08-02 10:15)
+                      ✔ Now 'getTodosWithHashtag()' is redundant @done(18-05-27 09:08)
+                    ✔ Fix bug when #hashtag title changed, in db old tag not marked as 'readyToDelete' (add tag and change name multiple times adding some num at end) @done(18-08-11 10:01)
+                        ✔ Add tooltip for #hashtag ('Click on tag to filter') @done(18-08-31 10:12)
+                            ✔ Fix click on #hashtag when tooltip showed (the issue -> if click on it, tooltip not hides) @done(18-08-31 10:12)
+                    ☐ Fix color for tag when direct link for list of todo used (for example paste http://localhost:4200/todos/active and go -> color for #hashtag not from base) `(Delayed for some time) - possibly won't be necessarily, after changed some part with All/Active/Completed)`
+    
+                    ✔ Write tests for 'Utils' class @done(18-07-24 10:42)
+                    ✔ Write tests for 'Tag' model @done(18-07-24 10:54)
+                    ✔ Write tests for 'ParseTagPipe' @done(18-07-26 10:11)
+                    ✔ Write tests for 'SafePipe' @done(18-07-27 09:29)
+                    ✔ Write tests for 'FilterTagPipe' @done(18-07-27 09:42)
+                    ✔ Write tests for 'DynamicContentDirective' @done(18-08-02 09:48)
+                    ✔ Update all broken tests @done(18-07-31 10:29)
+                    ✔ Rewrite part with resolvers, and return from resolver Object/Class like {activeRouteState, params, todos} @done(18-05-26 11:00)
+                    ✔ Update styles for 'completed-todos' span (hover and active looks not proper - inactive?) @done(18-08-05 09:18)
+        
+                    ✔ Update CLI to version 6 (look here `https://blog.codewithdan.com/2018/05/03/upgrading-an-application-to-angular-6-step-by-step/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more`) @done(18-08-07 10:16)
+                        ✔ And here `https://habr.com/company/ispsystem/blog/358696/` @done(18-08-07 10:16)
+                            ✔ Use `https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md` @done(18-08-07 10:16)
+                            ✔ Observable.throw replace by the throwError() function. (`https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md#dep-methods`) @done(18-08-07 10:16)
+                            ✔ Use `https://github.com/reactivex/rxjs-tslint` @done(18-08-07 10:16)
+                            ✔ Use `https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md#deprecations` @done(18-08-07 10:16)
 
             ✔ Bug -> When todo edited and click on trash icon -> just edit canceled @done(18-08-08 10:17)
                 ✔ Update test with new blur behaviour for 'TodoListItemEditComponent' @done(18-08-14 09:59)
@@ -491,76 +489,75 @@ Todos:
                 ✔ Fix color for triangle (a little darker than other part of tooltip) @done(18-08-18 09:14)
                 ✔ Fix - ERROR TypeError: Cannot read property 'parentNode' of null @done(18-08-25 10:17)
                 ✔ Find the way to use 'appTooltipDirective' with 'innerHTML' (look at 'DynamicContentDirective') @done(18-08-29 09:33)
-                    ✔ Fix issue, when tooltip showed, and more on it and move to other line now hides @done(18-08-29 10:07)
+                  ✔ Fix issue, when tooltip showed, and more on it and move to other line now hides @done(18-08-29 10:07)
                 ✔ Fix tooltip when UI changed (for example pin/unpin todo when tooltip showed) @done(18-09-04 09:16)
-                    ✔ And another example -> when tooltip showed, and add new item in list @done(18-09-04 09:16)
+                  ✔ And another example -> when tooltip showed, and add new item in list @done(18-09-04 09:16)
                 ✔ Change all tooltips from 'matTooltip' to 'appTooltipDirective' @done(18-09-04 09:34)
-                    ✔ Fix hiden tooltip for 'Add' todo button (probably add new 'disabled' state to 'TooltipDirective') @done(18-09-05 09:40)
+                  ✔ Fix hiden tooltip for 'Add' todo button (probably add new 'disabled' state to 'TooltipDirective') @done(18-09-05 09:40)
                 ✔ Look at Discord tooltip (Not applicable) @done(18-09-08 09:15)
                 ✔ Add delay for show tooltip in 'TooltipDirective' @done(18-09-13 10:37)
-                    ✔ Fix issue when tooltip still appears when unhovered already @done(18-09-14 10:46)
+                  ✔ Fix issue when tooltip still appears when unhovered already @done(18-09-14 10:46)
                 ✔ Change 'delay' member in 'TooltipDirective' and 'DynamicContentDirective' to property 'delayAnimation' and set as default value - 500 @done(18-09-14 11:01)
-                    ✔ Delete 'delay' prop in html templates @done(18-09-14 11:01)
-                    ✔ Replace all members to properties in 'TooltipDirective' @done(18-09-15 09:17)
-                    ✔ Refactor variables in 'TooltipDirective' @done(18-09-15 09:17)
-                ✔ Add delay for show tooltip in 'DynamicContentDirective' @done(18-09-15 09:33)
-                    ✔ Refactor 'DynamicContentDirective' like 'TooltipDirective' @done(18-09-15 09:33)
-                ☐ Use tooltip behaviour idea like in `http://crystalui.org/components/tooltip` (e.g. if quickly hover and out - tooltip should stay) (Delayed for some time)
-                ☐ Fix fast multiple mouseenter events (for example if you move cursor fast on element, then away and again on it tooltip now showed) (Delayed for some time)
-                ☐ Fix tooltip position (not centered) (grid styles (sticky footer) <-- The cause of wrong tooltip position) (Delayed for some time)
-                    ☐ After fix position remove all 'matTooltip' (only on left in todo-list-item-view.component.html for fixing position purpose)
+                ✔ Delete 'delay' prop in html templates @done(18-09-14 11:01)
+                ✔ Replace all members to properties in 'TooltipDirective' @done(18-09-15 09:17)
+                ✔ Refactor variables in 'TooltipDirective' @done(18-09-15 09:17)
+            ✔ Add delay for show tooltip in 'DynamicContentDirective' @done(18-09-15 09:33)
+                ✔ Refactor 'DynamicContentDirective' like 'TooltipDirective' @done(18-09-15 09:33)
+            ☐ Use tooltip behaviour idea like in `http://crystalui.org/components/tooltip` (e.g. if quickly hover and out - tooltip should stay) (Delayed for some time)
+            ☐ Fix fast multiple mouseenter events (for example if you move cursor fast on element, then away and again on it tooltip now showed) (Delayed for some time)
+            ☐ Fix tooltip position (not centered) (grid styles (sticky footer) <-- The cause of wrong tooltip position) (Delayed for some time)
+                ☐ After fix position remove all 'matTooltip' (only on left in todo-list-item-view.component.html for fixing position purpose)
 
 
-            ✔ Update tests for 'DynamicContentDirective' @done(18-09-12 10:26)
-            ✔ Write tests for 'TooltipDirective' @done(18-09-12 10:26)
-
-            ✔ Update 'concurrently' to latest version (4.0.1) @done(18-09-16 09:35)
-
-            ✔ After implementation authentication -> update patch version (to 1.4.5) @done(18-11-09 10:18)
-                ✔ Switch off debugging styles and update Demo on GH-Pages @done(18-11-09 10:17)
-                ✔ Fix errors 'Property 'data' does not exist on type 'string'' on --prod mode @done(18-11-10 09:25)
-                ✔ Add additional condition in 'SignInComponent' (tst|tst -> shouldn't use json-server and bypass it for GH-Pages) @done(18-11-11 09:43)
-                ✔ Deploy updated build on GH-Pages @done(18-11-11 10:19)
-            ✔ Complete 'Part 5 — Add authentication to protect private content' from `sitepoint.com` @done(18-10-01 09:08)
-                ✔ Fix button.sign-out-button styles with grids @done(18-10-01 09:34)
-                ✔ Fix msg '[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq)' @done(18-10-01 09:42)
-                ✔ Move styles from 'sign-in.component.scss' to '_sign-in.scss' @done(18-10-02 09:26)
-                ✔ The session data is lost when the browser refreshes the page (use sessionStorage or localStorage or consider cookies as a solution) @done(18-10-22 10:07)
-                    ✔ Use localStorage (example `https://github.com/gothinkster/angular-realworld-example-app/blob/master/src/app/core/services/user.service.ts#L41`) @done(18-10-22 10:07)
-                        ✔ Add 'JwtService' @done(18-10-19 10:02)
-                            ✔ Update test for 'JwtService' @done(18-10-24 09:47)
-                            ✔ Update test for 'AuthService' @done(18-10-25 10:29)
-                            ✔ Update test for 'SessionStorageService' @done(18-10-26 09:40)
-                            ✔ Update test for 'SignInComponent' @done(18-10-28 09:54)
-            ✔ Add protection (look here `https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html`) @done(18-10-08 09:35)
+                ✔ Update tests for 'DynamicContentDirective' @done(18-09-12 10:26)
+                ✔ Write tests for 'TooltipDirective' @done(18-09-12 10:26)
+    
+                ✔ Update 'concurrently' to latest version (4.0.1) @done(18-09-16 09:35)
+    
+                ✔ After implementation authentication -> update patch version (to 1.4.5) @done(18-11-09 10:18)
+                    ✔ Switch off debugging styles and update Demo on GH-Pages @done(18-11-09 10:17)
+                    ✔ Fix errors 'Property 'data' does not exist on type 'string'' on --prod mode @done(18-11-10 09:25)
+                    ✔ Add additional condition in 'SignInComponent' (tst|tst -> shouldn't use json-server and bypass it for GH-Pages) @done(18-11-11 09:43)
+                    ✔ Deploy updated build on GH-Pages @done(18-11-11 10:19)
+                ✔ Complete 'Part 5 — Add authentication to protect private content' from `sitepoint.com` @done(18-10-01 09:08)
+                    ✔ Fix button.sign-out-button styles with grids @done(18-10-01 09:34)
+                    ✔ Fix msg '[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq)' @done(18-10-01 09:42)
+                    ✔ Move styles from 'sign-in.component.scss' to '_sign-in.scss' @done(18-10-02 09:26)
+                    ✔ The session data is lost when the browser refreshes the page (use sessionStorage or localStorage or consider cookies as a solution) @done(18-10-22 10:07)
+                        ✔ Use localStorage (example `https://github.com/gothinkster/angular-realworld-example-app/blob/master/src/app/core/services/user.service.ts#L41`) @done(18-10-22 10:07)
+                            ✔ Add 'JwtService' @done(18-10-19 10:02)
+                                ✔ Update test for 'JwtService' @done(18-10-24 09:47)
+                                ✔ Update test for 'AuthService' @done(18-10-25 10:29)
+                                ✔ Update test for 'SessionStorageService' @done(18-10-26 09:40)
+                                ✔ Update test for 'SignInComponent' @done(18-10-28 09:54)
+                        ✔ Add protection (look here `https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html`) @done(18-10-08 09:35)
                 ✔ Update broken tests @done(18-10-12 09:52)
-                    ✔ Update tests for 'CanActivateTodosGuard' @done(18-10-11 10:06)
+                ✔ Update tests for 'CanActivateTodosGuard' @done(18-10-11 10:06)
                     ✔ Update tests for 'AppComponent' (look here `https://angular.io/guide/testing#components-with-routerlink`) @done(18-10-12 09:21)
                     ✔ Update tests for 'SignInComponent' @done(18-10-12 09:53)
             ✔ Look example in 'angular-realworld-example-app' on GH ( `https://github.com/gothinkster/angular-realworld-example-app` ) @done(18-10-19 09:20)
                 ✔ Test, can we use their api to get users data? (`https://conduit.productionready.io/api/users/login`) - Nope @done(18-10-17 10:05)
                 ✔ Check `https://angular.realworld.io/profile/Cl3r1k` what kind of data fetched for 'My Posts' @done(18-10-19 09:20)
             ☐ User firebase as backend? (`https://www.sitepoint.com/authenticating-firebase-angular-auth0-1/`)
-                ☐ And for GH pages (example here `https://medium.com/pan-labs/dynamic-web-apps-on-github-pages-for-free-ffac2b776d45`)
-
+              ☐ And for GH pages (example here `https://medium.com/pan-labs/dynamic-web-apps-on-github-pages-for-free-ffac2b776d45`)
+                
             ✔ Complete 'Part 6 — How to Update Angular Projects to the latest version' from `sitepoint.com` @done(18-10-09 10:41)
-                ✔ Update CLI to lastest version (6.1.9) @done(18-10-10 10:15)
-                    ✔ Fix 'high severity security vulnerability detected in cryptiles' @done(18-10-13 09:24)
-
+              ✔ Update CLI to lastest version (6.1.9) @done(18-10-10 10:15)
+                  ✔ Fix 'high severity security vulnerability detected in cryptiles' @done(18-10-13 09:24)
+            
             ✔ Fix issue: when DB in IndexedDb recreated, but in localStorage order is old @done(18-10-22 10:05)
-
+            
             ✔ Switch from 'akserg/ng2-dnd' to another dnd-module with ng6 support (for example `https://github.com/beyerleinf/ngx-dnd`) @done(18-11-01 09:46)
             ✔ Update CLI to v7 @done(18-11-02 10:24)
                 ✔ Fix errors after update @done(18-11-03 10:57)
                 ✔ Fix errors in tests for 'TodoListComponent' @done(18-11-03 11:07)
-
-
+                
             ☐ Consider 'Auto-resizing <textarea> elements' in material to replace current auto-resize (look here `https://material.angular.io/components/input/overview#auto-resizing-code-lt-textarea-gt-code-elements`)
-
+            
             ☐ Consider to implement app structure like in 'angular-realworld-example-app' on GH ( `https://github.com/gothinkster/angular-realworld-example-app` )
-
+        
         ☐ Fix cursor type for contaners (example: hover mouse between 'pinned-list' and 'unpinned-list', or between 'pinned-list' and input field for new todo)
-
+        
         ✔ Change styles to CSS-grids @done(18-02-26 09:08)
             ✔ Start grids from TodoListItemViewComponent @done(18-02-18 10:11)
                 ✔ Improve styles for 'checkbox.toggle' (currently not centered in container) @done(18-02-24 09:26)
@@ -568,8 +565,8 @@ Todos:
                 ☐ Fix issue -> when todo hovered (and zoom is 90% or 110%) -> buttons shift ---> Delayed for some time (When will be adaption for responsive) (probably margin: 0 auto; will solve it)
                 ☐ Improve styles for action-buttons (hover should work on more area) ---> Delayed for some time (Consider to implement this feature)
                     ☐ Improve styles if window width < 600 (make buttons-block responsive)
-            ✔ Implement grids in TodoListItemEditComponent @done(18-02-18 12:14)
-            ✔ Implement grids in TodoListHeaderComponent @done(18-02-24 09:25)
+                ✔ Implement grids in TodoListItemEditComponent @done(18-02-18 12:14)
+                ✔ Implement grids in TodoListHeaderComponent @done(18-02-24 09:25)
                 ✔ Fix small issue at bottom of the 'toggleAll' and input.new-todo (look bottom border input.new-todo) @done(18-02-23 10:58)
                 ✔ Improve styles for 'checkbox.toggleAll' (change height to center element and update 'checkbox.toggle' to center) @done(18-02-22 09:59)
             ✔ Implement grids in TodoListFooterComponent @done(18-02-24 10:19)
@@ -581,16 +578,23 @@ Todos:
             ☐ Fix 'toggleAll' checkbox style in Edge (use `http://yoksel.github.io/url-encoder/`)
             ☐ Fix styles for checkbox.toggle in FF and Edge
             ✔ Autoresize fields for new todo and editing todo with large text @done(18-02-15 09:07)
-                ✔ Disable width changes for textarea @done(18-02-15 09:41)
-                ✔ Improve processing 'Enter' in textarea (currently Enter adds linebreak and saves todo -> only saves todo should be) @done(18-02-15 09:20)
-                ✔ Improve initial size for textarea (when single line todo.title, and check multiple lines todo.title) @done(18-02-15 10:16)
-                ☐ Rewrite part for initial size for textarea (when single line todo.title, and check multiple lines todo.title) (Current method is a crutch) (look here `https://github.com/stevepapa/ng-autosize/issues/9`)
+              ✔ Disable width changes for textarea @done(18-02-15 09:41)
+              ✔ Improve processing 'Enter' in textarea (currently Enter adds linebreak and saves todo -> only saves todo should be) @done(18-02-15 09:20)
+              ✔ Improve initial size for textarea (when single line todo.title, and check multiple lines todo.title) @done(18-02-15 10:16)
+            ☐ Rewrite part for initial size for textarea (when single line todo.title, and check multiple lines todo.title) (Current method is a crutch) (look here `https://github.com/stevepapa/ng-autosize/issues/9`)
             ☐ Rewrite part for DnD (use `https://github.com/atlassian/react-beautiful-dnd` and adopt it to angular)
-                ☐ Use custom cursor for DnD icon (look here `https://github.com/atlassian/react-beautiful-dnd/blob/master/src/view/style-marshal/get-styles.js#L110`)
+              ☐ Use custom cursor for DnD icon (look here `https://github.com/atlassian/react-beautiful-dnd/blob/master/src/view/style-marshal/get-styles.js#L110`)
             ☐ Consider to use Material 'DragDropModule' (`https://material.angular.io/cdk/drag-drop/overview`) ---> Delayed for some time (Consider to implement this feature, after will be supported DnD for subComponents)
-                ☐ Use behavior and styles from 'Material 'DragDropModule''
+              ☐ Use behavior and styles from 'Material 'DragDropModule''
             ☐ Change styles in '_sign-in.scss' to grids
 
+
+
+
+
+// TABS below are (4)
+
+            
         ☐ Remove 'sweet-alert' styles
         ☐ In app for header use not simple text but styled text with logo (like example `https://pomotodo.com/pro` top left corner)
         ☐ Use some UI ideas for dialog like here `https://comining.io/account/wallets#`
