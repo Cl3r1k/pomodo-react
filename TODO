@@ -9,8 +9,6 @@ GitHub Flow Rules:
 
 
 Commit message:
-  
-
 
 
 
@@ -29,10 +27,11 @@ Todos:
     Current:
       ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
 
-      ☐ Add scss, eslint, prettier, husky and lint-staged
+      ☐ Add scss support, eslint, prettier, husky and lint-staged, implement absolute path imports
         ✔ Add scss support @done(20-06-05 08:37)
         ✔ Implement absolute path imports @done(20-06-05 08:53)
-        ☐ Implement eslint, prettier, husky, lint-staged
+        ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
+        ☐ Improve linters config
 
       ☐ Add autoincrement build
 
