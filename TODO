@@ -31,7 +31,9 @@ Todos:
         ✔ Add scss support @done(20-06-05 08:37)
         ✔ Implement absolute path imports @done(20-06-05 08:53)
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
-        ☐ Improve linters config
+        ☐ Improve linters/formatters config   <========================================================= CURRENT TASK
+      
+      ☐ Use modules for styles
 
       ☐ Add autoincrement build
 
@@ -587,32 +589,25 @@ Current:
               ☐ Use behavior and styles from 'Material 'DragDropModule''
             ☐ Change styles in '_sign-in.scss' to grids
 
+            ☐ Remove 'sweet-alert' styles
+            ☐ In app for header use not simple text but styled text with logo (like example `https://pomotodo.com/pro` top left corner)
+            ☐ Use some UI ideas for dialog like here `https://comining.io/account/wallets#`
+            ☐ Handle error properly as Observable (look here `http://pradeeploganathan.com/angular/creating-a-service-in-angular-5-with-rxjs-5-5/`)
+            ☐ Rewrite test for 'TodosComponent' (currently not complete)
+            ☐ Rewrite test for 'IndexedDbService' (currently not complete)
+            ☐ Fix bug when todo edited with small text, size of textarea autosized (for example start edit todo with name 'Add more todos!')
+            ☐ Use watcher, and perform deletion after 5 seconds, if user didn't cancel deletion (service worker?) (look in IndexedDbService)
 
-
-
-
-// TABS below are (4)
-
-            
-        ☐ Remove 'sweet-alert' styles
-        ☐ In app for header use not simple text but styled text with logo (like example `https://pomotodo.com/pro` top left corner)
-        ☐ Use some UI ideas for dialog like here `https://comining.io/account/wallets#`
-        ☐ Handle error properly as Observable (look here `http://pradeeploganathan.com/angular/creating-a-service-in-angular-5-with-rxjs-5-5/`)
-        ☐ Rewrite test for 'TodosComponent' (currently not complete)
-        ☐ Rewrite test for 'IndexedDbService' (currently not complete)
-        ☐ Fix bug when todo edited with small text, size of textarea autosized (for example start edit todo with name 'Add more todos!')
-        ☐ Use watcher, and perform deletion after 5 seconds, if user didn't cancel deletion (service worker?) (look in IndexedDbService)
             ☐ Use Material Snackbar for cancel deleted todo (look here `https://medium.com/codingthesmartway-com-blog/angular-material-part-2-popups-modals-1ed0c2405f18`)
-        ☐ Consider to use time as ID in DB (look here example `https://github.com/chenyaowen123/suishouji/blob/master/src/app/accounting/accounting.component.ts`)
-        ☐ Add filtering by todo name
-            ☐ Use switchMap for filters and search (look here `https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html` and here `https://codecraft.tv/courses/angular/http/http-with-observables/`)
-        ☐ Add spinner when Angular component loading `(examples: www.muller.tech/post/2017/04/03/angular4-create-modal/ and here https://medium.com/@tomastrajan/how-to-style-angular-application-loading-with-angular-cli-like-a-boss-cdd4f5358554)`
-        ☐ Use Reactive forms
-        ☐ Notify if user blocked notification (look here example `https://codingthesmartway.com/angular-material-introduction/` - left bottom corner)
-        ☐ Use UserGuide on first run like here `discordapp.com` or like in `feedly.com`
-        ☐ Add some kind of easter-egg
-
-        ☐ Consider to cancel editing, if user clicks on other area ---> Delayed for some time (Back to this later)
+            ☐ Consider to use time as ID in DB (look here example `https://github.com/chenyaowen123/suishouji/blob/master/src/app/accounting/accounting.component.ts`)
+            ☐ Add filtering by todo name
+                ☐ Use switchMap for filters and search (look here `https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html` and here `https://codecraft.tv/courses/angular/http/http-with-observables/`)
+            ☐ Add spinner when Angular component loading `(examples: www.muller.tech/post/2017/04/03/angular4-create-modal/ and here https://medium.com/@tomastrajan/how-to-style-angular-application-loading-with-angular-cli-like-a-boss-cdd4f5358554)`
+            ☐ Use Reactive forms
+            ☐ Notify if user blocked notification (look here example `https://codingthesmartway.com/angular-material-introduction/` - left bottom corner)
+            ☐ Use UserGuide on first run like here `discordapp.com` or like in `feedly.com`
+            ☐ Add some kind of easter-egg
+            ☐ Consider to cancel editing, if user clicks on other area ---> Delayed for some time (Back to this later)
             ☐ Probably should be used 'ViewChild'
 
         ☐ After finishing the tutor, improve the app using (`https://github.com/tastejs/todomvc-app-template`)
@@ -634,7 +629,7 @@ Current:
             |
             |
             ☐ Use Chrome LightHouse to test the app and get 100%
-
+        
         ☐ Improve DnD functionality -> Currently if todos moved to fast the movements not handled propely (posibly disable move posibility until server returns response)
         ☐ Limit amount of todo by 100 (more will be available in pro)
         ☐ Possibility to sync DB (look here `https://github.com/dfahlander/Dexie.js/issues/437`)
@@ -656,22 +651,28 @@ Current:
             `компоненты, роутинг между ними, гард на блокировку к админке (простой return false ), а потом уже форма авторизации для сбора логинь/пароль, сервис для проверки логина`
             `1)верстаю компоненты (шаблон) интерфейса админки, авторизации, регистрации. 2) это организовываю регистрацию пользователей (добавления в БД) 3) Далее авторизацию (проверку данных из БД) 4) предотвращение открытия админки, если сразу хотят перейти в нею по url,если он не было до этого авторизован, как админ`
             `локалсторадж для хранения авторизации, форма авторизации: реактивная форма + валидаторы, включая кастомный для сверки паролей, если 2 поля`
-
+        
         ☐ Implement MEAN - usefull links below:
-            `https://www.sitepoint.com/mean-stack-angular-2-angular-cli/`
-            `https://www.sitepoint.com/user-authentication-mean-stack/`
+          `https://www.sitepoint.com/mean-stack-angular-2-angular-cli/`
+          `https://www.sitepoint.com/user-authentication-mean-stack/`
 
   Future:
-        ☐ Options window:
-            ☐ Add in options value for Multiple/Single adding todo (use `http://dexie.org/docs/Table/Table.bulkAdd()`)
-            ☐ Add in options value for support spec symbols (like ☐ and ✔) in new todo
-        ☐ Add posibility to parse todo with special symbols (like ☐ and ✔) (parse input in service) (server side probably)
-            ☐ Update test for the feature in service and components
-        ☐ Add documentation (look here `https://habrahabr.ru/company/docsvision/blog/341562/`)
-            ☐ Add docs to methods in services like in IndexedDbService createTodo
-        ☐ In IndexedDB parse next events `IDBOpenDBRequest.onblocked` and `IDBOpenDBRequest.onupgradeneeded` (look here `https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest`)
+    ☐ Options window:
+        ☐ Add in options value for Multiple/Single adding todo (use `http://dexie.org/docs/Table/Table.bulkAdd()`)
+        ☐ Add in options value for support spec symbols (like ☐ and ✔) in new todo
+    ☐ Add posibility to parse todo with special symbols (like ☐ and ✔) (parse input in service) (server side probably)
+        ☐ Update test for the feature in service and components
+    ☐ Add documentation (look here `https://habrahabr.ru/company/docsvision/blog/341562/`)
+        ☐ Add docs to methods in services like in IndexedDbService createTodo
+      ☐ In IndexedDB parse next events `IDBOpenDBRequest.onblocked` and `IDBOpenDBRequest.onupgradeneeded`
+        (look here `https://developer.mozilla.org/en-US/docs/Web/API/IDBOpenDBRequest`)
 
-  Scheduled:
+
+
+// TABS below are (4)
+
+
+    Scheduled:
         ☐ Rewrite dynamic components with NgComponentOutlet (look here `https://angular.io/api/common/NgComponentOutlet` and here `https://github.com/angular/angular/pull/19713`) (return to this point after 01.01.2018)
             look example here `https://github.com/thekiba/ngx-component-outlet` and here `https://gist.github.com/thekiba/9b7fc4e32c92353e26890320f255f712`
 
