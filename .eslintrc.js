@@ -19,9 +19,9 @@ module.exports = {
     // 'no-param-reassign': 0,                                                    // Disallow Reassignment of Function Parameters (off)
     'import/imports-first': ['error', 'absolute-first'],                          // This rule reports any imports that come after non-import statements
     'import/newline-after-import': 'error',                                       // Enforces having one or more empty lines after the last top-level import statement or require call
-    'import/prefer-default-export': 0,                                            //
-    'prettier/prettier': ['error'],                                               //
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],    //
+    'import/prefer-default-export': 0,                                            // When there is only a single export from a module, prefer using default export over named export
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],    // Forbid the use of extraneous packages (Explicit set to true (default value) )
+    'prettier/prettier': ['error'],                                               // Rule that formats content using Prettier
   },
   settings: {
     // Absolute imports support for eslint
