@@ -8,13 +8,8 @@ module.exports = {
   ],
   plugins: ['jsx-a11y', 'prettier'],
   rules: {
-    // 
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx'],
-      },
-    ],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],         // Allow file extensions that may contain JSX
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],                // Disallow the use of console - Use console.error, console.warn and console.info instead
     'linebreak-style': 0,                                                         // Enforce consistent linebreak style - Incorrect  work in Windows (off)
     // 'no-param-reassign': 0,                                                    // Disallow Reassignment of Function Parameters (off)
     'import/imports-first': ['error', 'absolute-first'],                          // This rule reports any imports that come after non-import statements

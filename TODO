@@ -27,13 +27,13 @@ Todos:
     Current:
       ✔ Choose one of the branching model of Git (git-flow or github-flow) @done(20-06-01 09:01)
 
-      ☐ Add scss support, eslint, prettier, husky and lint-staged, implement absolute path imports
+      ✔ Add scss support, eslint, prettier, husky and lint-staged, implement absolute path imports @done(20-06-10 08:47)
         ✔ Add scss support @done(20-06-05 08:37)
         ✔ Implement absolute path imports @done(20-06-05 08:53)
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
-        ☐ Improve linters/formatters config   <========================================================= CURRENT TASK
+        ✔ Improve linters/formatters config @done(20-06-10 08:46)
       
-      ☐ Use modules for styles
+      ☐ Use modules for styles   <========================================================= CURRENT TASK
 
       ☐ Add autoincrement build
 
