@@ -19,7 +19,7 @@ module.exports = {
     'prettier/prettier': ['error'],                                               // Rule that formats content using Prettier
   },
   settings: {
-    // Absolute imports support for eslint
+    // Allow absolute paths imports support for eslint, e.g. import Button from 'components/Button'
     'import/resolver': {
       node: {
         paths: ['src'],

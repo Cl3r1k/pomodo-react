@@ -32,8 +32,9 @@ Todos:
         ✔ Implement absolute path imports @done(20-06-05 08:53)
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
+        ☐ Consider to implement stylelint (`https://stylelint.io/` `https://stylelint.io/user-guide/configuration`)   <========================================================= CURRENT TASK
       
-      ☐ Use modules for styles   <========================================================= CURRENT TASK
+      ☐ Use modules for styles
 
       ☐ Add autoincrement build
 
