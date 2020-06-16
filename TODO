@@ -33,10 +33,10 @@ Todos:
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
         ✔ Implement stylelint (`https://stylelint.io/` `https://stylelint.io/user-guide/configuration`) @done(20-06-14 09:21)
+        ✔ Use modules for styles @done(20-06-15 08:43)
       
-      ☐ Use modules for styles   <========================================================= CURRENT TASK
 
-      ☐ Add autoincrement build
+      ☐ Add autoincrement build   <========================================================= CURRENT TASK
 
       ☐ Add login/auth/sign-in page
         ☐ Sign-in page should have possibility to generate strong passwords
