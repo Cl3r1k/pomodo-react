@@ -37,6 +37,8 @@ Todos:
       
 
       ☐ Add autoincrement build   <========================================================= CURRENT TASK
+        (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)
+        (`https://github.com/facebook/create-react-app/issues/1917`)
 
       ☐ Add login/auth/sign-in page
         ☐ Sign-in page should have possibility to generate strong passwords
