@@ -11,9 +11,9 @@ GitHub Flow Rules:
 Commit message:
 
 
-
 Code StyleGuide / Rules:
   @high - For react styles use modules
+  @high - Use Conventional Commits (`https://www.conventionalcommits.org/en/v1.0.0/`)
 
 Technics to use:
   ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
