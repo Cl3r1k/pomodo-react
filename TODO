@@ -20,6 +20,7 @@ Technics to use:
   ☐ Autotest for master branch (bunch of unit tests, or regression tests, accessibility tests) ???
     ☐ Consider to code coverage tests over 90%, to successfull merge to `master` branch
     ☐ Autocheck modules vulnerabilites (audit, dependabot???) to successfull merge to `master` branch
+  ☐ Consider to use 'semantic-release' - `https://github.com/semantic-release/semantic-release`
 
 
 Todos:
