@@ -11,6 +11,7 @@ GitHub Flow Rules:
 Commit message:
 
 
+
 Code StyleGuide / Rules:
   @high - For react styles use modules
   @high - Use Conventional Commits (`https://www.conventionalcommits.org/en/v1.0.0/`)
@@ -21,6 +22,7 @@ Technics to use:
     ☐ Consider to code coverage tests over 90%, to successfull merge to `master` branch
     ☐ Autocheck modules vulnerabilites (audit, dependabot???) to successfull merge to `master` branch
   ☐ Consider to use 'semantic-release' - `https://github.com/semantic-release/semantic-release`
+  ☐ Consider to use 'size-limit' - `https://github.com/ai/size-limit`
 
 
 Todos:
