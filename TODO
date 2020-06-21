@@ -18,6 +18,7 @@ Code StyleGuide / Rules:
 
 Technics to use:
   ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
+    ☐ Make sure Travis CI turns green (or CI environment (Jenkins)) ?
   ☐ Autotest for master branch (bunch of unit tests, or regression tests, accessibility tests) ???
     ☐ Consider to code coverage tests over 90%, to successfull merge to `master` branch
     ☐ Autocheck modules vulnerabilites (audit, dependabot???) to successfull merge to `master` branch
@@ -41,6 +42,7 @@ Todos:
 
       ☐ Add autoincrement build   <========================================================= CURRENT TASK
         (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)
+        (`https://dev.to/omarzi/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa`)
         (`https://github.com/facebook/create-react-app/issues/1917`)
 
       ☐ Add login/auth/sign-in page
