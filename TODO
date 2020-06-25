@@ -42,9 +42,9 @@ Todos:
 
       ☐ Add autoincrement build on commit  <========================================================= CURRENT TASK
         ✔ Implement autoincrement build @done(20-06-23 09:05)
-        (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)
-        (`https://dev.to/omarzi/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa`)
-        (`https://github.com/facebook/create-react-app/issues/1917`)
+          (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)
+          (`https://dev.to/omarzi/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa`)
+          (`https://github.com/facebook/create-react-app/issues/1917`)
 
       ☐ Add login/auth/sign-in page
         ☐ Sign-in page should have possibility to generate strong passwords
