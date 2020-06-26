@@ -4,7 +4,7 @@
 
 module.exports = {
   hooks: {
-    'pre-commit': 'lint-staged',
+    'pre-commit': 'lint-staged && node ./generate.build.js && git add -A',
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
   },
 };
