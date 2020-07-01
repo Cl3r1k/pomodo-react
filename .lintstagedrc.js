@@ -5,6 +5,4 @@ module.exports = {
   '*.+(js|jsx)': ['eslint', 'prettier --write'],
   '*.+(json|md|graphql)': ['prettier --write'],
   '*.+(css|less|styl|scss|sass|sss)': ['stylelint --fix'],
-  // '*.+(*)': ['node ./generate.build.js'],
-  // '*.+(*)': (allFiles) => console.info('--------> allFiles: ', allFiles),
 };

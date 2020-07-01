@@ -6,6 +6,8 @@ module.exports = {
   hooks: {
     'pre-commit': 'lint-staged',
     'commit-msg':
-      'commitlint -E HUSKY_GIT_PARAMS && node ./generate.build.js && git add -A',
+      'node ./generate.build.js && git add ./src/metadata.json && commitlint -E HUSKY_GIT_PARAMS',
   },
 };
+
+// Consider to use 'applypatch-msg' or 'pre-applypatch' or 'post-applypatch' hooks for 'new build generation'
