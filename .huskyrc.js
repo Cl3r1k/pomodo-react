@@ -7,7 +7,8 @@ module.exports = {
   hooks: {
     'pre-commit': 'lint-staged',
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
-    'applypatch-msg': 'node ./generate.build.js && git add ./src/metadata.json',
+    'prepare-commit-msg':
+      'node ./generate.build.js && git add ./src/metadata.json',
   },
 };
 
