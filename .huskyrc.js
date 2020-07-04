@@ -6,8 +6,9 @@
 module.exports = {
   hooks: {
     'pre-commit': 'lint-staged',
+    'prepare-commit-msg': 'node ./generate.build.js', // Increment build after linters, but before 'commitlint'
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
-    'prepare-commit-msg':
-      'node ./generate.build.js && git add ./src/metadata.json',
   },
 };
+
+// NOTE: If 'commitlint' fails, 'generate.build.js' will be performed any way

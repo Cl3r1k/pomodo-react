@@ -16,7 +16,7 @@ Code StyleGuide / Rules:
   @high - For react styles use modules
   @high - Use Conventional Commits (`https://www.conventionalcommits.org/en/v1.0.0/`)
 
-Technics to use:
+Technics (ideas) to use :
   ☐ CI/CD ??? (`https://rollout.io/blog/continuous-integration-continuous-delivery-continuous-deployment/`) (`https://github.com/features/actions`)
     ☐ Make sure Travis CI turns green (or CI environment (Jenkins)) ?
   ☐ Autotest for master branch (bunch of unit tests, or regression tests, accessibility tests) ???
@@ -40,15 +40,19 @@ Todos:
         ✔ Use modules for styles @done(20-06-15 08:43)
       
 
-      ☐ Add autoincrement build on commit  <========================================================= CURRENT TASK
+      ✔ Add autoincrement build on commit @done(20-07-03 08:47)
         ✔ Implement autoincrement build @done(20-06-23 09:05)
           (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)
           (`https://dev.to/omarzi/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa`)
           (`https://github.com/facebook/create-react-app/issues/1917`)
 
-      ☐ Add login/auth/sign-in page
+      ☐ Add login/auth/sign-in page  <========================================================= CURRENT TASK
         ☐ Sign-in page should have possibility to generate strong passwords
 
+      ☐ Migrate to TS
+
+      ☐ Implement 'Auto Resize TextArea' (info - `https://medium.com/@lucasalgus/creating-a-custom-auto-resize-textarea-component-for-your-react-web-application-6959c0ad68bc`)
+    
       ☐ TODO part
 
       ☐ POMO part
@@ -59,7 +63,6 @@ Todos:
 
       ☐ Landing page
 
-      ☐ Migrate to TS
 
   Future:
 
