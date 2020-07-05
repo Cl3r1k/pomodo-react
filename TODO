@@ -47,7 +47,14 @@ Todos:
           (`https://github.com/facebook/create-react-app/issues/1917`)
 
       ☐ Add login/auth/sign-in page  <========================================================= CURRENT TASK
+        ☐ Implement protected routes
+        ☐ Use React context for authentication
+        ☐ Implement Github authentication
+        ☐ Implement Google authentication
+        ☐ Implement Social-newtworks authentication
+        ☐ Implement Email authentication
         ☐ Sign-in page should have possibility to generate strong passwords
+        ☐ Implement possibility to reset password / restore access
 
       ☐ Migrate to TS
 
