@@ -46,8 +46,8 @@ Todos:
           (`https://dev.to/omarzi/how-to-validate-commit-message-convention-using-commitlint-and-husky-aaa`)
           (`https://github.com/facebook/create-react-app/issues/1917`)
 
-      ☐ Add login/auth/sign-in page  <========================================================= CURRENT TASK
-        ☐ Implement protected routes
+      ☐ Add login/auth/sign-in page
+        ☐ Implement protected routes  <========================================================= CURRENT TASK
         ☐ Use React context for authentication
         ☐ Implement Github authentication
         ☐ Implement Google authentication
