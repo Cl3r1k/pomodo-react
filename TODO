@@ -48,6 +48,8 @@ Todos:
 
       ☐ Add login/auth/sign-in page
         ☐ Implement protected routes  <========================================================= CURRENT TASK
+          - 'react-router-dom' info (`https://reactrouter.com/web/guides/quick-start`)
+          ☐ Consider to extract 'routes' logic to separate file
         ☐ Use React context for authentication
         ☐ Implement Github authentication
         ☐ Implement Google authentication
