@@ -1,5 +1,7 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const NotFoundPage = () => {
-  return <div>Not Found Page</div>;
+  const { pathname } = useLocation();
+  return <div>Not Found Page at: {pathname}</div>;
 };

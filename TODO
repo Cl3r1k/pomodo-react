@@ -55,7 +55,7 @@ Todos:
         ☐ Implement Google authentication
         ☐ Implement Social-newtworks authentication
         ☐ Implement Email authentication
-        ☐ Sign-in page should have possibility to generate strong passwords
+        ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)
         ☐ Implement possibility to reset password / restore access
 
       ☐ Migrate to TS
