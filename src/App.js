@@ -1,10 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
+// Routes
+import { PrivateRoute } from 'routes/PrivateRoute';
+
 // Pages
 import { HomePage } from 'pages/HomePage';
 import { AboutPage } from 'pages/AboutPage';
+import { DashboardPage } from 'pages/DashboardPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
+import { LoginPage } from 'pages/LoginPage';
+
+// Components
+import { AuthStatus } from 'components/AuthStatus';
 
 // Styles
 import styles from './App.module.scss';
@@ -14,6 +22,8 @@ export const App = () => {
     <Router>
       <div className={styles.App}>
         <header className={styles['App-header']}>
+          <AuthStatus />
+
           <nav>
             <ul>
               <li>
@@ -21,6 +31,9 @@ export const App = () => {
               </li>
               <li>
                 <Link to="/about">About Page</Link>
+              </li>
+              <li>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
               <li>
                 <Link to="/not-found">Not Found Page</Link>
@@ -37,6 +50,12 @@ export const App = () => {
           <Route path="/about">
             <AboutPage />
           </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <PrivateRoute path="/dashboard">
+            <DashboardPage />
+          </PrivateRoute>
           <Route path="/*">
             <NotFoundPage />
           </Route>
