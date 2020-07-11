@@ -26,4 +26,4 @@ fs.readFile('src/metadata.json', (err, content) => {
   });
 });
 
-// Idea took from `https://github.com/facebook/create-react-app/issues/1917#issuecomment-291468057`
+// Idea took from here `https://github.com/facebook/create-react-app/issues/1917#issuecomment-291468057`

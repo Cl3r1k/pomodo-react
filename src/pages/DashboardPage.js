@@ -1,5 +1,14 @@
 import React from 'react';
 
+// Components
+import { RenderCounter } from 'components/RenderCounter';
+
 export const DashboardPage = () => {
-  return <div>Dashboard Page (Protected???)</div>;
+  return (
+    <div>
+      <RenderCounter />
+
+      <h3>Dashboard Page (Protected???)</h3>
+    </div>
+  );
 };

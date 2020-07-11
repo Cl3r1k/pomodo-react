@@ -1,17 +1,30 @@
 import React from 'react';
 import { RenderCounter } from 'components/RenderCounter';
+import { useHistory } from 'react-router-dom';
 
 export const AuthStatus = () => {
+  const history = useHistory();
   const isAuthenticated = false;
+
+  const handleOnClickSignOut = () => {
+    // Perform sign-out logic
+    // authContext.signOut(() => history.replace('/'));
+    history.push('/');
+  };
 
   return (
     <div>
       <RenderCounter />
 
       {isAuthenticated ? (
-        <div>Welcome, Authenticated user</div>
+        <p>
+          Welcome, Authenticated user{' '}
+          <button type="button" onClick={handleOnClickSignOut}>
+            Sign out
+          </button>
+        </p>
       ) : (
-        <div>You should login</div>
+        <p>You are not logged in!</p>
       )}
     </div>
   );

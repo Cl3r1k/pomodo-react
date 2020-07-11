@@ -13,6 +13,7 @@ import { LoginPage } from 'pages/LoginPage';
 
 // Components
 import { AuthStatus } from 'components/AuthStatus';
+import { RenderCounter } from 'components/RenderCounter';
 
 // Styles
 import styles from './App.module.scss';
@@ -21,6 +22,8 @@ export const App = () => {
   return (
     <Router>
       <div className={styles.App}>
+        <RenderCounter />
+
         <header className={styles['App-header']}>
           <AuthStatus />
 
