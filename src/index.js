@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// ContextProviders
+import { AuthContextProvider } from 'context/AuthContextProvider';
+
 // Components
 import { App } from 'App';
 
@@ -12,7 +15,9 @@ import './index.module.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <App />
+    </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

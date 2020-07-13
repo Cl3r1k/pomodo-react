@@ -1,16 +1,21 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
+// Hooks
+import { useAuthDispatch } from 'hooks/useAuthDispatch';
+
 // Components
 import { RenderCounter } from 'components/RenderCounter';
 
 export const LoginPage = () => {
   const history = useHistory();
   const location = useLocation();
+  const authDispatch = useAuthDispatch();
 
   const { from } = location.state || { from: { pathname: '/' } };
   const handleOnClickSignIn = () => {
     // authContext.authenticate(() => history.replace(from));
+    authDispatch({ type: 'SIGN_IN' });
     history.replace(from);
   };
 

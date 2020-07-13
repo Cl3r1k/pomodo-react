@@ -3,10 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
+// Hooks
+import { useAuthState } from 'hooks/useAuthState';
+
 // A wrapper for <Route> that redirects to the login screen
 // if you're not yet authenticated
 export const PrivateRoute = ({ children, ...rest }) => {
-  const isAuthenticated = false;
+  const { isAuthenticated } = useAuthState();
 
   return (
     <Route

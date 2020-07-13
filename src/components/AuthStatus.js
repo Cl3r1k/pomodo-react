@@ -1,14 +1,24 @@
 import React from 'react';
-import { RenderCounter } from 'components/RenderCounter';
 import { useHistory } from 'react-router-dom';
+
+// Hooks
+import { useAuthState } from 'hooks/useAuthState';
+import { useAuthDispatch } from 'hooks/useAuthDispatch';
+
+// Components
+import { RenderCounter } from 'components/RenderCounter';
 
 export const AuthStatus = () => {
   const history = useHistory();
-  const isAuthenticated = false;
+  const { isAuthenticated } = useAuthState();
+  const authDispatch = useAuthDispatch();
+
+  console.info('isAuthenticated: ', isAuthenticated);
 
   const handleOnClickSignOut = () => {
     // Perform sign-out logic
     // authContext.signOut(() => history.replace('/'));
+    authDispatch({ type: 'SIGN_OUT' });
     history.push('/');
   };
 
