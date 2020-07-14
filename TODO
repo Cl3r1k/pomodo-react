@@ -47,11 +47,11 @@ Todos:
           (`https://github.com/facebook/create-react-app/issues/1917`)
 
       ☐ Add login/auth/sign-in page
-        ☐ Implement protected routes  <========================================================= CURRENT TASK
+        ✔ Implement protected routes @done(20-07-13 08:43)
           - 'react-router-dom' info (`https://reactrouter.com/web/guides/quick-start`)
-          ☐ Consider to extract 'routes' logic to separate file
-        ☐ Use React context for authentication
-        ☐ Implement Github authentication
+          ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
+        ✔ Use React context for authentication @done(20-07-13 08:43)
+        ☐ Implement Github authentication  <========================================================= CURRENT TASK
         ☐ Implement Google authentication
         ☐ Implement Social-newtworks authentication
         ☐ Implement Email authentication

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 // Hooks
 import { useAuthState } from 'hooks/useAuthState';
@@ -8,7 +8,7 @@ import { useAuthDispatch } from 'hooks/useAuthDispatch';
 // Components
 import { RenderCounter } from 'components/RenderCounter';
 
-export const AuthStatus = () => {
+export const NavBar = () => {
   const history = useHistory();
   const { isAuthenticated } = useAuthState();
   const authDispatch = useAuthDispatch();
@@ -36,6 +36,23 @@ export const AuthStatus = () => {
       ) : (
         <p>You are not logged in!</p>
       )}
+
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home Page</Link>
+          </li>
+          <li>
+            <Link to="/about">About Page</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/not-found">Not Found Page</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
