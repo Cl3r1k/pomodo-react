@@ -5,7 +5,7 @@ export const useAuthDispatch = () => {
   const authDispatch = useContext(AuthDispatchContext);
 
   if (authDispatch === undefined) {
-    throw new Error('useAuthDispatch should be used with AuthContextProvider');
+    throw new Error('useAuthDispatch must be used with AuthContextProvider');
   }
 
   return authDispatch;

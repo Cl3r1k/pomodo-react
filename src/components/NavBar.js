@@ -5,6 +5,9 @@ import { Link, useHistory } from 'react-router-dom';
 import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
+// Actions
+import { authActionSignOut } from 'actions/authActions';
+
 // Components
 import { RenderCounter } from 'components/RenderCounter';
 
@@ -18,8 +21,9 @@ export const NavBar = () => {
   const handleOnClickSignOut = () => {
     // Perform sign-out logic
     // authContext.signOut(() => history.replace('/'));
-    authDispatch({ type: 'SIGN_OUT' });
-    history.push('/');
+    authActionSignOut(authDispatch, () => history.push('/'));
+    // authDispatch({ type: 'SIGN_OUT' });
+    // history.push('/');
   };
 
   return (

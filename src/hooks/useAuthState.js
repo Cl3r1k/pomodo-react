@@ -5,7 +5,7 @@ export const useAuthState = () => {
   const authContext = useContext(AuthStateContext);
 
   if (authContext === undefined) {
-    throw new Error('useAuthState should be used with AuthContextProvider');
+    throw new Error('useAuthState must be used with AuthContextProvider');
   }
 
   return authContext;

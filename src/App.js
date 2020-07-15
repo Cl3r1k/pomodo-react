@@ -16,16 +16,16 @@ export const App = () => {
 
   return (
     <Router>
-      <div className={styles.App}>
+      <div className={styles.appContainer}>
         <RenderCounter />
 
-        <header className={styles['App-header']}>
+        <header className={styles.headerContainer}>
           <NavBar />
         </header>
 
         <main className={styles.mainContainer}>{routes}</main>
 
-        <footer>Some footer</footer>
+        <footer className={styles.footerContainer}>Some footer</footer>
       </div>
     </Router>
   );
