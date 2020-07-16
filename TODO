@@ -52,9 +52,35 @@ Todos:
           ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
         ✔ Use React context for authentication @done(20-07-13 08:43)
         ☐ Implement Github authentication  <========================================================= CURRENT TASK
+          - Usefull links:
+            - Done
+              React: Simple Auth Flow: `https://dev.to/koralarts/react-simple-auth-flow-3fbf`
+
+            - Next
+              Auth0 authentication with react: `https://dev.to/kal_code/auth0-authentication-with-react-27ko`
+            
+            - ToRead
+              How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
+              Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
+              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
+              Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
+              OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`
+              Create an Elegant Login and Register Form on React: `https://www.youtube.com/watch?v=juUaJpMd2LE`
+              Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
+              Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
+              React Token Auth: `https://habr.com/en/post/485764/`
+              Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
+              Facebook Login Button In React: `https://www.youtube.com/watch?v=ea9KyE78qKI`
+              Авторизация react приложения через Google Sign In: `https://www.youtube.com/watch?v=XWz7YaI1Px0`
+              Building the Login Component in React JS: `https://www.youtube.com/watch?v=QoLUB0QkUaE`
+              React Client Side Authentication: `https://www.youtube.com/watch?v=oRL-pttfNSc`
+              Login with Github Using Rest API v3 in Javascript Full Project with Source Code: `https://www.youtube.com/watch?v=nysqJfP4dcY`
+
         ☐ Implement Google authentication
+          - Some example (`https://dev.to/ogwurujohnson/social-logins-with-google-auth-4e15`)
         ☐ Implement Social-newtworks authentication
         ☐ Implement Email authentication
+          - Some example (`https://dev.to/_elmahdim/react-firebase-authentication-3bik`)
         ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)
         ☐ Implement possibility to reset password / restore access
 
@@ -63,6 +89,7 @@ Todos:
       ☐ Implement 'Auto Resize TextArea' (info - `https://medium.com/@lucasalgus/creating-a-custom-auto-resize-textarea-component-for-your-react-web-application-6959c0ad68bc`)
     
       ☐ TODO part
+        - Some primer `https://dev.to/oohsinan/creating-a-todo-list-app-with-react-using-hooks-and-contexts-564g`
 
       ☐ POMO part
 
@@ -71,6 +98,8 @@ Todos:
       ☐ Settings part
 
       ☐ Landing page
+
+      ☐ Security tips `https://dev.to/vaibhavkhulbe/7-security-tips-for-your-react-application-4e78`
 
 
   Future:
