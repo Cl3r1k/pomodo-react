@@ -16,7 +16,16 @@ export const LoginPage = () => {
   const authDispatch = useAuthDispatch();
 
   const { from } = location.state || { from: { pathname: '/' } };
-  const handleOnClickSignIn = () => {
+  const handleOnSubmitSignIn = evt => {
+    evt.preventDefault();
+
+    const formElements = evt.target.elements;
+    console.info('formElements: ', formElements);
+    const userDetails = {
+      email: formElements.email.value,
+      password: formElements.password.value,
+    };
+    console.info('userDetails: ', userDetails);
     // authContext.authenticate(() => history.replace(from));
     authActionSignIn(authDispatch, () => history.replace(from));
     // authDispatch({ type: 'SIGN_IN' });
@@ -28,9 +37,18 @@ export const LoginPage = () => {
       <RenderCounter />
 
       <h3>You must login to view the page at {from.pathname}</h3>
-      <button type="button" onClick={handleOnClickSignIn}>
-        Sign in
-      </button>
+
+      <form onSubmit={handleOnSubmitSignIn}>
+        <label htmlFor="email">
+          <input type="text" name="email" id="email" />
+        </label>
+
+        <label htmlFor="password">
+          <input type="password" name="password" id="password" />
+        </label>
+
+        <button type="submit">Sign in</button>
+      </form>
     </div>
   );
 };
