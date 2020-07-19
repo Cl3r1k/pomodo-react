@@ -27,7 +27,7 @@ export const LoginPage = () => {
     };
     console.info('userDetails: ', userDetails);
     // authContext.authenticate(() => history.replace(from));
-    authActionSignIn(authDispatch, () => history.replace(from));
+    authActionSignIn(authDispatch, userDetails, () => history.replace(from));
     // authDispatch({ type: 'SIGN_IN' });
     // history.replace(from);
   };
