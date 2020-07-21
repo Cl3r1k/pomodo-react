@@ -10,14 +10,16 @@ export const authActionSignIn = async (dispatch, credentials, callBack) => {
   // TODO: Dispatch auth 'started' ?
 
   console.info('authActionSignIn() called');
-  if (validateCredentials(credentials)) {
-    await delay(1000);
+  await delay(1000);
 
+  if (validateCredentials(credentials)) {
     dispatch({ type: actionTypes.SIGN_IN });
 
     // Emulate async action
     delayCallback(callBack, 100);
   }
+
+  throw new Error('Not found user with this email or password');
 
   // TODO: Dispatch auth 'finished' ?
 };

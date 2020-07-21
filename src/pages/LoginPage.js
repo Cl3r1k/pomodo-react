@@ -38,7 +38,7 @@ export const LoginPage = () => {
       );
     } catch (err) {
       setError(err);
-      console.info(error);
+      // console.info('error: ', error);
       setLoading(false);
     }
   };
@@ -60,6 +60,8 @@ export const LoginPage = () => {
           </label>
 
           <button type="submit">Sign in</button>
+
+          {error && <span>{error.message}</span>}
         </fieldset>
       </form>
     </div>
