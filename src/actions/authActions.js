@@ -13,10 +13,10 @@ export const authActionSignIn = async (dispatch, credentials, callBack) => {
   await delay(1000);
 
   if (validateCredentials(credentials)) {
-    dispatch({ type: actionTypes.SIGN_IN });
-
     // Emulate async action
     delayCallback(callBack, 100);
+
+    return dispatch({ type: actionTypes.SIGN_IN });
   }
 
   throw new Error('Not found user with this email or password');
@@ -25,7 +25,8 @@ export const authActionSignIn = async (dispatch, credentials, callBack) => {
 };
 
 export const authActionSignOut = (dispatch, callBack) => {
+  // Send request to sign-out probably
   dispatch({ type: actionTypes.SIGN_OUT });
-  // Emulate async action
-  setTimeout(callBack, 100);
+  // Sign out and perform callback immediately
+  callBack();
 };

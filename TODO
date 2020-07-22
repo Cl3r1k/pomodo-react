@@ -83,6 +83,7 @@ Todos:
           - Some example (`https://dev.to/_elmahdim/react-firebase-authentication-3bik`)
         ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)
         ☐ Implement possibility to reset password / restore access
+        ☐ Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
 
       ☐ Migrate to TS
 
