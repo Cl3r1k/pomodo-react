@@ -9,6 +9,7 @@ import { authActionSignIn } from 'actions/authActions';
 
 // Components
 import { RenderCounter } from 'components/RenderCounter';
+import { LoginGithub } from 'components/LoginGithub';
 
 export const LoginPage = () => {
   const history = useHistory();
@@ -64,6 +65,8 @@ export const LoginPage = () => {
           {error && <span>{error.message}</span>}
         </fieldset>
       </form>
+
+      <LoginGithub />
     </div>
   );
 };
