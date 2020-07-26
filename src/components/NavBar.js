@@ -53,6 +53,9 @@ export const NavBar = () => {
             <Link to="/dashboard">Dashboard</Link>
           </li>
           <li>
+            <Link to="/login">Login (testing...)</Link>
+          </li>
+          <li>
             <Link to="/not-found">Not Found Page</Link>
           </li>
         </ul>

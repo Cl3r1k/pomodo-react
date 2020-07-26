@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 
 // Hooks
 import { useAuthState } from 'hooks/useAuthState';
 // import { useAuthDispatch } from 'hooks/useAuthDispatch';
+
+// Assets
+import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
+import styles from 'styles/LoginGithub.module.scss';
 
 export const LoginGithub = () => {
   const {
@@ -60,10 +64,39 @@ export const LoginGithub = () => {
 
   // console.info('clientId:', clientId, 'redirectUri: ', redirectUri);
 
+  const handleOnClick = () => {
+    setAuthGhData({ ...authGhData, isLoading: true });
+  };
+
   if (isAuthenticated) {
     // console.info('<LoginGithub /> isAuthenticated');
-    return <Redirect to="/" />;
+    // return <Redirect to="/" />;
+    return <div>Authenticated already (redirect?)</div>;
   }
 
-  return <div>Login Github</div>;
+  return (
+    <section className={styles.container}>
+      <div>
+        <h1>Welcome</h1>
+        <span>Super amazing app</span>
+        <span>{authGhData.errorMessage}</span>
+        <div className="login-container">
+          {authGhData.isLoading ? (
+            <div className="loader-container">
+              <div className="loader" />
+            </div>
+          ) : (
+            <a
+              href={`https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}&redirect_uri=${redirectUri}`}
+              onClick={handleOnClick}
+              className="login-link"
+            >
+              <GithubIcon style={{ width: '42px', height: '42px' }} />
+              Login with Github
+            </a>
+          )}
+        </div>
+      </div>
+    </section>
+  );
 };
