@@ -13,4 +13,70 @@
     width: 25%;
     height: 45%;
   }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    color: #808080;
+    margin-bottom: 70px;
+  }
+
+  .errorMessage {
+    margin: 10px 0 20px 0;
+    color: red;
+  }
+
+  .loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tan;
+    // width: 70%;
+    border-radius: 3px;
+    color: #fff;
+
+    .loginLink {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      // cursor: default;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    .loadingContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+    }
+
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      animation: spin 2s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

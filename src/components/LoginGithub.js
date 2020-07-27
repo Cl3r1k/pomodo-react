@@ -78,21 +78,21 @@ export const LoginGithub = () => {
     <section className={styles.container}>
       <div>
         <h1>Welcome</h1>
-        <span>Super amazing app</span>
-        <span>{authGhData.errorMessage}</span>
-        <div className="login-container">
+        <span className={styles.title}>Super amazing app</span>
+        <span className={styles.errorMessage}>{authGhData.errorMessage}</span>
+        <div className={styles.loginContainer}>
           {authGhData.isLoading ? (
-            <div className="loader-container">
-              <div className="loader" />
+            <div className={styles.loadingContainer}>
+              <div className={styles.loader} />
             </div>
           ) : (
             <a
               href={`https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}&redirect_uri=${redirectUri}`}
               onClick={handleOnClick}
-              className="login-link"
+              className={styles.loginLink}
             >
               <GithubIcon style={{ width: '42px', height: '42px' }} />
-              Login with Github
+              <span>Login with Github</span>
             </a>
           )}
         </div>
