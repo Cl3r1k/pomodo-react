@@ -27,6 +27,9 @@ export const LoginGithub = () => {
     const url = window.location.href;
     const hasCode = url.includes('?code=');
 
+    console.info('url: ', url);
+    console.info('hasCode: ', hasCode);
+
     if (hasCode) {
       const newUrl = url.split('?code=');
       window.history.pushState({}, null, newUrl[0]);

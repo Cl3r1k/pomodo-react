@@ -8,10 +8,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     width: 25%;
     height: 45%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
   }
 
   h1 {
@@ -21,8 +21,8 @@
 
   .title {
     font-size: 1.1rem;
-    color: #808080;
     margin-bottom: 70px;
+    color: #808080;
   }
 
   .errorMessage {
@@ -34,9 +34,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: tan;
     // width: 70%;
     border-radius: 3px;
+    background-color: tan;
     color: #fff;
 
     .loginLink {
@@ -61,11 +61,11 @@
     }
 
     .loader {
+      width: 12px;
+      height: 12px;
       border: 4px solid #f3f3f3;
       border-top: 4px solid #3498db;
       border-radius: 50%;
-      width: 12px;
-      height: 12px;
       animation: spin 2s linear infinite;
     }
   }
