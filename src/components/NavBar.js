@@ -13,7 +13,7 @@ import { RenderCounter } from 'components/RenderCounter';
 
 export const NavBar = () => {
   const history = useHistory();
-  const { isAuthenticated } = useAuthState();
+  const { isAuthenticated, user } = useAuthState();
   const authDispatch = useAuthDispatch();
 
   console.info('isAuthenticated: ', isAuthenticated);
@@ -31,12 +31,19 @@ export const NavBar = () => {
       <RenderCounter />
 
       {isAuthenticated ? (
-        <p>
-          Welcome, Authenticated user{' '}
+        <div>
+          <div>
+            <div>Welcome, Authenticated user</div>
+            {/* <img src={user?.avatar_uls || ''} alt="Avatar" /> */}
+            <span>Name: {user?.name}</span>
+            {/* <span>{user.public_repos}</span> */}
+            <span>Followers: {user?.followers}</span>
+            <span>Following: {user?.following}</span>
+          </div>
           <button type="button" onClick={handleOnClickSignOut}>
             Sign out
           </button>
-        </p>
+        </div>
       ) : (
         <p>You are not logged in!</p>
       )}
