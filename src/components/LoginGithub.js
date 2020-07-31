@@ -36,9 +36,9 @@ export const LoginGithub = () => {
       setAuthGhData({ ...authGhData, isLoading: true });
 
       const requestData = {
-        client_id: clientId,
-        redirect_uri: redirectUri,
-        client_secret: clientSecret,
+        clientId,
+        clientSecret,
+        redirectUri,
         code: newUrl[1],
       };
 

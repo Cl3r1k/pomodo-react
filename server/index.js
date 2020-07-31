@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 const express = require('express');
 const bodyParser = require('body-parser');
 const FormData = require('form-data');
@@ -17,13 +16,13 @@ app.use((req, res, next) => {
 });
 
 app.post('/authenticate', (req, res) => {
-  const { client_id, redirect_uri, client_secret, code } = req.body;
+  const { clientId, clientSecret, redirectUri, code } = req.body;
 
   const data = new FormData();
-  data.append('client_id', client_id);
-  data.append('client_secret', client_secret);
+  data.append('client_id', clientId);
+  data.append('client_secret', clientSecret);
   data.append('code', code);
-  data.append('redirect_uri', redirect_uri);
+  data.append('redirect_uri', redirectUri);
 
   // Request to exchange code for an access token
   fetch('https://github.com/login/oauth/access_token', {
@@ -33,13 +32,13 @@ app.post('/authenticate', (req, res) => {
     .then(response => response.text())
     .then(paramString => {
       const params = new URLSearchParams(paramString);
-      const access_token = params.get('access_toke');
+      const accessToken = params.get('access_toke');
       const scope = params.get('scope');
-      const token_type = params.get('token_type');
+      const tokenType = params.get('token_type');
 
       // Request to return data of a user that has been authenticated
       return fetch(
-        `https://api.github.com/user?access_token=${access_token}&scope=${scope}&token_type=${token_type}`
+        `https://api.github.com/user?access_token=${accessToken}&scope=${scope}&token_type=${tokenType}`
       );
     })
     .then(responseAuth => responseAuth.text())
