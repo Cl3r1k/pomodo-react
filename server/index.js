@@ -26,6 +26,8 @@ app.post('/authenticate', (req, res) => {
   data.append('code', code);
   data.append('redirect_uri', redirectUri);
 
+  console.info('server POST /authenticate - data: ', data);
+
   // Request to exchange code for an access token
   fetch('https://github.com/login/oauth/access_token', {
     method: 'POST',

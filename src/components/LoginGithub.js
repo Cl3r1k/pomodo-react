@@ -42,6 +42,8 @@ export const LoginGithub = () => {
         code: newUrl[1],
       };
 
+      console.info('requestData: ', requestData);
+
       // Use code parameter and other parameters to make POST request to proxy_server
       fetch(proxyUrl, {
         method: 'POST',
