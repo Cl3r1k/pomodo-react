@@ -36,7 +36,7 @@ app.post('/authenticate', (req, res) => {
     .then(response => response.text())
     .then(paramString => {
       const params = new URLSearchParams(paramString);
-      const accessToken = params.get('access_toke');
+      const accessToken = params.get('access_token');
       const scope = params.get('scope');
       const tokenType = params.get('token_type');
 
