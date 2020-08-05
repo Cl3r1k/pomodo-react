@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 // Hooks
 import { useAuthState } from 'hooks/useAuthState';
-// import { useAuthDispatch } from 'hooks/useAuthDispatch';
+import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
@@ -17,7 +17,7 @@ export const LoginGithub = () => {
     redirectUri,
     proxyUrl,
   } = useAuthState();
-  // const authDispatch = useAuthDispatch();
+  const authDispatch = useAuthDispatch();
   const [authGhData, setAuthGhData] = useState({
     errorMessage: '',
     isLoading: false,
@@ -51,11 +51,28 @@ export const LoginGithub = () => {
       })
         .then(response => response.json())
         .then(data => {
-          console.info('data: ', data);
-          // authDispatch({
-          //   type: 'SIGN_IN',
-          //   payload: { user: data },
-          // });
+          console.info('Successful login data: ', data);
+
+          const {
+            avatar_url: avatarUrl,
+            login,
+            public_repos: publicRepos,
+            followers,
+            following,
+          } = JSON.parse(data);
+
+          const userData = {
+            avatarUrl,
+            login,
+            publicRepos,
+            followers,
+            following,
+          };
+
+          authDispatch({
+            type: 'SIGN_IN',
+            payload: userData,
+          });
         })
         .catch(err => {
           console.info('err: ', err);
@@ -65,7 +82,7 @@ export const LoginGithub = () => {
           });
         });
     }
-  }, [authGhData, clientId, clientSecret, proxyUrl, redirectUri]);
+  }, [authGhData, clientId, clientSecret, proxyUrl, redirectUri, authDispatch]);
 
   // console.info('clientId:', clientId, 'redirectUri: ', redirectUri);
 
@@ -75,8 +92,8 @@ export const LoginGithub = () => {
 
   if (isAuthenticated) {
     // console.info('<LoginGithub /> isAuthenticated');
-    // return <Redirect to="/" />;
-    return <div>Authenticated already (redirect?)</div>;
+    return <Redirect to="/" />;
+    // return <div>Authenticated already (redirect?)</div>;
   }
 
   return (

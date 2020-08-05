@@ -17,6 +17,7 @@ export const NavBar = () => {
   const authDispatch = useAuthDispatch();
 
   console.info('isAuthenticated: ', isAuthenticated);
+  console.info('user: ', user);
 
   const handleOnClickSignOut = () => {
     // Perform sign-out logic
@@ -35,8 +36,8 @@ export const NavBar = () => {
           <div>
             <div>Welcome, Authenticated user</div>
             {/* <img src={user?.avatar_uls || ''} alt="Avatar" /> */}
-            <span>Name: {user?.name}</span>
-            {/* <span>{user.public_repos}</span> */}
+            <span>Login: {user?.login}</span>
+            <span>Public repos: {user?.publicRepos}</span>
             <span>Followers: {user?.followers}</span>
             <span>Following: {user?.following}</span>
           </div>
