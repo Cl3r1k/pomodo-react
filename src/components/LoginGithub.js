@@ -54,19 +54,19 @@ export const LoginGithub = () => {
           console.info('Successful login data: ', data);
 
           const {
-            avatar_url: avatarUrl,
             login,
+            id,
+            avatar_url: avatarUrl,
             public_repos: publicRepos,
             followers,
-            following,
           } = JSON.parse(data);
 
           const userData = {
-            avatarUrl,
             login,
+            id,
+            avatarUrl,
             publicRepos,
             followers,
-            following,
           };
 
           authDispatch({
@@ -92,6 +92,7 @@ export const LoginGithub = () => {
 
   if (isAuthenticated) {
     // console.info('<LoginGithub /> isAuthenticated');
+    console.info('isAuthenticated... Redirect to="/"');
     return <Redirect to="/" />;
     // return <div>Authenticated already (redirect?)</div>;
   }

@@ -35,11 +35,10 @@ export const NavBar = () => {
         <div>
           <div>
             <div>Welcome, Authenticated user</div>
-            {/* <img src={user?.avatar_uls || ''} alt="Avatar" /> */}
+            <img src={user?.avatarUrl} alt="Avatar" />
             <span>Login: {user?.login}</span>
             <span>Public repos: {user?.publicRepos}</span>
             <span>Followers: {user?.followers}</span>
-            <span>Following: {user?.following}</span>
           </div>
           <button type="button" onClick={handleOnClickSignOut}>
             Sign out
