@@ -98,14 +98,14 @@ export const LoginGithub = () => {
   }
 
   return (
-    <section className={styles.container}>
+    <section className={styles.wrapper}>
       <div>
         <h1>Welcome</h1>
         <span className={styles.title}>Super amazing app</span>
         <span className={styles.errorMessage}>{authGhData.errorMessage}</span>
-        <div className={styles.loginContainer}>
+        <div className={styles.loginWrapper}>
           {authGhData.isLoading ? (
-            <div className={styles.loadingContainer}>
+            <div className={styles.loadingWrapper}>
               <div className={styles.loader} />
             </div>
           ) : (
