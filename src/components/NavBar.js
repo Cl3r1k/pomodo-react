@@ -38,7 +38,6 @@ export const NavBar = () => {
             <img src={user?.avatarUrl} alt="Avatar" />
             <span>Login: {user?.login}</span>
             <span>Public repos: {user?.publicRepos}</span>
-            <span>Followers: {user?.followers}</span>
           </div>
           <button type="button" onClick={handleOnClickSignOut}>
             Sign out

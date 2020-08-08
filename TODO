@@ -63,8 +63,10 @@ Todos:
               OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
               React GitHub Login (package): `https://github.com/checkr/react-github-login`
               kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
+              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
             
-            - ToRead              
+            - ToRead        
+              Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
               Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
               React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
               OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`

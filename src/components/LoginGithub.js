@@ -58,7 +58,6 @@ export const LoginGithub = () => {
             id,
             avatar_url: avatarUrl,
             public_repos: publicRepos,
-            followers,
           } = JSON.parse(data);
 
           const userData = {
@@ -66,7 +65,6 @@ export const LoginGithub = () => {
             id,
             avatarUrl,
             publicRepos,
-            followers,
           };
 
           authDispatch({
