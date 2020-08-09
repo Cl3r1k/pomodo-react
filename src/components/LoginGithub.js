@@ -88,6 +88,11 @@ export const LoginGithub = () => {
     setAuthGhData({ ...authGhData, isLoading: true });
   };
 
+  // TODO: Use example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
+  const handleOnClickLogin = () => {
+    console.info('handleOnClickLogin() called');
+  };
+
   if (isAuthenticated) {
     // console.info('<LoginGithub /> isAuthenticated');
     console.info('isAuthenticated... Redirect to="/"');
@@ -107,14 +112,19 @@ export const LoginGithub = () => {
               <div className={styles.loader} />
             </div>
           ) : (
-            <a
-              href={`https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}&redirect_uri=${redirectUri}`}
-              onClick={handleOnClick}
-              className={styles.loginLink}
-            >
-              <GithubIcon style={{ width: '42px', height: '42px' }} />
-              <span>Login with Github</span>
-            </a>
+            <>
+              <a
+                href={`https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}&redirect_uri=${redirectUri}`}
+                onClick={handleOnClick}
+                className={styles.loginLink}
+              >
+                <GithubIcon style={{ width: '42px', height: '42px' }} />
+                <span>Login with Github</span>
+              </a>
+              <button type="button" onClick={handleOnClickLogin}>
+                Login (iframe) in with GitHub
+              </button>
+            </>
           )}
         </div>
       </div>
