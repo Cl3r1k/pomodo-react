@@ -5,6 +5,9 @@ import { Redirect } from 'react-router-dom';
 import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
+// Utils
+import { combineToQueryParams } from 'services/utils';
+
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
 import styles from 'styles/LoginGithub.module.scss';
@@ -91,6 +94,21 @@ export const LoginGithub = () => {
   // TODO: Use example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
   const handleOnClickLogin = () => {
     console.info('handleOnClickLogin() called');
+
+    const scope = 'user:email';
+    const queryParams = combineToQueryParams({
+      scope,
+      client_id: clientId,
+      redirect_uri: redirectUri,
+    });
+
+    console.info('queryParams: ', queryParams);
+
+    // const popup = PopupWindow.open(
+    //   'github-oauth-authorize',
+    //   `https://github.com/login/oauth/authorize?${queryParams}`,
+    //   { height: 1000, width: 600 }
+    // );
   };
 
   if (isAuthenticated) {
