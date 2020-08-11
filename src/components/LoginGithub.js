@@ -6,7 +6,8 @@ import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
 // Utils
-import { combineToQueryParams } from 'services/utils';
+import { combineToQuery } from 'services/utils';
+import { PopupWindow } from 'classes/PopupWindow';
 
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
@@ -96,7 +97,7 @@ export const LoginGithub = () => {
     console.info('handleOnClickLogin() called');
 
     const scope = 'user:email';
-    const queryParams = combineToQueryParams({
+    const queryParams = combineToQuery({
       scope,
       client_id: clientId,
       redirect_uri: redirectUri,
@@ -104,11 +105,13 @@ export const LoginGithub = () => {
 
     console.info('queryParams: ', queryParams);
 
-    // const popup = PopupWindow.open(
-    //   'github-oauth-authorize',
-    //   `https://github.com/login/oauth/authorize?${queryParams}`,
-    //   { height: 1000, width: 600 }
-    // );
+    const popup = PopupWindow.open(
+      'github-oauth-authorize',
+      `https://github.com/login/oauth/authorize?${queryParams}`,
+      { height: 800, width: 600 }
+    );
+
+    console.info('popup: ', popup);
   };
 
   if (isAuthenticated) {
