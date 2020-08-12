@@ -13,3 +13,5 @@ export const combineToQuery = (params, delimiter = '&') => {
     return param;
   }, '');
 };
+
+export const combineToParams = () => '';
