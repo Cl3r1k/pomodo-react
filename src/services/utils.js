@@ -14,4 +14,12 @@ export const combineToQuery = (params, delimiter = '&') => {
   }, '');
 };
 
-export const combineToParams = () => '';
+export const combineToParams = query => {
+  const q = query.replace(/^\??\//, '');
+
+  return q.split('&').reduce((values, param) => {
+    const [key, value] = param.split('=');
+
+    return { ...values, [key]: value };
+  }, {});
+};
