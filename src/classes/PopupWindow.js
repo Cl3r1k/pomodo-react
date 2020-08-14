@@ -49,6 +49,8 @@ export class PopupWindow {
             return undefined;
           }
 
+          console.info('popup.location.search:', popup.location.search);
+
           const params = combineToParams(
             popup.location.search.replace(/^\?/, '')
           );

@@ -93,6 +93,7 @@ export const LoginGithub = () => {
   };
 
   // TODO: Use example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
+  // Replication: https://codesandbox.io/s/green-waterfall-l5qmu?file=/src/App.js
   const handleOnClickLogin = () => {
     console.info('handleOnClickLogin() called');
 
@@ -112,6 +113,11 @@ export const LoginGithub = () => {
     );
 
     console.info('popup: ', popup);
+
+    popup.then(
+      data => console.info('popup.then() data: ', data),
+      error => console.info('popup.then() error: ', error)
+    );
   };
 
   if (isAuthenticated) {

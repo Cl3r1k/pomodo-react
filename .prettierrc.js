@@ -1,5 +1,5 @@
 module.exports = {
-  endOfLine: 'crlf', // Common flavors of line endings - Carriage Return + Line Feed characters (\r\n), common on Windows (Default value changed from 'auto' to 'lf' in v2.0.0)
+  endOfLine: 'lf', // Common flavors of line endings - Carriage Return + Line Feed characters (\r\n), common on Windows (Default value changed from 'auto' to 'lf' in v2.0.0)
   semi: true, // Print semicolons at the ends of statements
   singleQuote: true, // Use single quotes instead of double quotes
   tabWidth: 2, // Specify the number of spaces per indentation-level
