@@ -49,6 +49,7 @@ export class PopupWindow {
             return undefined;
           }
 
+          console.info('popup.location:', popup.location);
           console.info('popup.location.search:', popup.location.search);
 
           const params = combineToParams(
