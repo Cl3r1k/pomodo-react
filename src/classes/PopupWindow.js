@@ -23,6 +23,7 @@ export class PopupWindow {
   }
 
   close() {
+    console.info('called close()!');
     this.cancel();
     this.window.close();
   }
@@ -31,16 +32,21 @@ export class PopupWindow {
     this.promise = new Promise((resolve, reject) => {
       this.iid = window.setInterval(() => {
         try {
+          console.info('tick');
           const popup = this.window;
 
-          if (!popup || this.closed) {
+          console.info('popup: ', popup, 'popup.closed', popup.closed);
+
+          if (!popup || popup.closed !== false) {
             this.close();
 
             reject(new Error('The popup was closed'));
 
-            console.error('Do we need this return???');
             return undefined;
           }
+
+          // console.info('popup.location.href: ', popup.location.href);
+          // console.info('popup.location.pathname: ', popup.location.pathname);
 
           if (
             popup.location.href === this.url ||
