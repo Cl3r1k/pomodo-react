@@ -45,8 +45,14 @@ export class PopupWindow {
             return undefined;
           }
 
-          // console.info('popup.location.href: ', popup.location.href);
+          console.info('popup.location: ', popup.location);
+          console.error('popup.location.href: ', popup.location.href);
           // console.info('popup.location.pathname: ', popup.location.pathname);
+          console.info(
+            'popup.location.href === this.url: ',
+            popup.location.href === this.url
+          );
+          // console.info(`popup.location.pathname === "blank"`, popup.location.pathname === "blank");
 
           if (
             popup.location.href === this.url ||

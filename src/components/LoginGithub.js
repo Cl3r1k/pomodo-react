@@ -93,7 +93,7 @@ export const LoginGithub = () => {
   };
 
   // TODO: Use example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
-  // Replication: https://codesandbox.io/s/suspicious-ride-kjb5d?file=/src/PopupWindow.js
+  // Replication: https://codesandbox.io/s/friendly-tu-rqrb9?file=/src/PopupWindow.js
   const handleOnClickLogin = () => {
     console.info('handleOnClickLogin() called');
 
@@ -149,7 +149,7 @@ export const LoginGithub = () => {
                 <span>Login with Github</span>
               </a>
               <button type="button" onClick={handleOnClickLogin}>
-                Login (iframe) in with GitHub
+                Login (iframe) with GitHub
               </button>
             </>
           )}
