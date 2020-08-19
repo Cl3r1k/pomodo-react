@@ -24,6 +24,7 @@ export class PopupWindow {
 
   close() {
     console.info('called close()!');
+    // console.info('this.search: ', this.search);
     this.cancel();
     this.window.close();
   }
@@ -32,12 +33,12 @@ export class PopupWindow {
     this.promise = new Promise((resolve, reject) => {
       this.iid = window.setInterval(() => {
         try {
-          console.info('tick');
+          // console.info('tick');
           const popup = this.window;
 
           // console.info('popup: ', popup, 'popup.closed', popup.closed);
 
-          console.info('before check --- !popup || popup.closed !== false');
+          // console.info('before check --- !popup || popup.closed !== false');
 
           if (!popup || popup.closed !== false) {
             this.close();
@@ -62,8 +63,8 @@ export class PopupWindow {
           //     popup.location.pathname === 'blank'
           // );
 
-          console.info(`before check --- popup.location.href === this.url ||
-          popup.location.pathname === "blank"`);
+          // console.info(`before check --- popup.location.href === this.url ||
+          // popup.location.pathname === "blank"`);
 
           if (
             popup.location.href === this.url ||
@@ -72,17 +73,19 @@ export class PopupWindow {
             return undefined;
           }
 
-          console.info(`AFTER check --- popup.location.href === this.url ||
-          popup.location.pathname === "blank"`);
+          // console.info(`AFTER check --- popup.location.href === this.url ||
+          // popup.location.pathname === "blank"`);
 
           // console.info('popup.location:', popup.location);
           // console.info('popup.location.search:', popup.location.search);
+
+          // this.search = popup.location.search;
 
           const params = combineToParams(
             popup.location.search.replace(/^\?/, '')
           );
 
-          console.info('params: ', params);
+          // console.info('params: ', params);
 
           resolve(params);
 
