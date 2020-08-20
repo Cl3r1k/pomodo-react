@@ -24,7 +24,6 @@ export class PopupWindow {
 
   close() {
     console.info('called close()!');
-    // console.info('this.search: ', this.search);
     this.cancel();
     this.window.close();
   }
@@ -78,8 +77,6 @@ export class PopupWindow {
 
           // console.info('popup.location:', popup.location);
           // console.info('popup.location.search:', popup.location.search);
-
-          // this.search = popup.location.search;
 
           const params = combineToParams(
             popup.location.search.replace(/^\?/, '')
