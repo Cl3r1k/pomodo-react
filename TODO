@@ -61,11 +61,11 @@ Todos:
 
             - Next              
               Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
+
               OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
               React GitHub Login (package): `https://github.com/checkr/react-github-login`
               kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
               React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
-              Popup example - `https://codesandbox.io/s/github/victors141/react-portal-popup/tree/master/`
             
             - ToRead
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
@@ -82,6 +82,7 @@ Todos:
               Building the Login Component in React JS: `https://www.youtube.com/watch?v=QoLUB0QkUaE`
               React Client Side Authentication: `https://www.youtube.com/watch?v=oRL-pttfNSc`
               Login with Github Using Rest API v3 in Javascript Full Project with Source Code: `https://www.youtube.com/watch?v=nysqJfP4dcY`
+              Don’t get clever with login forms: `https://bradfrost.com/blog/post/dont-get-clever-with-login-forms/`
 
         ☐ Implement Google authentication
           - Some example (`https://dev.to/ogwurujohnson/social-logins-with-google-auth-4e15`)
