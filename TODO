@@ -60,12 +60,12 @@ Todos:
               How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
 
             - Next              
-              Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
+              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
 
+              Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
               OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
               React GitHub Login (package): `https://github.com/checkr/react-github-login`
               kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
-              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
             
             - ToRead
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`

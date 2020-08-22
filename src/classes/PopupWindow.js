@@ -76,13 +76,12 @@ export class PopupWindow {
           // popup.location.pathname === "blank"`);
 
           // console.info('popup.location:', popup.location);
+          console.info('popup.location.href:', popup.location.href);
           console.info('popup.location.search:', popup.location.search);
 
           const params = combineToParams(
             popup.location.search.replace(/^\?/, '')
           );
-
-          // console.info('params: ', params);
 
           resolve(params);
 

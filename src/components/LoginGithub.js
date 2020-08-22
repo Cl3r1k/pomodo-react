@@ -28,6 +28,7 @@ export const LoginGithub = () => {
   });
 
   useEffect(() => {
+    console.info('Called useEffect()');
     const url = window.location.href;
     const hasCode = url.includes('?code=');
 
@@ -36,6 +37,10 @@ export const LoginGithub = () => {
 
     if (hasCode) {
       const newUrl = url.split('?code=');
+
+      // TODO: Check useEffect behaviour on first login action
+      // alert(newUrl);
+
       window.history.pushState({}, null, newUrl[0]);
       setAuthGhData({ ...authGhData, isLoading: true });
 
