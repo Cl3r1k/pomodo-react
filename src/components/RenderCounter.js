@@ -2,9 +2,11 @@
 import React, { useRef } from 'react';
 
 // Component to track renders amount
-// The idea - used 'div.container' with inner content with position 'absolute'
+// The idea - used 'div.container' with inner div-content with position 'absolute'
 // so 'div.container' don't effect on a component size in which it used
 // used inline styles to reduce amount of splitting
+// Don't forget, that this component affects on DOM by placing container
+// e.g. it will affect on flex of Grids elements
 export const RenderCounter = () => {
   const renderRef = useRef(0);
 

@@ -9,7 +9,8 @@ import { authActionSignIn } from 'actions/authActions';
 
 // Components
 import { RenderCounter } from 'components/RenderCounter';
-import { LoginGithub } from 'components/LoginGithub';
+import { LoginGithubWithServer } from 'components/LoginGithubWithServer';
+import { LoginGithubWithPopup } from 'components/LoginGithubWithPopup';
 
 export const LoginPage = () => {
   const history = useHistory();
@@ -66,7 +67,8 @@ export const LoginPage = () => {
         </fieldset>
       </form>
 
-      <LoginGithub />
+      <LoginGithubWithServer />
+      <LoginGithubWithPopup />
     </div>
   );
 };

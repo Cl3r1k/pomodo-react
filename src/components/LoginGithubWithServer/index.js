@@ -5,15 +5,11 @@ import { Redirect } from 'react-router-dom';
 import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
-// Utils
-import { combineToQuery } from 'services/utils';
-import { PopupWindow } from 'classes/PopupWindow';
-
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
-import styles from 'styles/LoginGithub.module.scss';
+import styles from './styles.module.scss';
 
-export const LoginGithub = () => {
+export const LoginGithubWithServer = () => {
   const {
     isAuthenticated,
     clientId,
@@ -38,7 +34,6 @@ export const LoginGithub = () => {
     if (hasCode) {
       const newUrl = url.split('?code=');
 
-      // TODO: Check useEffect behaviour on first login action
       // alert(newUrl);
 
       window.history.pushState({}, null, newUrl[0]);
@@ -97,36 +92,8 @@ export const LoginGithub = () => {
     setAuthGhData({ ...authGhData, isLoading: true });
   };
 
-  // TODO: Use example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
-  // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
-  const handleOnClickLogin = () => {
-    console.info('handleOnClickLogin() called');
-
-    const scope = 'user:email';
-    const queryParams = combineToQuery({
-      scope,
-      client_id: clientId,
-      redirect_uri: redirectUri,
-    });
-
-    console.info('queryParams: ', queryParams);
-
-    const popup = PopupWindow.open(
-      'github-oauth-authorize',
-      `https://github.com/login/oauth/authorize?${queryParams}`,
-      { height: 800, width: 600 }
-    );
-
-    console.info('popup: ', popup);
-
-    popup.then(
-      data => console.info('popup.then() data: ', data),
-      error => console.info('popup.then() error: ', error)
-    );
-  };
-
   if (isAuthenticated) {
-    // console.info('<LoginGithub /> isAuthenticated');
+    // console.info('<LoginGithubWithServer /> isAuthenticated');
     console.info('isAuthenticated... Redirect to="/"');
     return <Redirect to="/" />;
     // return <div>Authenticated already (redirect?)</div>;
@@ -153,9 +120,6 @@ export const LoginGithub = () => {
                 <GithubIcon style={{ width: '42px', height: '42px' }} />
                 <span>Login with Github</span>
               </a>
-              <button type="button" onClick={handleOnClickLogin}>
-                Login (iframe) with GitHub
-              </button>
             </>
           )}
         </div>
