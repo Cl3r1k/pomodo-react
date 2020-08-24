@@ -24,7 +24,7 @@ export const LoginGithubWithServer = () => {
   });
 
   useEffect(() => {
-    console.info('Called useEffect()');
+    // alert('<LoginGithubWithServer /> Called useEffect()');
     const url = window.location.href;
     const hasCode = url.includes('?code=');
 
@@ -34,7 +34,7 @@ export const LoginGithubWithServer = () => {
     if (hasCode) {
       const newUrl = url.split('?code=');
 
-      // alert(newUrl);
+      // alert('<LoginGithubWithServer /> hasCode url: ', url);
 
       window.history.pushState({}, null, newUrl[0]);
       setAuthGhData({ ...authGhData, isLoading: true });

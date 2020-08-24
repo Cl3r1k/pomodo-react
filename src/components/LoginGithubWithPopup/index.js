@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // Hooks
 import { useAuthState } from 'hooks/useAuthState';
@@ -11,14 +11,27 @@ import { PopupWindow } from 'classes/PopupWindow';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithPopup = () => {
-  const { clientId, redirectUri } = useAuthState();
+  useEffect(() => {
+    // alert(
+    //   '<LoginGithubWithPopup /> window.location.href: ',
+    //   window.location.href
+    // );
+
+    const url = window.location.href;
+    const hasCode = url.includes('?code=');
+
+    if (hasCode) {
+      // alert('<LoginGithubWithPopup /> hasCode url: ', url);
+    }
+  }, []);
+
+  const { clientId, redirectUri, scope } = useAuthState();
 
   // TODO: Used example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
   // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
   const handleOnClickLogin = () => {
     console.info('handleOnClickLogin() called');
 
-    const scope = 'user:email';
     const queryParams = combineToQuery({
       scope,
       client_id: clientId,

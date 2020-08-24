@@ -7,6 +7,7 @@ import { AuthStateContext, AuthDispatchContext } from 'context/AuthContext';
 // Reducers
 import { authReducer } from 'reducers/authReducer';
 
+// TODO: Move clientId...scope out from state
 const initialState = {
   isAuthenticated: false,
   user: null,
@@ -14,6 +15,7 @@ const initialState = {
   clientSecret: process.env.REACT_APP_CLIENT_SECRET,
   redirectUri: process.env.REACT_APP_REDIRECT_URI,
   proxyUrl: process.env.REACT_APP_PROXY_URL,
+  scope: process.env.REACT_APP_SCOPE,
 };
 
 export const AuthContextProvider = ({ children }) => {
