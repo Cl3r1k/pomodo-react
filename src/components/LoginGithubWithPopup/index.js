@@ -43,14 +43,15 @@ export const LoginGithubWithPopup = () => {
     const popup = PopupWindow.open(
       'github-oauth-authorize',
       `https://github.com/login/oauth/authorize?${queryParams}`,
+      window,
       { height: 800, width: 600 }
     );
 
     console.info('popup: ', popup);
 
     popup.then(
-      data => console.info('popup.then() data: ', data),
-      error => console.info('popup.then() error: ', error)
+      data => console.info('popup.then() data: ', data), // Here we can perform request throw proxy-server
+      error => console.info('popup.then() error: ', error) // Here we can process error, and reset loading process, or show error
     );
   };
 

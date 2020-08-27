@@ -10,16 +10,33 @@ export class PopupWindow {
     return popup;
   }
 
-  constructor(id, url, options = {}) {
+  constructor(id, url, parentWindow, options = {}) {
     this.id = id;
     this.url = url;
+    this.parentWindow = parentWindow;
     this.options = options;
   }
 
   open() {
-    const { url, id, options } = this;
+    const { url, id, parentWindow, options } = this;
 
-    this.window = window.open(url, id, combineToQuery(options, ','));
+    // TODO: Process situation when parentWindow is undefined; (hint: use || )
+    const { top } = parentWindow;
+    const { height, width } = options;
+
+    const y = top.outerHeight / 2 + top.screenY - height / 2;
+    const x = top.outerWidth / 2 + top.screenX - width / 2;
+
+    const query = combineToQuery(options, ',');
+    console.warn('query: ', query);
+
+    // TODO: Improve window options part
+    this.window = window.open(
+      url,
+      id,
+      `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${width}, height=${height}, top=${y}, left=${x}`
+    );
+    // this.window = window.open(url, id, combineToQuery(options, ','));
   }
 
   close() {
