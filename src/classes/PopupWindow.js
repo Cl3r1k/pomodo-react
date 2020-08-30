@@ -42,7 +42,6 @@ export class PopupWindow {
     this.promise = new Promise((resolve, reject) => {
       this.iid = window.setInterval(() => {
         try {
-          // console.info('tick');
           const popup = this.window;
 
           // console.info('popup: ', popup, 'popup.closed', popup.closed);
@@ -57,24 +56,6 @@ export class PopupWindow {
             return undefined;
           }
 
-          // console.info('popup.location: ', popup.location);
-          // console.error('popup.location.href: ', popup.location.href);
-          // console.info('popup.location.pathname: ', popup.location.pathname);
-          // console.info(
-          //   'popup.location.href === this.url: ',
-          //   popup.location.href === this.url
-          // );
-          // console.info(`popup.location.pathname === "blank"`, popup.location.pathname === "blank");
-          // console.error(
-          //   `popup.location.href === this.url ||
-          // popup.location.pathname === 'blank'`,
-          //   popup.location.href === this.url ||
-          //     popup.location.pathname === 'blank'
-          // );
-
-          // console.info(`before check --- popup.location.href === this.url ||
-          // popup.location.pathname === "blank"`);
-
           if (
             popup.location.href === this.url ||
             popup.location.pathname === 'blank'
@@ -82,11 +63,7 @@ export class PopupWindow {
             return undefined;
           }
 
-          // console.info(`AFTER check --- popup.location.href === this.url ||
-          // popup.location.pathname === "blank"`);
-
-          // console.info('popup.location:', popup.location);
-          console.info('popup.location.href:', popup.location.href);
+          // console.info('popup.location.href:', popup.location.href);
           console.info('popup.location.search:', popup.location.search);
 
           const params = combineToParams(

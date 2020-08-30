@@ -58,9 +58,10 @@ Todos:
               React: Simple Auth Flow: `https://dev.to/koralarts/react-simple-auth-flow-3fbf`
               Auth0 authentication with react: `https://dev.to/kal_code/auth0-authentication-with-react-27ko`
               How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
+              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
 
             - Next              
-              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
+              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`              
 
               Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
               OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
@@ -70,7 +71,6 @@ Todos:
             - ToRead
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
               Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
-              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
               OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`
               Create an Elegant Login and Register Form on React: `https://www.youtube.com/watch?v=juUaJpMd2LE`
               Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
