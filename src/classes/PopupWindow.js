@@ -44,8 +44,6 @@ export class PopupWindow {
         try {
           const popup = this.window;
 
-          // console.info('before check --- !popup || popup.closed !== false');
-
           if (!popup || popup.closed !== false) {
             this.close();
 
