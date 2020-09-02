@@ -33,7 +33,6 @@ export class PopupWindow {
   }
 
   close() {
-    // console.info('called close()!');
     this.cancel();
     this.window.close();
   }
