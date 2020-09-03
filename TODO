@@ -53,6 +53,8 @@ Todos:
           ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
         ✔ Use React context for authentication @done(20-07-13 08:43)
         ☐ Implement Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK
+          - (Sign-in Github-popup example: `https://codesandbox.io/signin`)
+
           - Usefull links:
             - Done
               React: Simple Auth Flow: `https://dev.to/koralarts/react-simple-auth-flow-3fbf`
