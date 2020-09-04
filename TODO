@@ -61,11 +61,11 @@ Todos:
               Auth0 authentication with react: `https://dev.to/kal_code/auth0-authentication-with-react-27ko`
               How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
               React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
+              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
 
-            - Next              
-              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`              
-
+            - Next
               Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
+              
               OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
               React GitHub Login (package): `https://github.com/checkr/react-github-login`
               kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
@@ -95,6 +95,12 @@ Todos:
         ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)
         ☐ Implement possibility to reset password / restore access
         ☐ Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
+        ☐ WHERE to store the JWT client-side. Best practice seems to be secure, httpOnly cookie, but to make the cookie safe, you have to also use CSRF protection strategy.
+        ☐ How to generate proper ssl certificate with all Chrome requirements (`https://medium.com/@guillaume.bottius/hi-thanks-for-the-code-c14d221f9fcc`)
+        ☐ Saving user data in Mongo: `https://medium.com/createdd-notes/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359`
+        ☐ Working with JWTs: `https://medium.com/@siddharthac6/json-web-token-jwt-the-right-way-of-implementing-with-node-js-65b8915d550e`
+
+      ☐ Consider to use HTTPS (`https://create-react-app.dev/docs/using-https-in-development/`, `https://www.freecodecamp.org/news/how-to-set-up-https-locally-with-create-react-app/`)
 
       ☐ Migrate to TS
 
