@@ -10,7 +10,12 @@ export class PopupWindow {
     return popup;
   }
 
-  constructor(id, url, parentWindow = {}, options = {}) {
+  constructor(
+    id,
+    url,
+    parentWindow = {},
+    options = { width: 600, height: 400 }
+  ) {
     this.id = id;
     this.url = url;
     this.parentWindow = parentWindow;
