@@ -11,7 +11,7 @@ export class PopupWindow {
   }
 
   constructor(
-    id,
+    id = '',
     url,
     parentWindow = {},
     options = { width: 600, height: 400 }
