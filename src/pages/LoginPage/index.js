@@ -67,8 +67,8 @@ export const LoginPage = () => {
         </fieldset>
       </form>
 
-      <LoginGithubWithServer />
       <LoginGithubWithPopup />
+      <LoginGithubWithServer />
     </div>
   );
 };

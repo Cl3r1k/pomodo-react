@@ -68,15 +68,14 @@ Todos:
               kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
               Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
               OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`
+              Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
 
             - Next
-              Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
 
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
             
             - ToRead:
               - Github Auth:
-                Create an Elegant Login and Register Form on React: `https://www.youtube.com/watch?v=juUaJpMd2LE`
                 Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
                 React Token Auth: `https://habr.com/en/post/485764/`
                 Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
@@ -93,6 +92,10 @@ Todos:
                 How to Create a React App With Email Authentication: `https://medium.com/better-programming/how-to-create-a-react-app-with-email-authentication-372a67a6d27b`
               - Auth forms:
                 Easily Create a Form With React Hooks: `https://medium.com/better-programming/easily-create-a-form-with-react-hooks-1cab17e2be0d`
+                Create an Elegant Login and Register Form on React: `https://www.youtube.com/watch?v=juUaJpMd2LE`
+                Sliding Sign In & Sign Up Form: `https://www.youtube.com/watch?v=mUdo6w87rh4`
+                Responsive Login & Registration Form Using HTML & CSS & JS | Sliding Sign In & Sign Up Form: `https://www.youtube.com/watch?v=piG91X4sV2U`
+                Responsive Animated Login Form Using HTML & CSS & JavaScript (2020): `https://www.youtube.com/watch?v=t-EMinSz_Tk`
               - Auth flow:
                 To handle user authentication with ReactJS: `https://codeburst.io/to-handle-user-authentication-with-reactjs-2f565e7e0d63`
 
