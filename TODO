@@ -55,30 +55,31 @@ Todos:
         ☐ Implement Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK
           - (Sign-in Github-popup example: `https://codesandbox.io/signin`)
 
-          - Usefull links:
+          - Usefull Auth links:
             - Done
-              React: Simple Auth Flow: `https://dev.to/koralarts/react-simple-auth-flow-3fbf`
-              Auth0 authentication with react: `https://dev.to/kal_code/auth0-authentication-with-react-27ko`
-              How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
-              React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
-              React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
-              Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
-              OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
-              React GitHub Login (package): `https://github.com/checkr/react-github-login`
-              kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
-              Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
-              OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`
-              Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
+              - Github Auth:
+                React: Simple Auth Flow: `https://dev.to/koralarts/react-simple-auth-flow-3fbf`
+                Auth0 authentication with react: `https://dev.to/kal_code/auth0-authentication-with-react-27ko`
+                How to Implement “Login with GitHub” in a React App: `https://levelup.gitconnected.com/how-to-implement-login-with-github-in-a-react-app-bd3d704c64fc`
+                React Tutorial with Popup Authentication: `https://auth0.com/blog/build-react-apps-using-react-hooks-and-auth0-auth-popup/`
+                React Authentication with Twitter, Google, Facebook and Github: `https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105`
+                Implementing Github OAuth flow in React: `https://www.graphql.college/implementing-github-oauth-flow/`
+                OAuth: `https://github.com/github/developer.github.com/blob/master/content/v3/oauth.md`
+                React GitHub Login (package): `https://github.com/checkr/react-github-login`
+                kentcdodds / react-github-profile: `https://codesandbox.io/s/github/kentcdodds/react-github-profile/tree/master/?file=/src/github-client.js`
+                Authenticate React with Github using Auth0: `https://auth0.com/authenticate/react/github/`
+                OAuth GitHub Authentication from single page React app: `https://stackoverflow.com/questions/51423805/oauth-github-authentication-from-single-page-react-app`
+                Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
+                Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
+                React Token Auth: `https://habr.com/en/post/485764/`
 
             - Next
+              Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
 
+              Github OAuth using Node.js (MERN) (Sign in with Github): `https://www.youtube.com/watch?v=wcUdBgktd4s`
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
             
             - ToRead:
-              - Github Auth:
-                Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
-                React Token Auth: `https://habr.com/en/post/485764/`
-                Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
               - Facebook Auth:
                 Facebook Login Button In React: `https://www.youtube.com/watch?v=ea9KyE78qKI`
                 Login with Facebook and Google in reactjs: `https://medium.com/recraftrelic/login-with-facebook-and-google-in-reactjs-990d818d5dab`
@@ -96,8 +97,15 @@ Todos:
                 Sliding Sign In & Sign Up Form: `https://www.youtube.com/watch?v=mUdo6w87rh4`
                 Responsive Login & Registration Form Using HTML & CSS & JS | Sliding Sign In & Sign Up Form: `https://www.youtube.com/watch?v=piG91X4sV2U`
                 Responsive Animated Login Form Using HTML & CSS & JavaScript (2020): `https://www.youtube.com/watch?v=t-EMinSz_Tk`
-              - Auth flow:
+
+              - Auth flow (@important):
                 To handle user authentication with ReactJS: `https://codeburst.io/to-handle-user-authentication-with-reactjs-2f565e7e0d63`
+                Best practices for authentication in an oauth API flow: `https://dev.to/imjacobclark/best-practices-for-authentication-in-an-oauth-api-flow-4e1k`
+                Recommended Best Practices for Authentication: `https://developer.okta.com/books/api-security/authn/best-practices/`
+                12 best practices for user account, authentication and password management: `https://cloud.google.com/blog/products/gcp/12-best-practices-for-user-account`
+                OAuth 2.0 Security Best Current Practice: `https://oauth.net/2/oauth-best-practice/`
+                User Authentication Best Practices Checklist: `https://dzone.com/articles/user-authentication-best-practices-checklist`
+                Mobile Device Login Flow Best Practices: `https://auth0.com/docs/best-practices/mobile-device-login-flow-best-practices`
 
         ☐ Implement Google authentication
           - Some example (`https://dev.to/ogwurujohnson/social-logins-with-google-auth-4e15`)
