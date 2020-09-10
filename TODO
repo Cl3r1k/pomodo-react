@@ -53,6 +53,7 @@ Todos:
           ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
         ✔ Use React context for authentication @done(20-07-13 08:43)
         ☐ Implement Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK
+          ☐ Bump `minor` version after implement Github authentication
           - (Sign-in Github-popup example: `https://codesandbox.io/signin`)
 
           - Usefull Auth links:
@@ -72,11 +73,10 @@ Todos:
                 Login with GitHub and Microsoft in reactjs: `https://medium.com/zestgeek/login-with-github-and-microsoft-in-reactjs-e33ffbcd933`
                 Setting up GitHub auth for a React App with Firebase: `https://www.youtube.com/watch?v=IjAcifkvLP4`
                 React Token Auth: `https://habr.com/en/post/485764/`
+                Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
+                Github OAuth using Node.js (MERN) (Sign in with Github): `https://www.youtube.com/watch?v=wcUdBgktd4s`
 
             - Next
-              Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
-
-              Github OAuth using Node.js (MERN) (Sign in with Github): `https://www.youtube.com/watch?v=wcUdBgktd4s`
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
             
             - ToRead:
@@ -88,7 +88,6 @@ Todos:
                 Building the Login Component in React JS: `https://www.youtube.com/watch?v=QoLUB0QkUaE`
                 React Client Side Authentication: `https://www.youtube.com/watch?v=oRL-pttfNSc`
                 Login with Github Using Rest API v3 in Javascript Full Project with Source Code: `https://www.youtube.com/watch?v=nysqJfP4dcY`
-                Don’t get clever with login forms: `https://bradfrost.com/blog/post/dont-get-clever-with-login-forms/`
               - Email Auth:
                 How to Create a React App With Email Authentication: `https://medium.com/better-programming/how-to-create-a-react-app-with-email-authentication-372a67a6d27b`
               - Auth forms:
@@ -100,6 +99,7 @@ Todos:
 
               - Auth flow (@important):
                 To handle user authentication with ReactJS: `https://codeburst.io/to-handle-user-authentication-with-reactjs-2f565e7e0d63`
+                Don’t get clever with login forms: `https://bradfrost.com/blog/post/dont-get-clever-with-login-forms/`
                 Best practices for authentication in an oauth API flow: `https://dev.to/imjacobclark/best-practices-for-authentication-in-an-oauth-api-flow-4e1k`
                 Recommended Best Practices for Authentication: `https://developer.okta.com/books/api-security/authn/best-practices/`
                 12 best practices for user account, authentication and password management: `https://cloud.google.com/blog/products/gcp/12-best-practices-for-user-account`
