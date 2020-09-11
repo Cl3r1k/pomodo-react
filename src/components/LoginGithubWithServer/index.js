@@ -6,14 +6,14 @@ import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
 // Constants
-import { clientId, proxyUrl } from 'constants/api.config';
+import { clientId, clientSecret, proxyUrl } from 'constants/api.config';
 
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithServer = () => {
-  const { isAuthenticated, clientSecret, redirectUri } = useAuthState();
+  const { isAuthenticated, redirectUri, scope } = useAuthState();
   const authDispatch = useAuthDispatch();
   const [authGhData, setAuthGhData] = useState({
     errorMessage: '',
@@ -81,7 +81,7 @@ export const LoginGithubWithServer = () => {
           });
         });
     }
-  }, [authGhData, clientSecret, redirectUri, authDispatch]);
+  }, [authGhData, redirectUri, authDispatch]);
 
   // console.info('clientId:', clientId, 'redirectUri: ', redirectUri);
 
@@ -110,7 +110,7 @@ export const LoginGithubWithServer = () => {
           ) : (
             <>
               <a
-                href={`https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}&redirect_uri=${redirectUri}`}
+                href={`https://github.com/login/oauth/authorize?scope=${scope}&client_id=${clientId}&redirect_uri=${redirectUri}`}
                 onClick={handleOnClick}
                 className={styles.loginLink}
               >

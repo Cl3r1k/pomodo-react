@@ -108,9 +108,11 @@ Todos:
                 Mobile Device Login Flow Best Practices: `https://auth0.com/docs/best-practices/mobile-device-login-flow-best-practices`
 
         ☐ Implement Google authentication
+          ☐ Bump `minor` version after implement Google authentication
           - Some example (`https://dev.to/ogwurujohnson/social-logins-with-google-auth-4e15`)
           - Some example: `https://codesandbox.io/s/github/intricatecloud/google-sign-in-demo/tree/master/react/google-auth-demo`
         ☐ Implement Social-newtworks authentication
+          ☐ Bump `minor` version after implement Social-newtworks authentication
         ☐ Implement Email authentication
           - Some example (`https://dev.to/_elmahdim/react-firebase-authentication-3bik`)
         ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)

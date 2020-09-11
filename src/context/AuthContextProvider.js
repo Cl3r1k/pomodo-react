@@ -11,7 +11,6 @@ import { authReducer } from 'reducers/authReducer';
 const initialState = {
   isAuthenticated: false,
   user: null,
-  clientSecret: process.env.REACT_APP_CLIENT_SECRET,
   redirectUri: process.env.REACT_APP_REDIRECT_URI,
   scope: process.env.REACT_APP_SCOPE,
 };
