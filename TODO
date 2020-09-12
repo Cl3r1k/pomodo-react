@@ -78,6 +78,9 @@ Todos:
 
             - Next
               Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
+              Example: `https://codesandbox.io/s/building-basic-react-authentication-osld0?file=/src/App.js`
+
+              Authenticated Routing with React, React Router, Redux & TypeScript: `https://medium.com/octopus-wealth/authenticated-routing-with-react-react-router-redux-typescript-677ed49d4bd6`
             
             - ToRead:
               - Facebook Auth:
@@ -106,6 +109,7 @@ Todos:
                 OAuth 2.0 Security Best Current Practice: `https://oauth.net/2/oauth-best-practice/`
                 User Authentication Best Practices Checklist: `https://dzone.com/articles/user-authentication-best-practices-checklist`
                 Mobile Device Login Flow Best Practices: `https://auth0.com/docs/best-practices/mobile-device-login-flow-best-practices`
+                React, NodeJS and JWT Authentication - the right way! [Part 1]: `https://blog.galmalachi.com/react-nodejs-and-jwt-authentication-the-right-way-part-1-ckelrnovw014f99s15nzh8bg3?utm_source=assistant&utm_medium=CPC&utm_campaign=message`
 
         ☐ Implement Google authentication
           ☐ Bump `minor` version after implement Google authentication

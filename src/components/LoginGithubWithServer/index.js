@@ -6,14 +6,19 @@ import { useAuthState } from 'hooks/useAuthState';
 import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
 // Constants
-import { clientId, clientSecret, proxyUrl } from 'constants/api.config';
+import {
+  clientId,
+  clientSecret,
+  proxyUrl,
+  redirectUri,
+} from 'constants/api.config';
 
 // Assets
 import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithServer = () => {
-  const { isAuthenticated, redirectUri, scope } = useAuthState();
+  const { isAuthenticated, scope } = useAuthState();
   const authDispatch = useAuthDispatch();
   const [authGhData, setAuthGhData] = useState({
     errorMessage: '',
@@ -81,7 +86,7 @@ export const LoginGithubWithServer = () => {
           });
         });
     }
-  }, [authGhData, redirectUri, authDispatch]);
+  }, [authGhData, authDispatch]);
 
   // console.info('clientId:', clientId, 'redirectUri: ', redirectUri);
 
