@@ -110,6 +110,11 @@ Todos:
                 User Authentication Best Practices Checklist: `https://dzone.com/articles/user-authentication-best-practices-checklist`
                 Mobile Device Login Flow Best Practices: `https://auth0.com/docs/best-practices/mobile-device-login-flow-best-practices`
                 React, NodeJS and JWT Authentication - the right way! [Part 1]: `https://blog.galmalachi.com/react-nodejs-and-jwt-authentication-the-right-way-part-1-ckelrnovw014f99s15nzh8bg3?utm_source=assistant&utm_medium=CPC&utm_campaign=message`
+                Web Security 101: An Interactive Cross-Site Request Forgery (CSRF) Demo: `https://victorzhou.com/blog/csrf/`
+                Three obvious security rules: `https://habr.com/ru/post/143259/`
+                React Authentication: How to Store JWT in a Cookie: `https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81`
+                Authentication in SPA (ReactJS and VueJS) the right way: `https://medium.com/@jcbaey/authentication-in-spa-reactjs-and-vuejs-the-right-way-e4a9ac5cd9a3`
+                Client-side Authentication the the Right Way (Cookies vs. Local Storage): `https://www.taniarascia.com/full-stack-cookies-localstorage-react-express/`
 
         ☐ Implement Google authentication
           ☐ Bump `minor` version after implement Google authentication

@@ -11,6 +11,7 @@ import {
   clientSecret,
   proxyUrl,
   redirectUri,
+  scope,
 } from 'constants/api.config';
 
 // Assets
@@ -18,7 +19,7 @@ import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithServer = () => {
-  const { isAuthenticated, scope } = useAuthState();
+  const { isAuthenticated } = useAuthState();
   const authDispatch = useAuthDispatch();
   const [authGhData, setAuthGhData] = useState({
     errorMessage: '',

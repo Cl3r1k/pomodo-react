@@ -11,7 +11,6 @@ import { authReducer } from 'reducers/authReducer';
 const initialState = {
   isAuthenticated: false,
   user: null,
-  scope: process.env.REACT_APP_SCOPE,
 };
 
 export const AuthContextProvider = ({ children }) => {

@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 
 // Hooks
-import { useAuthState } from 'hooks/useAuthState';
+// import { useAuthState } from 'hooks/useAuthState';
 
 // Utils
 import { combineToQuery } from 'services/utils';
 import { PopupWindow } from 'classes/PopupWindow';
 
 // Constants
-import { clientId, redirectUri } from 'constants/api.config';
+import { clientId, redirectUri, scope } from 'constants/api.config';
 
 // Styles
 import styles from './styles.module.scss';
@@ -27,8 +27,6 @@ export const LoginGithubWithPopup = () => {
       // alert('<LoginGithubWithPopup /> hasCode url: ', url);
     }
   }, []);
-
-  const { scope } = useAuthState();
 
   // TODO: Used example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
   // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
