@@ -8,7 +8,7 @@ import { combineToQuery } from 'services/utils';
 import { PopupWindow } from 'classes/PopupWindow';
 
 // Constants
-import { clientId, redirectUri, scope } from 'constants/api.config';
+import { clientIdGithub, redirectUri, scope } from 'constants/api.config';
 
 // Styles
 import styles from './styles.module.scss';
@@ -35,7 +35,7 @@ export const LoginGithubWithPopup = () => {
 
     const queryParams = combineToQuery({
       scope,
-      client_id: clientId,
+      client_id: clientIdGithub,
       redirect_uri: redirectUri,
     });
 

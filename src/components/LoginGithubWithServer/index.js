@@ -7,7 +7,7 @@ import { useAuthDispatch } from 'hooks/useAuthDispatch';
 
 // Constants
 import {
-  clientId,
+  clientIdGithub,
   clientSecret,
   proxyUrl,
   redirectUri,
@@ -43,7 +43,7 @@ export const LoginGithubWithServer = () => {
       setAuthGhData({ ...authGhData, isLoading: true });
 
       const requestData = {
-        clientId,
+        clientIdGithub,
         clientSecret,
         redirectUri,
         code: newUrl[1],
@@ -89,7 +89,7 @@ export const LoginGithubWithServer = () => {
     }
   }, [authGhData, authDispatch]);
 
-  // console.info('clientId:', clientId, 'redirectUri: ', redirectUri);
+  // console.info('clientIdGithub:', clientIdGithub, 'redirectUri: ', redirectUri);
 
   const handleOnClick = () => {
     setAuthGhData({ ...authGhData, isLoading: true });
@@ -116,7 +116,7 @@ export const LoginGithubWithServer = () => {
           ) : (
             <>
               <a
-                href={`https://github.com/login/oauth/authorize?scope=${scope}&client_id=${clientId}&redirect_uri=${redirectUri}`}
+                href={`https://github.com/login/oauth/authorize?scope=${scope}&client_id=${clientIdGithub}&redirect_uri=${redirectUri}`}
                 onClick={handleOnClick}
                 className={styles.loginLink}
               >

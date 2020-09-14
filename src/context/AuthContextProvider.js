@@ -7,7 +7,6 @@ import { AuthStateContext, AuthDispatchContext } from 'context/AuthContext';
 // Reducers
 import { authReducer } from 'reducers/authReducer';
 
-// TODO: Move clientId...scope out from state
 const initialState = {
   isAuthenticated: false,
   user: null,
