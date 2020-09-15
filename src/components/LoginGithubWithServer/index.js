@@ -8,7 +8,7 @@ import { useAuthDispatch } from 'hooks/useAuthDispatch';
 // Constants
 import {
   clientIdGithub,
-  clientSecret,
+  clientSecretGithub,
   proxyUrl,
   redirectUri,
   scope,
@@ -44,7 +44,7 @@ export const LoginGithubWithServer = () => {
 
       const requestData = {
         clientIdGithub,
-        clientSecret,
+        clientSecretGithub,
         redirectUri,
         code: newUrl[1],
       };

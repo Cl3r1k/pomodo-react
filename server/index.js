@@ -16,13 +16,13 @@ app.use((req, res, next) => {
 });
 
 app.post('/authenticate', (req, res) => {
-  const { clientIdGithub, clientSecret, redirectUri, code } = req.body;
+  const { clientIdGithub, clientSecretGithub, redirectUri, code } = req.body;
 
   console.info('server post ::: req.body: ', req.body);
 
   const data = new FormData();
   data.append('client_id', clientIdGithub);
-  data.append('client_secret', clientSecret);
+  data.append('client_secret', clientSecretGithub);
   data.append('code', code);
   data.append('redirect_uri', redirectUri);
 
