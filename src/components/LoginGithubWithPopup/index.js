@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Hooks
 // import { useAuthState } from 'hooks/useAuthState';
@@ -14,6 +14,11 @@ import { clientIdGithub, redirectUri, scope } from 'constants/api.config';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithPopup = () => {
+  const [authGhData, setAuthGhData] = useState({
+    isLoading: false,
+    errorMessage: '',
+  });
+
   useEffect(() => {
     // alert(
     //   '<LoginGithubWithPopup /> window.location.href: ',
@@ -32,6 +37,10 @@ export const LoginGithubWithPopup = () => {
   // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
   const handleOnClickLogin = () => {
     console.info('handleOnClickLogin() called');
+
+    setAuthGhData({ isLoading: true });
+
+    console.info('authGhData: ', authGhData);
 
     const queryParams = combineToQuery({
       scope,
@@ -61,6 +70,7 @@ export const LoginGithubWithPopup = () => {
       <button type="button" onClick={handleOnClickLogin}>
         Login (iframe) with GitHub
       </button>
+      <div>isLoading: {authGhData.isLoading ? 'true' : 'false'}</div>
     </div>
   );
 };
