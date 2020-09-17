@@ -134,6 +134,8 @@ Todos:
 
       ☐ Consider to use HTTPS (`https://create-react-app.dev/docs/using-https-in-development/`, `https://www.freecodecamp.org/news/how-to-set-up-https-locally-with-create-react-app/`)
 
+      ☐ Consider to add Rest-List (e.g. when pomo finished, will be showed rest-list, where will be reminded what to do while resting)
+
       ☐ Migrate to TS
 
       ☐ Consider Folder Structure: `https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346`

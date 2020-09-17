@@ -33,6 +33,10 @@ export const LoginGithubWithPopup = () => {
     }
   }, []);
 
+  const handleErrorAuth = error => {
+    console.info('handleErrorAuth() popup.then() error: ', error);
+  };
+
   // TODO: Used example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
   // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
   const handleOnClickLogin = () => {
@@ -61,7 +65,7 @@ export const LoginGithubWithPopup = () => {
 
     popup.then(
       data => console.info('popup.then() data: ', data), // Here we can perform request throw proxy-server
-      error => console.info('popup.then() error: ', error) // Here we can process error, and reset loading process, or show error
+      error => handleErrorAuth(error) // Here we can process error, and reset loading process, or show error
     );
   };
 
