@@ -33,6 +33,10 @@ export const LoginGithubWithPopup = () => {
     }
   }, []);
 
+  const handleSuccessAuth = data => {
+    console.info('handleSuccessAuth() popup.then() data: ', data);
+  };
+
   const handleErrorAuth = error => {
     console.info('handleErrorAuth() popup.then() error: ', error);
   };
@@ -64,7 +68,7 @@ export const LoginGithubWithPopup = () => {
     console.info('popup: ', popup);
 
     popup.then(
-      data => console.info('popup.then() data: ', data), // Here we can perform request throw proxy-server
+      data => handleSuccessAuth(data), // Here we can perform request throw proxy-server
       error => handleErrorAuth(error) // Here we can process error, and reset loading process, or show error
     );
   };
