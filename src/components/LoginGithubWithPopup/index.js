@@ -69,7 +69,7 @@ export const LoginGithubWithPopup = () => {
 
     popup.then(
       data => handleSuccessAuth(data),
-      error => handleErrorAuth(error) // Here we can process error, and reset loading process, or show error
+      error => handleErrorAuth(error)
     );
   };
 
