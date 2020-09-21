@@ -125,6 +125,7 @@ Todos:
         ☐ Implement Email authentication
           - Some example (`https://dev.to/_elmahdim/react-firebase-authentication-3bik`)
         ☐ Sign-in page should have possibility to generate strong passwords (`https://coderoll.net/javascript/87-generacija-parolja-s-pomoschju-javascript.html`)
+        ☐ Create a simple password strength indicator with JavaScript: `https://dev.to/michaelburrows/create-a-simple-password-strength-indicator-with-javascript-1pak`
         ☐ Implement possibility to reset password / restore access
         ☐ Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
         ☐ WHERE to store the JWT client-side. Best practice seems to be secure, httpOnly cookie, but to make the cookie safe, you have to also use CSRF protection strategy.

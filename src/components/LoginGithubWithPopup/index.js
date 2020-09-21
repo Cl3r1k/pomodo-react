@@ -79,6 +79,9 @@ export const LoginGithubWithPopup = () => {
         Login (iframe) with GitHub
       </button>
       <div>isLoading: {authGhData.isLoading ? 'true' : 'false'}</div>
+      {authGhData.errorMessage && (
+        <div>ErrorMessage: {authGhData.errorMessage}</div>
+      )}
     </div>
   );
 };
