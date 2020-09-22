@@ -39,6 +39,10 @@ export const LoginGithubWithPopup = () => {
 
   const handleErrorAuth = error => {
     console.info('handleErrorAuth() popup.then() error: ', error);
+    setAuthGhData({
+      isLoading: false,
+      errorMessage: `Login failed: error: ${error}`,
+    });
   };
 
   // TODO: Used example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
