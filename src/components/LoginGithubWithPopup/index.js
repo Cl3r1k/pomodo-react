@@ -35,7 +35,8 @@ export const LoginGithubWithPopup = () => {
 
   const handleSuccessAuth = data => {
     console.info('handleSuccessAuth() popup.then() data: ', data);
-    setAuthGhData({ ...authGhData, isLoading: false });
+    // Check...
+    setAuthGhData({ ...authGhData, isLoading: false /* errorMessage: '' */ });
   };
 
   const handleErrorAuth = error => {
