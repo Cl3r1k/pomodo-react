@@ -75,11 +75,11 @@ Todos:
                 React Token Auth: `https://habr.com/en/post/485764/`
                 Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
                 Github OAuth using Node.js (MERN) (Sign in with Github): `https://www.youtube.com/watch?v=wcUdBgktd4s`
+              - Email Auth:
+                Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
+                  Example: `https://codesandbox.io/s/building-basic-react-authentication-osld0?file=/src/App.js`
 
             - Next
-              Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
-              Example: `https://codesandbox.io/s/building-basic-react-authentication-osld0?file=/src/App.js`
-
               Authenticated Routing with React, React Router, Redux & TypeScript: `https://medium.com/octopus-wealth/authenticated-routing-with-react-react-router-redux-typescript-677ed49d4bd6`
             
             - ToRead:
@@ -93,6 +93,7 @@ Todos:
                 Login with Github Using Rest API v3 in Javascript Full Project with Source Code: `https://www.youtube.com/watch?v=nysqJfP4dcY`
               - Email Auth:
                 How to Create a React App With Email Authentication: `https://medium.com/better-programming/how-to-create-a-react-app-with-email-authentication-372a67a6d27b`
+                Consider to use example for Email Auth: `https://codesandbox.io/s/building-basic-react-authentication-osld0?file=/src/pages/Login.js`
               - Auth forms:
                 Easily Create a Form With React Hooks: `https://medium.com/better-programming/easily-create-a-form-with-react-hooks-1cab17e2be0d`
                 Create an Elegant Login and Register Form on React: `https://www.youtube.com/watch?v=juUaJpMd2LE`
