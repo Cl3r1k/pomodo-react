@@ -81,6 +81,7 @@ Todos:
 
             - Next
               Authenticated Routing with React, React Router, Redux & TypeScript: `https://medium.com/octopus-wealth/authenticated-routing-with-react-react-router-redux-typescript-677ed49d4bd6`
+                Example: `https://codesandbox.io/s/authenticated-routing-with-react-react-router-redux-typescript-8odqr?file=/src/App.js`
             
             - ToRead:
               - Facebook Auth:
@@ -138,6 +139,8 @@ Todos:
       ☐ Consider to use HTTPS (`https://create-react-app.dev/docs/using-https-in-development/`, `https://www.freecodecamp.org/news/how-to-set-up-https-locally-with-create-react-app/`)
 
       ☐ Consider to add Rest-List (e.g. when pomo finished, will be showed rest-list, where will be reminded what to do while resting)
+
+      ☐ Consider to use css-modules without 'module' prefix (CSS Modules in React: `https://habr.com/ru/post/335244/`)
 
       ☐ Migrate to TS
 
