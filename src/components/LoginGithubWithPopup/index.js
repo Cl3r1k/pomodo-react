@@ -91,7 +91,9 @@ export const LoginGithubWithPopup = () => {
         isLoading: {authGhData.isLoading ? 'true' : 'false'}
       </div>
       {authGhData.errorMessage && (
-        <div>ErrorMessage: {authGhData.errorMessage}</div>
+        <div className={styles.error}>
+          ErrorMessage: {authGhData.errorMessage}
+        </div>
       )}
     </div>
   );
