@@ -36,7 +36,7 @@ export const LoginGithubWithPopup = () => {
   const handleSuccessAuth = data => {
     console.info('handleSuccessAuth() popup.then() data: ', data);
     // console.info('handleSuccessAuth() authGhData: ', authGhData);
-    // Here we should use our proxy-server to perform login/oauth/access_token and then
+    // Here we should use our proxy-server to perform 'login/oauth/access_token' request and then
     // change state if success or error
     setAuthGhData({ ...authGhData, isLoading: false, errorMessage: '' });
   };
