@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Hooks
-// import { useAuthState } from 'hooks/useAuthState';
+import { useAuthState } from 'hooks/useAuthState';
 
 // Utils
 import { combineToQuery } from 'services/utils';
@@ -14,6 +14,7 @@ import { clientIdGithub, redirectUri, scope } from 'constants/api.config';
 import styles from './styles.module.scss';
 
 export const LoginGithubWithPopup = () => {
+  const { isAuthenticated } = useAuthState();
   const [authGhData, setAuthGhData] = useState({
     isLoading: false,
     errorMessage: '',
@@ -95,6 +96,7 @@ export const LoginGithubWithPopup = () => {
           ErrorMessage: {authGhData.errorMessage}
         </div>
       )}
+      <div>isAuthenticated: {isAuthenticated}</div>
     </div>
   );
 };
