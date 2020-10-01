@@ -96,7 +96,7 @@ export const LoginGithubWithPopup = () => {
           ErrorMessage: {authGhData.errorMessage}
         </div>
       )}
-      <div>isAuthenticated: {isAuthenticated}</div>
+      <div className={styles.authText}>isAuthenticated: {isAuthenticated}</div>
     </div>
   );
 };
