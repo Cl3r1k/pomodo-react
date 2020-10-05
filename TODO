@@ -142,6 +142,8 @@ Todos:
 
       ☐ Consider to use css-modules without 'module' prefix (CSS Modules in React: `https://habr.com/ru/post/335244/`)
 
+      ☐ Consider to use CSS Variables (CSS Variables for React Devs: `https://joshwcomeau.com/css/css-variables-for-react-devs/`)
+
       ☐ Migrate to TS
 
       ☐ Consider Folder Structure: `https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346`
