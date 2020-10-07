@@ -85,7 +85,11 @@ export const LoginGithubWithPopup = () => {
 
   return (
     <div className={styles.wrapper}>
-      <button type="button" onClick={handleOnClickLogin}>
+      <button
+        className={styles.button}
+        type="button"
+        onClick={handleOnClickLogin}
+      >
         Login (iframe) with GitHub
       </button>
       <div className={styles.info}>
