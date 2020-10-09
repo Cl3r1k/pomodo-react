@@ -75,13 +75,15 @@ Todos:
                 React Token Auth: `https://habr.com/en/post/485764/`
                 Github Application Tutorial with React: `https://www.youtube.com/watch?v=sln97IB8N4k`
                 Github OAuth using Node.js (MERN) (Sign in with Github): `https://www.youtube.com/watch?v=wcUdBgktd4s`
+
               - Email Auth:
                 Building Basic React Authentication: `https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71`
                   Example: `https://codesandbox.io/s/building-basic-react-authentication-osld0?file=/src/App.js`
+                Authenticated Routing with React, React Router, Redux & TypeScript: `https://medium.com/octopus-wealth/authenticated-routing-with-react-react-router-redux-typescript-677ed49d4bd6`
+                  Example: `https://codesandbox.io/s/authenticated-routing-with-react-react-router-redux-typescript-8odqr?file=/src/App.js`
 
             - Next
-              Authenticated Routing with React, React Router, Redux & TypeScript: `https://medium.com/octopus-wealth/authenticated-routing-with-react-react-router-redux-typescript-677ed49d4bd6`
-                Example: `https://codesandbox.io/s/authenticated-routing-with-react-react-router-redux-typescript-8odqr?file=/src/App.js`
+              
             
             - ToRead:
               - Facebook Auth:
