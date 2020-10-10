@@ -29,7 +29,7 @@ export const LoginGithubWithServer = () => {
   useEffect(() => {
     // alert('<LoginGithubWithServer /> Called useEffect()');
     const url = window.location.href;
-    const hasCode = url.includes('?code=');
+    const hasCode = false; // url.includes('?code=');
 
     console.info('url: ', url);
     console.info('hasCode: ', hasCode);
@@ -52,7 +52,7 @@ export const LoginGithubWithServer = () => {
       console.info('requestData: ', requestData);
 
       // Use code parameter and other parameters to make POST request to proxy_server
-      fetch(proxyUrl, {
+      fetch(`${proxyUrl}/authenticate`, {
         method: 'POST',
         body: JSON.stringify(requestData),
       })

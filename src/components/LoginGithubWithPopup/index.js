@@ -8,7 +8,12 @@ import { combineToQuery } from 'services/utils';
 import { PopupWindow } from 'classes/PopupWindow';
 
 // Constants
-import { clientIdGithub, redirectUri, scope } from 'constants/api.config';
+import {
+  clientIdGithub,
+  redirectUri,
+  scope,
+  proxyUrl,
+} from 'constants/api.config';
 
 // Styles
 import styles from './styles.module.scss';
@@ -34,12 +39,34 @@ export const LoginGithubWithPopup = () => {
     }
   }, []);
 
-  const handleSuccessAuth = data => {
-    console.info('handleSuccessAuth() popup.then() data: ', data);
+  const handleSuccessAuth = ({ code }) => {
+    console.info('handleSuccessAuth() popup.then() code: ', code);
     // console.info('handleSuccessAuth() authGhData: ', authGhData);
     // Here we should use our proxy-server to perform 'login/oauth/access_token' request and then
     // change state if success or error
-    setAuthGhData({ ...authGhData, isLoading: false, errorMessage: '' });
+    if (code) {
+      const requestData = {
+        code,
+        provider: 'github',
+      };
+
+      fetch(`${proxyUrl}/authenticate`, {
+        method: 'POST',
+        body: JSON.stringify(requestData),
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.info('Successfull data: ', data);
+          setAuthGhData({ isLoading: false, errorMessage: '' });
+        })
+        .catch(err => {
+          console.info('Failed from proxyServer: err: ', err);
+          setAuthGhData({
+            isLoading: false,
+            errorMessage: `Login failed (proxy): error: ${err}`,
+          });
+        });
+    }
   };
 
   const handleErrorAuth = error => {
