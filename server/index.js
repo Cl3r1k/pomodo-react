@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const FormData = require('form-data');
 const fetch = require('node-fetch');
+const config = require('../config');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.post('/authenticate', (req, res) => {
 
   console.info('server post ::: req.body: ', req.body);
   console.info('provider: ', provider);
+  console.info('config.someConf: ', config.someConf);
 
   const data = new FormData();
   data.append('client_id', clientIdGithub);
