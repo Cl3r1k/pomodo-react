@@ -1,3 +1,3 @@
 module.exports = {
-  someConf: 'someConf',
+  someConfigProperty: 'Some Config Property',
 };
