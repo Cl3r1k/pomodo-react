@@ -28,6 +28,7 @@ app.post('/authenticate', (req, res) => {
   console.info('server post ::: req.body: ', req.body);
   console.info('provider: ', provider);
   console.info('config.someConfigProperty: ', config.someConfigProperty);
+  console.info('config.clientSecretGithub: ', config.clientSecretGithub);
 
   const data = new FormData();
   data.append('client_id', clientIdGithub);
