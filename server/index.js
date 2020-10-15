@@ -28,6 +28,7 @@ app.post('/authenticate', (req, res) => {
   console.info('server post ::: req.body: ', req.body);
   console.info('provider: ', provider);
   console.info('config.someConfigProperty: ', config.someConfigProperty);
+  // TODO: fix export variables from .env to server (for example export like 'process.env.REACT_APP_CLIENT_SECRET')
   console.info('config.clientSecretGithub: ', config.clientSecretGithub);
 
   const data = new FormData();
