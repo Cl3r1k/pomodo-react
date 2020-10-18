@@ -38,10 +38,16 @@ Todos:
           ☐ Extend absoulte path imports (like, @src, @config, @etc)
             - Related info:
               ✔ `https://code.visualstudio.com/docs/languages/jsconfig` @done(20-10-14 09:56)
-              ☐ `https://github.com/facebook/create-react-app/issues/5645`
+              ✔ `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
+              ☐ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports`
+              ☐ `https://github.com/bjerkio/stact/issues/11`
               ☐ `https://github.com/facebook/create-react-app/issues/5118#issuecomment-434591873`
               ☐ `https://github.com/facebook/create-react-app/issues/5762`
               ☐ `https://github.com/facebook/create-react-app/issues/5585`
+              ☐ `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
+              ☐ `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
+              ☐ `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
+              ☐ `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
