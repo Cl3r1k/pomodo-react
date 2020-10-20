@@ -39,8 +39,9 @@ Todos:
             - Related info:
               ✔ `https://code.visualstudio.com/docs/languages/jsconfig` @done(20-10-14 09:56)
               ✔ `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
-              ☐ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports`
-              ☐ `https://github.com/bjerkio/stact/issues/11`
+              ✔ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
+              ✔ `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
+              ☐ `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/`
               ☐ `https://github.com/facebook/create-react-app/issues/5118#issuecomment-434591873`
               ☐ `https://github.com/facebook/create-react-app/issues/5762`
               ☐ `https://github.com/facebook/create-react-app/issues/5585`
