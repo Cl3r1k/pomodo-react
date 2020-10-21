@@ -41,14 +41,18 @@ Todos:
               ✔ `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
               ✔ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
               ✔ `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
-              ☐ `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/`
-              ☐ `https://github.com/facebook/create-react-app/issues/5118#issuecomment-434591873`
+              ✔ `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
+              ☐ `https://github.com/facebook/create-react-app/issues/5118`
+              ☐ `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353`
+              ☐ `https://stackoverflow.com/questions/38601592/typescript-import-path-alias`
               ☐ `https://github.com/facebook/create-react-app/issues/5762`
               ☐ `https://github.com/facebook/create-react-app/issues/5585`
               ☐ `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
               ☐ `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
               ☐ `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
               ☐ `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
+              ☐ `https://github.com/facebook/create-react-app/pull/6116`
+              ☐ `https://github.com/facebook/create-react-app/pull/6656`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
