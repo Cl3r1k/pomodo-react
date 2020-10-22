@@ -42,7 +42,7 @@ Todos:
               ✔ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
               ✔ `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
               ✔ `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
-              ☐ `https://github.com/facebook/create-react-app/issues/5118`
+              ✔ `https://github.com/facebook/create-react-app/issues/5118` @done(20-10-21 09:08)
               ☐ `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353`
               ☐ `https://stackoverflow.com/questions/38601592/typescript-import-path-alias`
               ☐ `https://github.com/facebook/create-react-app/issues/5762`
@@ -58,6 +58,15 @@ Todos:
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
         ✔ Implement stylelint (`https://stylelint.io/` `https://stylelint.io/user-guide/configuration`) @done(20-06-14 09:21)
         ✔ Use modules for styles @done(20-06-15 08:43)
+
+      ☐ Node.js with Typescript
+        ☐ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/`
+        ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
+        ☐ Using TypeScript with Node.js and Express - `https://blog.logrocket.com/typescript-with-node-js-and-express/`
+        ☐ How to setup a NodeJS project with Typescript - `https://dev.to/aryclenio/how-to-setup-a-nodejs-project-with-typescript-4ehi`
+        ☐ Getting Started Using TypeScript with Node.js and Express - `https://medium.com/@pankaj.itdeveloper/getting-started-using-typescript-with-node-js-and-express-6aff573667d5`
+        ☐ Node.js QuickStart - `https://basarat.gitbook.io/typescript/nodejs`
+        ☐ Typescript on Server - `https://habr.com/ru/post/328466/`
       
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)

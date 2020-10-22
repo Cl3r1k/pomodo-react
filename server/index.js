@@ -33,6 +33,7 @@ app.post('/authenticate', (req, res) => {
   console.info('config.clientSecretGithub: ', config.clientSecretGithub);
   console.info('config.proxyUrl: ', config.proxyUrl);
   console.info('config.redirectUri: ', config.redirectUri);
+  console.info('config.scope: ', config.scope);
 
   const data = new FormData();
   data.append('client_id', clientIdGithub);
