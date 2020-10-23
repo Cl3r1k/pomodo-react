@@ -37,22 +37,24 @@ Todos:
         ✔ Implement absolute path imports @done(20-06-05 08:53)
           ☐ Extend absoulte path imports (like, @src, @config, @etc)
             - Related info:
-              ✔ `https://code.visualstudio.com/docs/languages/jsconfig` @done(20-10-14 09:56)
-              ✔ `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
-              ✔ `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
-              ✔ `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
-              ✔ `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
-              ✔ `https://github.com/facebook/create-react-app/issues/5118` @done(20-10-21 09:08)
-              ☐ `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353`
-              ☐ `https://stackoverflow.com/questions/38601592/typescript-import-path-alias`
-              ☐ `https://github.com/facebook/create-react-app/issues/5762`
-              ☐ `https://github.com/facebook/create-react-app/issues/5585`
-              ☐ `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
-              ☐ `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
-              ☐ `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
-              ☐ `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
-              ☐ `https://github.com/facebook/create-react-app/pull/6116`
-              ☐ `https://github.com/facebook/create-react-app/pull/6656`
+              ✔ jsconfig.json - `https://code.visualstudio.com/docs/languages/jsconfig` @done(20-10-14 09:56)
+              ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
+              ✔ CRA: Absolute Imports - `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
+              ✔ Typescript aliases - `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
+              ✔ Simpler Typescript paths with path aliases - `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
+              ✔ Support absolute imports with @ - `https://github.com/facebook/create-react-app/issues/5118` @done(20-10-21 09:08)
+              ✔ Path aliases with TypeScript in Node.js - `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353` @done(20-10-22 09:09)
+              ☐ TypeScript Import Path Alias - `https://stackoverflow.com/questions/38601592/typescript-import-path-alias`
+              ☐ TypeScript - absolute path doesn't work - `https://github.com/facebook/create-react-app/issues/5762`
+              ☐ TypeScript {paths} are not taken into consideration - `https://github.com/facebook/create-react-app/issues/5585`
+              ☐ Using absolute (alias) imports in Javascript and VSCode - `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
+              ☐ Creating path aliases in create-react-app with react-app-rewired - `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
+              ☐ Create React App: import modules using aliases with Webpack and Typescript - `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
+              ☐ How to add import shortcuts - alias - `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
+              ☐ Set module resolution based on baseUrl in jsconfig/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6116`
+              ☐ Set baseUrl from jsconfig.json/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6656`
+              ☐ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js`
+              ☐ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
