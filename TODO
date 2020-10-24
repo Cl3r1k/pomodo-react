@@ -44,7 +44,7 @@ Todos:
               ✔ Simpler Typescript paths with path aliases - `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
               ✔ Support absolute imports with @ - `https://github.com/facebook/create-react-app/issues/5118` @done(20-10-21 09:08)
               ✔ Path aliases with TypeScript in Node.js - `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353` @done(20-10-22 09:09)
-              ☐ TypeScript Import Path Alias - `https://stackoverflow.com/questions/38601592/typescript-import-path-alias`
+              ✔ TypeScript Import Path Alias - `https://stackoverflow.com/questions/38601592/typescript-import-path-alias` @done(20-10-23 09:44)
               ☐ TypeScript - absolute path doesn't work - `https://github.com/facebook/create-react-app/issues/5762`
               ☐ TypeScript {paths} are not taken into consideration - `https://github.com/facebook/create-react-app/issues/5585`
               ☐ Using absolute (alias) imports in Javascript and VSCode - `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
@@ -181,6 +181,8 @@ Todos:
       ☐ Consider to exclude 'node_modules' (`https://code.visualstudio.com/docs/languages/jsconfig#_using-the-exclude-property`)
 
       ☐ Consider Folder Structure: `https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346`
+
+      ☐ Consider to use 'autoprefixer'
 
       ☐ Implement 'Auto Resize TextArea' (info - `https://medium.com/@lucasalgus/creating-a-custom-auto-resize-textarea-component-for-your-react-web-application-6959c0ad68bc`)
     
