@@ -34,6 +34,7 @@ app.post('/authenticate', (req, res) => {
   console.info('config.proxyUrl: ', config.proxyUrl);
   console.info('config.redirectUri: ', config.redirectUri);
   console.info('config.scope: ', config.scope);
+  console.info('config.serverPort: ', config.serverPort);
 
   const data = new FormData();
   data.append('client_id', clientIdGithub);

@@ -45,9 +45,9 @@ Todos:
               ✔ Support absolute imports with @ - `https://github.com/facebook/create-react-app/issues/5118` @done(20-10-21 09:08)
               ✔ Path aliases with TypeScript in Node.js - `https://dev.to/larswaechter/path-aliases-with-typescript-in-nodejs-4353` @done(20-10-22 09:09)
               ✔ TypeScript Import Path Alias - `https://stackoverflow.com/questions/38601592/typescript-import-path-alias` @done(20-10-23 09:44)
-              ☐ TypeScript - absolute path doesn't work - `https://github.com/facebook/create-react-app/issues/5762`
-              ☐ TypeScript {paths} are not taken into consideration - `https://github.com/facebook/create-react-app/issues/5585`
-              ☐ Using absolute (alias) imports in Javascript and VSCode - `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode`
+              ✔ TypeScript - absolute path doesn't work - `https://github.com/facebook/create-react-app/issues/5762` @done(20-10-24 09:08)
+              ✔ TypeScript {paths} are not taken into consideration - `https://github.com/facebook/create-react-app/issues/5585` @done(20-10-24 09:31)
+              ✔ Using absolute (alias) imports in Javascript and VSCode - `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode` @done(20-10-24 09:45)
               ☐ Creating path aliases in create-react-app with react-app-rewired - `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
               ☐ Create React App: import modules using aliases with Webpack and Typescript - `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
               ☐ How to add import shortcuts - alias - `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
