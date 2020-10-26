@@ -48,13 +48,14 @@ Todos:
               ✔ TypeScript - absolute path doesn't work - `https://github.com/facebook/create-react-app/issues/5762` @done(20-10-24 09:08)
               ✔ TypeScript {paths} are not taken into consideration - `https://github.com/facebook/create-react-app/issues/5585` @done(20-10-24 09:31)
               ✔ Using absolute (alias) imports in Javascript and VSCode - `https://nimblewebdeveloper.com/blog/absolute-alias-imports-in-javascript-vscode` @done(20-10-24 09:45)
-              ☐ Creating path aliases in create-react-app with react-app-rewired - `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472`
-              ☐ Create React App: import modules using aliases with Webpack and Typescript - `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0`
-              ☐ How to add import shortcuts - alias - `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias`
+              ✔ Creating path aliases in create-react-app with react-app-rewired - `https://medium.com/deskera-engineering/creating-path-aliases-in-create-react-app-with-react-app-rewired-c2cde81b472` @done(20-10-25 09:11)
+              ✔ Create React App: import modules using aliases with Webpack and Typescript - `https://dev.to/blundert/create-react-app-import-modules-using-aliases-with-webpack-and-typescript-49o0` @done(20-10-25 09:35)
+              ✔ How to add import shortcuts - alias - `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias` @done(20-10-25 09:46)
               ☐ Set module resolution based on baseUrl in jsconfig/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6116`
               ☐ Set baseUrl from jsconfig.json/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6656`
               ☐ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js`
               ☐ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa`
+            The flow idea: configure tsconfig.json 'baseUrl' and 'paths' to VS Code support, probably configure webpack.config 'resolve.alias', and probably configure package.json 'jest.moduleDirectories' and 'jest.moduleNameMapper' for test support
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
