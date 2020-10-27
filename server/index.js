@@ -70,5 +70,10 @@ app.post('/authenticate', (req, res) => {
     });
 });
 
+app.get('/auth', (req, res) => {
+  console.info('req:', req);
+  console.info('res:', res);
+});
+
 const PORT = config.serverPort || 5000;
 app.listen(PORT, () => console.info(`Server listening on port: ${PORT}`));
