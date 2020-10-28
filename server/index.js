@@ -71,8 +71,7 @@ app.post('/authenticate', (req, res) => {
 });
 
 app.get('/auth', (req, res) => {
-  console.info('req:', req);
-  console.info('res:', res);
+  res.status(200).json(`GET /auth config.serverPort: ${config.serverPort}`);
 });
 
 const PORT = config.serverPort || 5000;
