@@ -70,6 +70,10 @@ app.post('/authenticate', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+  res.status(200).json('Avaialable server routes');
+});
+
 app.get('/auth', (req, res) => {
   res.status(200).json(`GET /auth config.serverPort: ${config.serverPort}`);
 });

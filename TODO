@@ -53,7 +53,7 @@ Todos:
               ✔ How to add import shortcuts - alias - `https://stackoverflow.com/questions/50132624/how-to-add-import-shortcuts-alias` @done(20-10-25 09:46)
               ✔ Set module resolution based on baseUrl in jsconfig/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6116` @done(20-10-26 09:12)
               ✔ Set baseUrl from jsconfig.json/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6656` @done(20-10-27 09:01)
-              ☐ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js`
+              ✔ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js` @done(20-10-28 09:34)
               ☐ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa`
             The flow idea: configure tsconfig.json 'baseUrl' and 'paths' to VS Code support, probably configure webpack.config 'resolve.alias', and probably configure package.json 'jest.moduleDirectories' and 'jest.moduleNameMapper' for test support
 
