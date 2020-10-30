@@ -62,6 +62,11 @@ Todos:
         ✔ Implement stylelint (`https://stylelint.io/` `https://stylelint.io/user-guide/configuration`) @done(20-06-14 09:21)
         ✔ Use modules for styles @done(20-06-15 08:43)
 
+
+      ☐ Migrate to TS
+        ☐ A simple guide for migrating from JavaScript to TypeScript - `https://blog.logrocket.com/a-simple-guide-for-migrating-from-javascript-to-typescript/`
+
+
       ☐ Node.js with Typescript
         ☐ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/`
         ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
@@ -176,8 +181,6 @@ Todos:
       ☐ Consider to use css-modules without 'module' prefix (CSS Modules in React: `https://habr.com/ru/post/335244/`)
 
       ☐ Consider to use CSS Variables (CSS Variables for React Devs: `https://joshwcomeau.com/css/css-variables-for-react-devs/`)
-
-      ☐ Migrate to TS
 
       ☐ Consider to exclude 'node_modules' (`https://code.visualstudio.com/docs/languages/jsconfig#_using-the-exclude-property`)
 

@@ -71,7 +71,10 @@ app.post('/authenticate', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.status(200).json('Avaialable server routes');
+  res.status(200).json(`
+    Avaialable server routes:
+    GET '/': list of routes (API) (this page)
+  `);
 });
 
 app.get('/auth', (req, res) => {
