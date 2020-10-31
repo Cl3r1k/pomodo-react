@@ -54,7 +54,7 @@ Todos:
               ✔ Set module resolution based on baseUrl in jsconfig/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6116` @done(20-10-26 09:12)
               ✔ Set baseUrl from jsconfig.json/tsconfig.json - `https://github.com/facebook/create-react-app/pull/6656` @done(20-10-27 09:01)
               ✔ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js` @done(20-10-28 09:34)
-              ☐ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa`
+              ✔ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa` @done(20-10-30 08:50)
             The flow idea: configure tsconfig.json 'baseUrl' and 'paths' to VS Code support, probably configure webpack.config 'resolve.alias', and probably configure package.json 'jest.moduleDirectories' and 'jest.moduleNameMapper' for test support
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
@@ -68,6 +68,9 @@ Todos:
 
 
       ☐ Node.js with Typescript
+        ☐ Import statements in TypeScript: which syntax to use - `https://blog.atomist.com/typescript-imports/`
+        ☐ Setup Node/Express with TypeScript - `https://dev.to/aryanshmahato/setup-node-express-with-typescript-3bho`
+        ☐ Use TypeScript to Build a Node API with Express - `https://developer.okta.com/blog/2018/11/15/node-express-typescript`
         ☐ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/`
         ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
         ☐ Using TypeScript with Node.js and Express - `https://blog.logrocket.com/typescript-with-node-js-and-express/`
@@ -75,6 +78,11 @@ Todos:
         ☐ Getting Started Using TypeScript with Node.js and Express - `https://medium.com/@pankaj.itdeveloper/getting-started-using-typescript-with-node-js-and-express-6aff573667d5`
         ☐ Node.js QuickStart - `https://basarat.gitbook.io/typescript/nodejs`
         ☐ Typescript on Server - `https://habr.com/ru/post/328466/`
+        ☐ Node.js (Express) with TypeScript, Eslint, Jest, Prettier and Husky - Part 1 - `https://dev.to/ornio/node-js-express-with-typescript-eslint-jest-prettier-and-husky-part-1-1lin`
+        ☐ Express with TypeScript setup - `https://medium.com/@xfor/express-with-typescript-setup-8d4863e4317e`
+        ☐ Node.js (Express) with TypeScript, Eslint, Jest, Prettier and Husky — Part 2 - `https://medium.com/@oxodesign/node-js-express-with-typescript-eslint-jest-prettier-and-husky-part-2-f129188ce404`
+        ☐ Setup a Node.js project with Typescript, ESLint, Prettier, Husky -  `https://gist.github.com/silver-xu/1dcceaa14c4f0253d9637d4811948437`
+        ☐ How to Properly Set Up Express With TypeScript - `https://levelup.gitconnected.com/how-to-properly-set-up-express-with-typescript-1b52570677c9`
       
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)

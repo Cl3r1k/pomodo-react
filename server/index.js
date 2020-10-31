@@ -74,6 +74,7 @@ app.get('/', (req, res) => {
   res.status(200).json(`
     Avaialable server routes:
     GET '/': list of routes (API) (this page)
+    GET '/auth': route for test config access
   `);
 });
 
