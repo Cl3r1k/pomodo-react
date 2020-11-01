@@ -25,6 +25,7 @@ Technics (ideas) to use :
   ☐ Consider to use 'semantic-release' - `https://github.com/semantic-release/semantic-release`
   ☐ Consider to use 'size-limit' - `https://github.com/ai/size-limit`
   ☐ Protect master branch to direct commit push
+  ☐ Consider to 'continuous npm-audit' - `https://blog.atomist.com/continuous-npm-audit/`
 
 
 Todos:
@@ -68,7 +69,7 @@ Todos:
 
 
       ☐ Node.js with Typescript
-        ☐ Import statements in TypeScript: which syntax to use - `https://blog.atomist.com/typescript-imports/`
+        ✔ Import statements in TypeScript: which syntax to use - `https://blog.atomist.com/typescript-imports/` @done(20-10-31 10:44)
         ☐ Setup Node/Express with TypeScript - `https://dev.to/aryanshmahato/setup-node-express-with-typescript-3bho`
         ☐ Use TypeScript to Build a Node API with Express - `https://developer.okta.com/blog/2018/11/15/node-express-typescript`
         ☐ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/`
@@ -83,6 +84,17 @@ Todos:
         ☐ Node.js (Express) with TypeScript, Eslint, Jest, Prettier and Husky — Part 2 - `https://medium.com/@oxodesign/node-js-express-with-typescript-eslint-jest-prettier-and-husky-part-2-f129188ce404`
         ☐ Setup a Node.js project with Typescript, ESLint, Prettier, Husky -  `https://gist.github.com/silver-xu/1dcceaa14c4f0253d9637d4811948437`
         ☐ How to Properly Set Up Express With TypeScript - `https://levelup.gitconnected.com/how-to-properly-set-up-express-with-typescript-1b52570677c9`
+
+
+      ☐ Improve linters - `https://habr.com/ru/post/417841/`
+        ☐ default-import-match-filename
+          ☐ [New]: add rule `default-import-match-filename` - `https://github.com/benmosher/eslint-plugin-import/pull/1476`
+          ☐ Proposal: `default-import-match-filename` - `https://github.com/benmosher/eslint-plugin-import/issues/325`
+          ☐ Enforce a case style for filenames - `https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/filename-case.md`
+          ☐ Disallow specific imports (no-restricted-imports) - `https://eslint.org/docs/rules/no-restricted-imports`
+          ☐ benmosher/eslint-plugin-import - `https://github.com/benmosher/eslint-plugin-import`
+          ☐ eslint-plugin-import-name - `https://www.npmjs.com/package/eslint-plugin-import-name`
+          ☐ microsoft/tslint-microsoft-contrib (import-name) - `https://github.com/microsoft/tslint-microsoft-contrib`
       
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)
