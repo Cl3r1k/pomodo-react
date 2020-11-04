@@ -70,7 +70,7 @@ Todos:
 
       ☐ Node.js with Typescript
         ✔ Import statements in TypeScript: which syntax to use - `https://blog.atomist.com/typescript-imports/` @done(20-10-31 10:44)
-        ☐ Setup Node/Express with TypeScript - `https://dev.to/aryanshmahato/setup-node-express-with-typescript-3bho`
+        ✔ Setup Node/Express with TypeScript - `https://dev.to/aryanshmahato/setup-node-express-with-typescript-3bho` @done(20-11-03 09:05)
         ☐ Use TypeScript to Build a Node API with Express - `https://developer.okta.com/blog/2018/11/15/node-express-typescript`
         ☐ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/`
         ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
