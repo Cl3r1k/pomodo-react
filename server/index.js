@@ -75,7 +75,7 @@ app.get('/', (req, res) => {
     Avaialable server routes:
     GET '/':                  list of routes (API) (this page)
     GET '/auth':              route for test config access
-    POST '/authenticate':    proxy route to use authenticate API from other providers
+    POST '/authenticate':     proxy route to use authenticate API from other providers
   `);
 });
 
