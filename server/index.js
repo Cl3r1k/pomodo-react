@@ -76,6 +76,7 @@ app.get('/', (req, res) => {
     GET '/':                  list of routes (API) (this page)
     GET '/auth':              route for test config access (from .env file through alias @config)
     POST '/authenticate':     proxy route to use authenticate API from other providers
+    GET '/users':             get users from DB
   `);
 });
 
