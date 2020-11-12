@@ -80,8 +80,8 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.get('/auth', (req, res) => {
-  res.status(200).json(`GET /auth config.serverPort: ${config.serverPort}`);
+app.get('/config', (req, res) => {
+  res.status(200).json(`GET /config config.serverPort: ${config.serverPort}`);
 });
 
 const PORT = config.serverPort || 5000;
