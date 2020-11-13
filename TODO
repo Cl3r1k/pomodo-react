@@ -73,6 +73,7 @@ Todos:
         ✔ Setup Node/Express with TypeScript - `https://dev.to/aryanshmahato/setup-node-express-with-typescript-3bho` @done(20-11-03 09:05)
         ✔ Use TypeScript to Build a Node API with Express - `https://developer.okta.com/blog/2018/11/15/node-express-typescript` @done(20-11-06 09:28)
         ✔ How to Setup a TypeScript + Node.js Project - `https://khalilstemmler.com/blogs/typescript/node-starter-project/` @done(20-11-10 09:02)
+        ☐ TSconfig module - `https://www.typescriptlang.org/tsconfig#module`
         ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
         ☐ Using TypeScript with Node.js and Express - `https://blog.logrocket.com/typescript-with-node-js-and-express/`
         ☐ How to setup a NodeJS project with Typescript - `https://dev.to/aryclenio/how-to-setup-a-nodejs-project-with-typescript-4ehi`
