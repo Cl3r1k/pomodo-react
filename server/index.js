@@ -77,6 +77,8 @@ app.get('/', (req, res) => {
     GET '/config':            route for test config access (from .env file through alias @config)
     POST '/authenticate':     proxy route to use authenticate API from other providers
     GET '/users':             get users from DB (mongo - mongoose?)
+    GET '/user':              get user from DB
+    POST '/user':             create user in DB
   `);
 });
 
