@@ -89,5 +89,9 @@ app.get('/config', (req, res) => {
     .json(`GET /config respone config.serverPort: ${config.serverPort}`);
 });
 
+app.get('/users', (req, res) => {
+  res.status(200).json('GET /users list');
+});
+
 const PORT = config.serverPort || 5000;
 app.listen(PORT, () => console.info(`Server listening on port: ${PORT}`));

@@ -9,7 +9,27 @@ GitHub Flow Rules:
 
 
 Commit message:
-
+docs: update TODO file
+feat: update husky config
+feat: improve 'authActions'
+feat: update 'package.json' (add 'concurrently')
+feat: improve 'LoginPage' and 'authActions'
+feat: improve 'AuthContextProvider' and 'authReducer'
+feat: add 'useAuthState', 'useAuthDispatch' and 'authContext' related code
+feat: extract 'routes' logic to separate file
+feat: add 'utils' with 'delay' methods
+feat: improve 'NavBar' component
+feat: improve 'LoginGithub' component
+feat: improve 'PopupWindow' class
+feat: improve 'proxy-server'
+fix: fix 'proxy-server' fetch method
+feat: split 'LoginGithub' component to separate components
+feat: update 'AuthContextProvider'
+refactor: update 'PopupWindow' class
+refactor: rename 'clientSecret' to 'clientSecretGithub'
+refactor: update 'LoginGithubWithPopup' component
+refactor: update app 'config'
+refactor: update 'proxy-server'
 
 
 Code StyleGuide / Rules:
@@ -77,6 +97,9 @@ Todos:
         ✔ TSconfig module - `https://www.typescriptlang.org/tsconfig#module` @done(20-11-13 08:58)
         ✔ Typescript confusion: tsconfig.json module, moduleResolution, target & lib explained - `https://medium.com/@tommedema/typescript-confusion-tsconfig-json-module-moduleresolution-target-lib-explained-65db2c44b491` @done(20-11-14 09:11)
         ☐ ts-node - ESM support: soliciting feedback - `https://github.com/TypeStrong/ts-node/issues/1007`
+        ☐ Deep dive into ES-modules in pictures -  `https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a`
+        ☐ Understanding (all) «modules» formats and JavaScript tools - `https://habr.com/ru/post/501198/`
+        ☐ Autoload modules using dynamic imports - `https://habr.com/ru/post/478974/`
         ☐ TypeScript Handbook -> Modules - `https://www.typescriptlang.org/docs/handbook/modules.html`
         ☐ How To Set Up a Node Project With Typescript - `https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript`
         ☐ Using TypeScript with Node.js and Express - `https://blog.logrocket.com/typescript-with-node-js-and-express/`
@@ -181,6 +204,7 @@ Todos:
                 Authentication in SPA (ReactJS and VueJS) the right way: `https://medium.com/@jcbaey/authentication-in-spa-reactjs-and-vuejs-the-right-way-e4a9ac5cd9a3`
                 Client-side Authentication the the Right Way (Cookies vs. Local Storage): `https://www.taniarascia.com/full-stack-cookies-localstorage-react-express/`
                 The subtleties of authorization: an overview of OAuth 2.0 technology: `https://habr.com/ru/company/dododev/blog/520046/`
+                Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
 
         ☐ Implement Google authentication
           ☐ Bump `minor` version after implement Google authentication
