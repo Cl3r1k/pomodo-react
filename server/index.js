@@ -90,7 +90,7 @@ app.get('/config', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-  res.status(200).json('GET /users list');
+  res.status(200).json('GET /users list from DB');
 });
 
 const PORT = config.serverPort || 5000;

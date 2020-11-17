@@ -9,27 +9,7 @@ GitHub Flow Rules:
 
 
 Commit message:
-docs: update TODO file
-feat: update husky config
-feat: improve 'authActions'
-feat: update 'package.json' (add 'concurrently')
-feat: improve 'LoginPage' and 'authActions'
-feat: improve 'AuthContextProvider' and 'authReducer'
-feat: add 'useAuthState', 'useAuthDispatch' and 'authContext' related code
-feat: extract 'routes' logic to separate file
-feat: add 'utils' with 'delay' methods
-feat: improve 'NavBar' component
-feat: improve 'LoginGithub' component
-feat: improve 'PopupWindow' class
-feat: improve 'proxy-server'
-fix: fix 'proxy-server' fetch method
-feat: split 'LoginGithub' component to separate components
-feat: update 'AuthContextProvider'
-refactor: update 'PopupWindow' class
-refactor: rename 'clientSecret' to 'clientSecretGithub'
-refactor: update 'LoginGithubWithPopup' component
-refactor: update app 'config'
-refactor: update 'proxy-server'
+
 
 
 Code StyleGuide / Rules:
@@ -97,6 +77,7 @@ Todos:
         ✔ TSconfig module - `https://www.typescriptlang.org/tsconfig#module` @done(20-11-13 08:58)
         ✔ Typescript confusion: tsconfig.json module, moduleResolution, target & lib explained - `https://medium.com/@tommedema/typescript-confusion-tsconfig-json-module-moduleresolution-target-lib-explained-65db2c44b491` @done(20-11-14 09:11)
         ☐ ts-node - ESM support: soliciting feedback - `https://github.com/TypeStrong/ts-node/issues/1007`
+        ☐ ES Modules in Depth - `https://ui.dev/esmodules/`
         ☐ Deep dive into ES-modules in pictures -  `https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a`
         ☐ Understanding (all) «modules» formats and JavaScript tools - `https://habr.com/ru/post/501198/`
         ☐ Autoload modules using dynamic imports - `https://habr.com/ru/post/478974/`
