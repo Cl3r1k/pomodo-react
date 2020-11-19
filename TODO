@@ -77,6 +77,8 @@ Todos:
         ✔ TSconfig module - `https://www.typescriptlang.org/tsconfig#module` @done(20-11-13 08:58)
         ✔ Typescript confusion: tsconfig.json module, moduleResolution, target & lib explained - `https://medium.com/@tommedema/typescript-confusion-tsconfig-json-module-moduleresolution-target-lib-explained-65db2c44b491` @done(20-11-14 09:11)
         ✔ ts-node - ESM support: soliciting feedback - `https://github.com/TypeStrong/ts-node/issues/1007` @done(20-11-17 09:16)
+        ☐ Setup a Typescript Project with ESlint, Prettier, EditorConfig and Husky - `https://dev.to/chuck_huey/setup-a-typescript-project-with-eslint-prettier-editorconfig-and-husky-13aa`
+        ☐ Usefull npm project for yourself and team - `https://habr.com/ru/post/417429/`
         ☐ ES Modules in Depth - `https://ui.dev/esmodules/`
         ☐ Deep dive into ES-modules in pictures -  `https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a`
         ☐ Understanding (all) «modules» formats and JavaScript tools - `https://habr.com/ru/post/501198/`
