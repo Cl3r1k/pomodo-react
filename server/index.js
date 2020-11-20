@@ -93,5 +93,9 @@ app.get('/users', (req, res) => {
   res.status(200).json('GET /users list from DB (mongo - mongoose?)');
 });
 
+app.get('/user', (req, res) => {
+  res.status(200).json('GET /user get user from DB');
+});
+
 const PORT = config.serverPort || 5000;
 app.listen(PORT, () => console.info(`Server listening on port: ${PORT}`));
