@@ -101,5 +101,9 @@ app.post('/user', (req, res) => {
   res.status(200).json('POST /user create user in DB');
 });
 
+app.patch('/user', (req, res) => {
+  res.status(200).json('PATCH /user update user in DB');
+});
+
 const PORT = config.serverPort || 5000;
 app.listen(PORT, () => console.info(`Server listening on port: ${PORT}`));
