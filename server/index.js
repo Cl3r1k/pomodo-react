@@ -79,7 +79,7 @@ app.get('/', (req, res) => {
     GET '/users':             get users from DB (mongo - mongoose?)
     GET '/user':              get user from DB
     POST '/user':             create user in DB
-    UPDATE '/user':           update user data in DB
+    PATCH '/user':            update user data in DB
   `);
 });
 
