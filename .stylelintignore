@@ -1,0 +1,4 @@
+# See https://stylelint.io/user-guide/ignore-code#files-entirely/ for more about ignoring files.
+
+# Single files
+metadata.json
