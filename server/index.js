@@ -102,7 +102,7 @@ app.post('/user', (req, res) => {
 });
 
 app.patch('/user', (req, res) => {
-  res.status(200).json('PATCH /user update user in DB');
+  res.status(200).json('PATCH /user - update user in DB');
 });
 
 const PORT = config.serverPort || 5000;
