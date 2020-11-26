@@ -98,7 +98,7 @@ app.get('/user', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-  res.status(200).json('POST /user create user in DB');
+  res.status(200).json('POST /user - create user in DB');
 });
 
 app.patch('/user', (req, res) => {
