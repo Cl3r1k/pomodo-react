@@ -94,7 +94,7 @@ app.get('/users', (req, res) => {
 });
 
 app.get('/user', (req, res) => {
-  res.status(200).json('GET /user get user from DB');
+  res.status(200).json('GET /user - get user from DB');
 });
 
 app.post('/user', (req, res) => {
