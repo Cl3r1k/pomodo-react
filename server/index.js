@@ -86,7 +86,7 @@ app.get('/', (req, res) => {
 app.get('/config', (req, res) => {
   res
     .status(200)
-    .json(`GET /config respone config.serverPort: ${config.serverPort}`);
+    .json(`GET /config - respone config.serverPort: ${config.serverPort}`);
 });
 
 app.get('/users', (req, res) => {
