@@ -108,6 +108,9 @@ Todos:
           ☐ benmosher/eslint-plugin-import - `https://github.com/benmosher/eslint-plugin-import`
           ☐ eslint-plugin-import-name - `https://www.npmjs.com/package/eslint-plugin-import-name`
           ☐ microsoft/tslint-microsoft-contrib (import-name) - `https://github.com/microsoft/tslint-microsoft-contrib`
+
+
+      ☐ Consider to use Babel with TS - `https://iamturns.com/typescript-babel/`
       
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)
