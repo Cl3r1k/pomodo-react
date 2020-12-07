@@ -40,7 +40,6 @@ Todos:
           ☐ Extend absoulte path imports (like, @src, @config, @etc)
             - Related info:
               ✔ jsconfig.json - `https://code.visualstudio.com/docs/languages/jsconfig` @done(20-10-14 09:56)
-              ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
               ✔ CRA: Absolute Imports - `https://create-react-app.dev/docs/importing-a-component/#absolute-imports` @done(20-10-19 09:05)
               ✔ Typescript aliases - `https://github.com/bjerkio/stact/issues/11` @done(20-10-19 09:07)
               ✔ Simpler Typescript paths with path aliases - `https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/` @done(20-10-20 09:38)
@@ -58,6 +57,13 @@ Todos:
               ✔ Aliasing module paths in Node JS - `https://arunmichaeldsouza.com/blog/aliasing-module-paths-in-node-js` @done(20-10-28 09:34)
               ✔ How to use module path aliases in Visual Studio Code, TypeScript and JavaScript - `https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa` @done(20-10-30 08:50)
             The flow idea: configure tsconfig.json 'baseUrl' and 'paths' to VS Code support, probably configure webpack.config 'resolve.alias', and probably configure package.json 'jest.moduleDirectories' and 'jest.moduleNameMapper' for test support
+
+          ☐ Issue: - compilerOptions.paths must not be set (aliased imports are not supported)
+            ☐ Using the tsconfig file to configure the alias does not take effect #8909 - `https://github.com/facebook/create-react-app/issues/8909`
+            ☐ The following changes are being made to your tsconfig.json file #375 - `https://github.com/timarney/react-app-rewired/issues/375`
+            ☐ How to configure react-script so that it doesn't override tsconfig.json on 'start' - `https://stackoverflow.com/questions/53794875/how-to-configure-react-script-so-that-it-doesnt-override-tsconfig-json-on-star`
+            ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
+            ☐ Use "paths" in tsconfig.json and jsconfig.json #10014 - `https://github.com/facebook/create-react-app/pull/10014`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
