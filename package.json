@@ -62,7 +62,7 @@
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
-    "stylelint": "^13.6.0",
+    "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0"
   }
