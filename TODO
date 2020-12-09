@@ -59,16 +59,22 @@ Todos:
             The flow idea: configure tsconfig.json 'baseUrl' and 'paths' to VS Code support, probably configure webpack.config 'resolve.alias', and probably configure package.json 'jest.moduleDirectories' and 'jest.moduleNameMapper' for test support
 
           ☐ Issue: - compilerOptions.paths must not be set (aliased imports are not supported)
-            ☐ Using the tsconfig file to configure the alias does not take effect #8909 - `https://github.com/facebook/create-react-app/issues/8909`
-            ☐ The following changes are being made to your tsconfig.json file #375 - `https://github.com/timarney/react-app-rewired/issues/375`
+            ✔ Using the tsconfig file to configure the alias does not take effect #8909 - `https://github.com/facebook/create-react-app/issues/8909` @done(20-12-08 09:51)
+            ✔ The following changes are being made to your tsconfig.json file #375 - `https://github.com/timarney/react-app-rewired/issues/375` @done(20-12-08 10:12)
             ☐ How to configure react-script so that it doesn't override tsconfig.json on 'start' - `https://stackoverflow.com/questions/53794875/how-to-configure-react-script-so-that-it-doesnt-override-tsconfig-json-on-star`
             ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
-            ☐ Use "paths" in tsconfig.json and jsconfig.json #10014 - `https://github.com/facebook/create-react-app/pull/10014`
+            ✔ Use "paths" in tsconfig.json and jsconfig.json #10014 - `https://github.com/facebook/create-react-app/pull/10014` @done(20-12-08 09:28)
+            ☐ Consider to use 'react-app-rewired' - `https://github.com/timarney/react-app-rewired`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
         ✔ Implement stylelint (`https://stylelint.io/` `https://stylelint.io/user-guide/configuration`) @done(20-06-14 09:21)
         ✔ Use modules for styles @done(20-06-15 08:43)
+
+
+      ☐ Update CRA and React to latest version
+        ☐ Update CRA to version 4.0.1
+        ☐ Update React to version 17.0.0
 
 
       ☐ Migrate to TS
