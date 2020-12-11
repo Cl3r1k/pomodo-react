@@ -61,10 +61,12 @@ Todos:
           ☐ Issue: - compilerOptions.paths must not be set (aliased imports are not supported)
             ✔ Using the tsconfig file to configure the alias does not take effect #8909 - `https://github.com/facebook/create-react-app/issues/8909` @done(20-12-08 09:51)
             ✔ The following changes are being made to your tsconfig.json file #375 - `https://github.com/timarney/react-app-rewired/issues/375` @done(20-12-08 10:12)
-            ☐ How to configure react-script so that it doesn't override tsconfig.json on 'start' - `https://stackoverflow.com/questions/53794875/how-to-configure-react-script-so-that-it-doesnt-override-tsconfig-json-on-star`
+            ✔ How to configure react-script so that it doesn't override tsconfig.json on 'start' - `https://stackoverflow.com/questions/53794875/how-to-configure-react-script-so-that-it-doesnt-override-tsconfig-json-on-star` @done(20-12-10 08:58)
             ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
             ✔ Use "paths" in tsconfig.json and jsconfig.json #10014 - `https://github.com/facebook/create-react-app/pull/10014` @done(20-12-08 09:28)
+            ☐ Replace CRA with own template for React-apps - `https://habr.com/ru/company/ruvds/blog/515008/`
             ☐ Consider to use 'react-app-rewired' - `https://github.com/timarney/react-app-rewired`
+              ☐ For CRA alias support probably 'react-app-rewire-alias' should be used  - `https://github.com/oklas/react-app-rewire-alias`
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
