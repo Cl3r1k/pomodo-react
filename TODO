@@ -209,6 +209,7 @@ Todos:
                 Client-side Authentication the the Right Way (Cookies vs. Local Storage): `https://www.taniarascia.com/full-stack-cookies-localstorage-react-express/`
                 The subtleties of authorization: an overview of OAuth 2.0 technology: `https://habr.com/ru/company/dododev/blog/520046/`
                 Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
+                How to Build HTML Forms Right: Security: `https://austingil.com/how-to-build-html-forms-right-security/`
 
         ☐ Implement Google authentication
           ☐ Bump `minor` version after implement Google authentication
