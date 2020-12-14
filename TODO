@@ -65,10 +65,10 @@ Todos:
             ✔ Add baseUrl and paths in tsconfig.json and jsconfig.json - `https://github.com/facebook/create-react-app/issues/5645` @done(20-10-17 10:31)
             ✔ Use "paths" in tsconfig.json and jsconfig.json #10014 - `https://github.com/facebook/create-react-app/pull/10014` @done(20-12-08 09:28)
             ✔ Replace CRA with own template for React-apps - `https://habr.com/ru/company/ruvds/blog/515008/` @done(20-12-11 09:26)
-            ☐ Consider to use 'react-app-rewired' - `https://github.com/timarney/react-app-rewired`
+            ✔ Consider to use 'react-app-rewired' - `https://github.com/timarney/react-app-rewired` - repo is "lightly" maintained @done(20-12-13 09:06)
               ☐ For CRA alias support probably 'react-app-rewire-alias' should be used  - `https://github.com/oklas/react-app-rewire-alias`
             ☐ Consider to use 'craco' - `https://github.com/gsoft-inc/craco`
-            ☐ Consider to use 'customize-cra' - `https://github.com/gsoft-inc/craco`
+            ✔ Consider to use 'customize-cra' - `https://github.com/arackaf/customize-cra` (Seems abandoned) @done(20-12-13 09:03)
 
         ✔ Implement eslint, prettier, husky, lint-staged @done(20-06-06 08:59)
         ✔ Improve linters/formatters config @done(20-06-10 08:46)
