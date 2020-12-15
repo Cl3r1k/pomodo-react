@@ -1,3 +1,5 @@
+// Preparation for TS
+
 module.exports = {
   clientIdGithub: process.env.REACT_APP_CLIENT_ID,
   clientSecretGithub: process.env.REACT_APP_CLIENT_SECRET,
