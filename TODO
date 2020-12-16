@@ -96,6 +96,7 @@ Todos:
         ✔ ts-node - ESM support: soliciting feedback - `https://github.com/TypeStrong/ts-node/issues/1007` @done(20-11-17 09:16)
         ☐ Setup a Typescript Project with ESlint, Prettier, EditorConfig and Husky - `https://dev.to/chuck_huey/setup-a-typescript-project-with-eslint-prettier-editorconfig-and-husky-13aa`
         ☐ Usefull npm project for yourself and team - `https://habr.com/ru/post/417429/`
+        ☐ React import from beginning to present days - `https://habr.com/ru/company/ruvds/blog/532338/`
         ☐ ES Modules in Depth - `https://ui.dev/esmodules/`
         ☐ Importing React Through the Ages - `https://epicreact.dev/importing-react-through-the-ages/`
         ☐ Deep dive into ES-modules in pictures -  `https://medium.com/web-standards/es-modules-cartoon-dive-71f42c1e851a`

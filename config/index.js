@@ -1,4 +1,5 @@
 // Preparation for TS
+// interface IConfig { }
 
 module.exports = {
   clientIdGithub: process.env.REACT_APP_CLIENT_ID,
