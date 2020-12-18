@@ -1,6 +1,7 @@
 // Preparation for TS
 // interface IConfig {
 //   clientIdGithub: string;
+//   clientSecretGithub: string;
 // }
 
 module.exports = {
