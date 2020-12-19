@@ -2,6 +2,7 @@
 // interface IConfig {
 //   clientIdGithub: string;
 //   clientSecretGithub: string;
+//   proxyUrl: string;
 // }
 
 module.exports = {
