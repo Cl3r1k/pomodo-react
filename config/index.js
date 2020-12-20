@@ -3,6 +3,7 @@
 //   clientIdGithub: string;
 //   clientSecretGithub: string;
 //   proxyUrl: string;
+//   redirectUri: string;
 // }
 
 module.exports = {
