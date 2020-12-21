@@ -4,6 +4,7 @@
 //   clientSecretGithub: string;
 //   proxyUrl: string;
 //   redirectUri: string;
+//   scope: string;
 // }
 
 module.exports = {
