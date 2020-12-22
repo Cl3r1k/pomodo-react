@@ -5,6 +5,7 @@
 //   proxyUrl: string;
 //   redirectUri: string;
 //   scope: string;
+//   serverPort: string;
 // }
 
 module.exports = {
