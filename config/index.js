@@ -6,6 +6,7 @@
 //   redirectUri: string;
 //   scope: string;
 //   serverPort: string;
+//   someConfigProperty: string;
 // }
 
 module.exports = {
