@@ -142,8 +142,8 @@ Todos:
           - 'react-router-dom' info (`https://reactrouter.com/web/guides/quick-start`)
           ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
         ✔ Use React context for authentication @done(20-07-13 08:43)
-        ☐ Implement Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK
-          ☐ Bump `minor` version after implement Github authentication
+        ☐ Implement Basic Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK
+          ✔ Bump `minor` version after implement Github authentication @done(20-12-30 09:00)
           - (Sign-in Github-popup example: `https://codesandbox.io/signin`)
 
           - Usefull Auth links:
