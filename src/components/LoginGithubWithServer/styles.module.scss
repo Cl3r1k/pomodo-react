@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 45%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #808080;
+  }
+
+  .errorMessage {
+    margin: 10px 0 20px 0;
+    color: red;
+  }
+
+  .loginWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 70%;
+    border-radius: 3px;
+    background-color: tan;
+    color: #fff;
+
+    .loginLink {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      // cursor: default;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    .loadingWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+    }
+
+    .loader {
+      width: 12px;
+      height: 12px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

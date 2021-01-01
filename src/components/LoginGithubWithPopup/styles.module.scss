@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #cecece;
+}
+
+.button {
+  margin: 5px 0;
+  background-color: #5151e8;
+}
+
+.info {
+  margin: 5px 0;
+}
+
+.error {
+  color: red;
+}
+
+.authText {
+  margin: 5px 0;
+  color: #75dd4b;
+}
