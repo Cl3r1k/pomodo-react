@@ -3,4 +3,8 @@ package.json
 package-lock.json
 public
 .eslintrc.js
+.eslintrc.cjs
+tsconfig.json
 .prettierrc.js
+.prettierrc.cjs
+prettier.config.cjs
