@@ -1,5 +1,6 @@
 // stylelint configuration
 // https://stylelint.io/user-guide/configure
+// https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configure.md#extends
 
 module.exports = {
   // The standard config based on a handful of CSS style guides
@@ -13,7 +14,7 @@ module.exports = {
   ],
 
   rules: {
-    // Disallow unknown properties
+    // Don't allow unknown properties
     // https://stylelint.io/user-guide/rules/property-no-unknown#property-no-unknown
     'property-no-unknown': [
       true,
@@ -52,6 +53,6 @@ module.exports = {
 
     // Specify the order of properties within declaration blocks
     // https://github.com/hudochenkov/stylelint-order/blob/master/rules/properties-order/README.md
-    'order/properties-order': ['width', 'height'],
+    'order/properties-order': ['position', 'width', 'height'],
   },
 };

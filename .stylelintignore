@@ -1,4 +1,13 @@
 # See https://stylelint.io/user-guide/ignore-code#files-entirely/ for more about ignoring files.
 
+# File patterns
+**/*.cjs
+**/*.json
+**/*.png
+**/*.ico
+**/*.old
+**/*.log
+
 # Single files
 metadata.json
+TODO
