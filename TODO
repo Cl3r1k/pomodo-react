@@ -129,7 +129,10 @@ Todos:
 
 
       ☐ Consider to use Babel with TS - `https://iamturns.com/typescript-babel/`
-      
+
+
+      ☐ Consider to replace 'node-sass' (LibSass and Node Sass are deprecated) (for example with 'dart-sass')
+
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)
         ✔ Implement autoincrement build @done(20-06-23 09:05)
