@@ -1,3 +1,5 @@
+// The old settings file for husky v4
+
 // Husky can prevent bad git commit, git push and more
 // https://github.com/typicode/husky
 // Supported git-hooks: https://git-scm.com/docs/githooks
