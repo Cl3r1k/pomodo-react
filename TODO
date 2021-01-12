@@ -82,7 +82,7 @@ Todos:
         ☐ Update React to version 17.0.0
 
 
-      ☐ Migrate to TS
+      ☐ Migrate to TS <========================================================= CURRENT TASK
         ☐ A simple guide for migrating from JavaScript to TypeScript - `https://blog.logrocket.com/a-simple-guide-for-migrating-from-javascript-to-typescript/`
 
 
@@ -146,7 +146,7 @@ Todos:
           - 'react-router-dom' info (`https://reactrouter.com/web/guides/quick-start`)
           ✔ Consider to extract 'routes' logic to separate file @done(20-07-13 09:00)
         ✔ Use React context for authentication @done(20-07-13 08:43)
-        ✔ Implement Basic Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) <========================================================= CURRENT TASK @done(20-12-31 10:18)
+        ✔ Implement Basic Github authentication (`https://docs.github.com/en/developers/apps/authorizing-oauth-apps`) @done(20-12-31 10:18)
           ✔ Bump `minor` version after implement Github authentication @done(20-12-30 09:00)
           - (Sign-in Github-popup example: `https://codesandbox.io/signin`)
 
