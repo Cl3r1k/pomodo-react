@@ -78,12 +78,15 @@ Todos:
 
 
       ☐ Update CRA and React to latest version
-        ☐ Update CRA to version 4.0.1
+        ✔ Update CRA to version 4.0.1 @done(21-01-12 09:13)
         ☐ Update React to version 17.0.0
 
 
       ☐ Migrate to TS <========================================================= CURRENT TASK
         ☐ A simple guide for migrating from JavaScript to TypeScript - `https://blog.logrocket.com/a-simple-guide-for-migrating-from-javascript-to-typescript/`
+
+      
+      ☐ Replace 'node-sass' (LibSass and Node Sass are deprecated `https://sass-lang.com/blog/libsass-is-deprecated`) (for example with 'dart-sass' `https://sass-lang.com/dart-sass`)
 
 
       ☐ Node.js with Typescript
@@ -130,9 +133,6 @@ Todos:
 
 
       ☐ Consider to use Babel with TS - `https://iamturns.com/typescript-babel/`
-
-
-      ☐ Consider to replace 'node-sass' (LibSass and Node Sass are deprecated) (for example with 'dart-sass')
 
 
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)
