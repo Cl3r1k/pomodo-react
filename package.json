@@ -2,6 +2,7 @@
   "name": "pomodo-react",
   "version": "0.2.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "postinstall": "husky install",
     "lint-staged": "lint-staged",
@@ -17,7 +18,7 @@
     "lint-styles:fix": "stylelint --fix ./src",
     "lint:fix": "npm run lint-code:fix && npm run lint-styles:fix",
     "prettier": "prettier --write ./src",
-    "update-build": "node ./generate.build.js",
+    "update-build": "node --experimental-specifier-resolution=node --loader ts-node/esm ./generate.build.ts",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
