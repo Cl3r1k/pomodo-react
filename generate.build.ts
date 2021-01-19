@@ -10,6 +10,7 @@ import packageFile from './package.json';
 
 const packageVersion = packageFile.version;
 
+// TODO: Move 'metadata.json' to base directory, and update related method
 readFile('src/metadata.json', (err, content) => {
   if (err) throw err;
 
