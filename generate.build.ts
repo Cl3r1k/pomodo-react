@@ -10,8 +10,7 @@ import packageFile from './package.json';
 
 const packageVersion = packageFile.version;
 
-// TODO: Move 'metadata.json' to base directory, and update related method
-readFile('src/metadata.json', (err, content) => {
+readFile('metadata.json', (err, content) => {
   if (err) throw err;
 
   // @ts-ignore
@@ -20,7 +19,7 @@ readFile('src/metadata.json', (err, content) => {
   metadata.build = `000${+metadata.build + 1}`.slice(-4);
   metadata.version = `${packageVersion}.${metadata.build}`;
 
-  writeFile('src/metadata.json', JSON.stringify(metadata), errWrite => {
+  writeFile('metadata.json', JSON.stringify(metadata), errWrite => {
     if (errWrite) throw errWrite;
 
     console.info(
