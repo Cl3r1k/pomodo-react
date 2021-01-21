@@ -6,10 +6,13 @@
   "scripts": {
     "postinstall": "husky install",
     "lint-staged": "lint-staged",
-    "server": "nodemon server/index.js",
+    "clear": "rmdir /S /Q build",
+    "server": "nodemon",
     "client": "craco start",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "craco build",
+    "build": "concurrently \"npm run build-server\" \"npm run build-client\"",
+    "build-server": "node server/index.ts",
+    "build-client": "craco build",
     "test": "craco test",
     "lint-code": "eslint --debug ./",
     "lint-styles": "stylelint ./",
@@ -19,6 +22,7 @@
     "lint:fix": "npm run lint-code:fix && npm run lint-styles:fix",
     "prettier": "prettier --write ./",
     "update-build": "node --experimental-specifier-resolution=node --loader ts-node/esm ./generate.build.ts",
+    "eslint-debug-loader": "eslint --debug ./.eslintrc.cjs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
