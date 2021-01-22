@@ -1,8 +1,13 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const FormData = require('form-data');
-const fetch = require('node-fetch');
-const config = require('../config');
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import express from 'express';
+import bodyParser from 'body-parser';
+import FormData from 'form-data';
+import fetch from 'node-fetch';
+import config from '../config';
 
 const app = express();
 
