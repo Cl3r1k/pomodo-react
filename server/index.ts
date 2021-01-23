@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import express from 'express';
+import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import FormData from 'form-data';
 import fetch from 'node-fetch';
-import config from '../config';
+import { config } from '../config';
 
 const app = express();
 
@@ -16,12 +15,12 @@ app.use(bodyParser.json({ type: 'text/*' }));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Enable Access-Control-Allow-Origin, '*' in the header so as to by-pass the CORS error
-app.use((req, res, next) => {
+app.use((_: Request, res: Response, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
 
-app.post('/authenticate', (req, res) => {
+app.post('/authenticate', (req: Request, res: Response) => {
   const {
     clientIdGithub,
     clientSecretGithub,
@@ -57,9 +56,9 @@ app.post('/authenticate', (req, res) => {
     .then(response => response.text())
     .then(paramString => {
       const params = new URLSearchParams(paramString);
-      const accessToken = params.get('access_token');
-      const scope = params.get('scope');
-      const tokenType = params.get('token_type');
+      const accessToken = params.get('access_token') || '';
+      const scope = params.get('scope') || '';
+      const tokenType = params.get('token_type') || '';
 
       // Request to return data of a user that has been authenticated
       return fetch(
@@ -75,9 +74,9 @@ app.post('/authenticate', (req, res) => {
     });
 });
 
-app.get('/', (req, res) => {
+app.get('/', (_: Request, res: Response) => {
   res.status(200).json(`
-    Avaialable server routes:
+    Available server routes:
     GET '/':                  list of routes (API) (this page)
     GET '/config':            route for test config access (from .env file through alias @config)
     POST '/authenticate':     proxy route to use authenticate API from other providers
@@ -88,25 +87,25 @@ app.get('/', (req, res) => {
   `);
 });
 
-app.get('/config', (req, res) => {
+app.get('/config', (_: Request, res: Response) => {
   res
     .status(200)
-    .json(`GET /config - respone config.serverPort: ${config.serverPort}`);
+    .json(`GET /config - response config.serverPort: ${config.serverPort}`);
 });
 
-app.get('/users', (req, res) => {
+app.get('/users', (_: Request, res: Response) => {
   res.status(200).json('GET /users - list from DB (mongo - mongoose?)');
 });
 
-app.get('/user', (req, res) => {
+app.get('/user', (_: Request, res: Response) => {
   res.status(200).json('GET /user - get user from DB');
 });
 
-app.post('/user', (req, res) => {
+app.post('/user', (_: Request, res: Response) => {
   res.status(200).json('POST /user - create user in DB');
 });
 
-app.patch('/user', (req, res) => {
+app.patch('/user', (_: Request, res: Response) => {
   res.status(200).json('PATCH /user - update user in DB');
 });
 

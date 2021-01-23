@@ -1,15 +1,14 @@
-// Preparation for TS
-// interface IConfig {
-//   clientIdGithub: string;
-//   clientSecretGithub: string;
-//   proxyUrl: string;
-//   redirectUri: string;
-//   scope: string;
-//   serverPort: string;
-//   someConfigProperty: string;
-// }
+interface IConfig {
+  clientIdGithub: string;
+  clientSecretGithub: string;
+  proxyUrl: string;
+  redirectUri: string;
+  scope: string;
+  serverPort: string;
+  someConfigProperty: string;
+}
 
-module.exports = {
+export const config: IConfig = {
   clientIdGithub: process.env.REACT_APP_CLIENT_ID || '',
   clientSecretGithub: process.env.REACT_APP_CLIENT_SECRET || '',
   proxyUrl: process.env.REACT_APP_PROXY_URL || '',
