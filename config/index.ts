@@ -1,14 +1,6 @@
-interface IConfig {
-  clientIdGithub: string;
-  clientSecretGithub: string;
-  proxyUrl: string;
-  redirectUri: string;
-  scope: string;
-  serverPort: string;
-  someConfigProperty: string;
-}
+import { TConfig } from '@config/types';
 
-export const config: IConfig = {
+export const config: TConfig = {
   clientIdGithub: process.env.REACT_APP_CLIENT_ID || '',
   clientSecretGithub: process.env.REACT_APP_CLIENT_SECRET || '',
   proxyUrl: process.env.REACT_APP_PROXY_URL || '',
