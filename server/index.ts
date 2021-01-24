@@ -1,12 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import FormData from 'form-data';
 import fetch from 'node-fetch';
-import { config } from '../config';
+import { TAuthenticationRequest } from '@server/types';
+import { config } from '@config/index';
 
 const app = express();
 
@@ -27,7 +24,7 @@ app.post('/authenticate', (req: Request, res: Response) => {
     redirectUri,
     code,
     provider,
-  } = req.body;
+  } = req.body as TAuthenticationRequest;
 
   console.info('server post ::: req.body: ', req.body);
   console.info('provider: ', provider);

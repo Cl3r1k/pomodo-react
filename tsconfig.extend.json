@@ -11,8 +11,8 @@
       "@services/*": ["src/services/*"],
       "@styles/*": ["src/styles/*"],
       "@extTypes/*": ["src/types/*"],
-      "@config": ["config/index"],
-      "@server": ["server/index"]
+      "@config/*": ["config/*"],
+      "@server/*": ["server/*"]
     }
   }
 }
