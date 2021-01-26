@@ -1,6 +1,6 @@
 // TODO: Type all disabled errors
+
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 // DESCRIPTION: Take current version from package.json, update build from metadata.json, combine it and save
 
 import { readFile, writeFile } from 'fs';
@@ -15,6 +15,8 @@ const packageVersion = packageFile.version;
 
 readFile('metadata.json', (err, content) => {
   if (err) throw err;
+
+  // const contentString = '{"build":"1123", "version":"0.1"}';
 
   // @ts-ignore
   const metadata: TMetadata = JSON.parse(content);
