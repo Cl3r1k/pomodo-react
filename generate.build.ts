@@ -1,5 +1,5 @@
 // TODO: Type all disabled errors
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // DESCRIPTION: Take current version from package.json, update build from metadata.json, combine it and save
 
@@ -12,6 +12,10 @@ type TMetadata = {
 };
 
 const packageVersion = packageFile.version;
+
+// function isTMetadata(obj: any): obj is TMetadata {
+//   return 'build' in obj && 'version' in obj;
+// }
 
 readFile('metadata.json', (err, content) => {
   if (err) throw err;
