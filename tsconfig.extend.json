@@ -4,15 +4,16 @@
     "paths": {
       "@actions/*": ["src/actions/*"],
       "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
+      "@config/*": ["config/*"],
       "@context/*": ["src/context/*"],
+      "@constants/*": ["src/constants/*"],
+      "@extTypes/*": ["src/types/*"],
       "@hooks/*": ["src/hooks/*"],
       "@reducers/*": ["src/reducers/*"],
+      "@server/*": ["server/*"],
       "@services/*": ["src/services/*"],
       "@styles/*": ["src/styles/*"],
-      "@extTypes/*": ["src/types/*"],
-      "@config/*": ["config/*"],
-      "@server/*": ["server/*"]
+      "@utils/*": ["utils/*"]
     }
   }
 }

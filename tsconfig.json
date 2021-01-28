@@ -37,6 +37,7 @@
     "config",
     "src",
     "server",
+    "utils",
     "generate.build.ts"
   ]
 }
