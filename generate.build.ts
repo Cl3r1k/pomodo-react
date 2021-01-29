@@ -1,9 +1,9 @@
 // TODO: Type all disabled errors
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // DESCRIPTION: Take current version from package.json, update build from metadata.json, combine it and save
 
 import { readFile, writeFile } from 'fs';
+import { safeJsonParse } from './utils';
 import packageFile from './package.json';
 
 type TMetadata = {
@@ -11,34 +11,36 @@ type TMetadata = {
   version: string;
 };
 
-const packageVersion = packageFile.version;
+function isTMetadata(obj: any): obj is TMetadata {
+  return 'build' in obj && 'version' in obj;
+}
 
-// function isTMetadata(obj: any): obj is TMetadata {
-//   return 'build' in obj && 'version' in obj;
-// }
+const packageVersion = packageFile.version;
 
 readFile('metadata.json', (err, content) => {
   if (err) throw err;
 
-  // const contentString = '{"build":"1123", "version":"0.1"}';
-
   // @ts-ignore
-  const metadata: TMetadata = JSON.parse(content);
+  const parsedJson = safeJsonParse(isTMetadata)(content);
 
-  metadata.build = `000${+metadata.build + 1}`.slice(-4);
-  metadata.version = `${packageVersion}.${metadata.build}`;
+  if (!parsedJson.hasError) {
+    const metadata: TMetadata = parsedJson.parsed;
 
-  writeFile('metadata.json', JSON.stringify(metadata), errWrite => {
-    if (errWrite) throw errWrite;
+    metadata.build = `000${+metadata.build + 1}`.slice(-4);
+    metadata.version = `${packageVersion}.${metadata.build}`;
 
-    console.info(
-      '\x1b[36m',
-      'Build version set to: ',
-      '\x1b[32m',
-      metadata.version,
-      '\x1b[0m'
-    );
-  });
+    writeFile('metadata.json', JSON.stringify(metadata), errWrite => {
+      if (errWrite) throw errWrite;
+
+      console.info(
+        '\x1b[36m',
+        'Build version set to: ',
+        '\x1b[32m',
+        metadata.version,
+        '\x1b[0m'
+      );
+    });
+  }
 });
 
 // Idea took from here `https://github.com/facebook/create-react-app/issues/1917#issuecomment-291468057`
