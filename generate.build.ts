@@ -1,6 +1,4 @@
-// TODO: Type all disabled errors
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// DESCRIPTION: Take current version from package.json, update build from metadata.json, combine it and save
+// DESCRIPTION: Take the current version from the 'package.json', update build from 'metadata.json', combine it and save
 
 import { readFile, writeFile } from 'fs';
 import { safeJsonParse } from './utils';
@@ -20,14 +18,17 @@ const packageVersion = packageFile.version;
 readFile('metadata.json', (err, content) => {
   if (err) throw err;
 
-  // @ts-ignore
-  const parsedJson = safeJsonParse(isTMetadata)(content);
+  const parsedJson = safeJsonParse(isTMetadata)(content.toString());
 
   if (!parsedJson.hasError) {
-    const metadata: TMetadata = parsedJson.parsed;
+    const { build } = parsedJson.parsed;
 
-    metadata.build = `000${+metadata.build + 1}`.slice(-4);
-    metadata.version = `${packageVersion}.${metadata.build}`;
+    const newBuild = `000${+build + 1}`.slice(-4);
+
+    const metadata = {
+      build: newBuild,
+      version: `${packageVersion}.${newBuild}`,
+    };
 
     writeFile('metadata.json', JSON.stringify(metadata), errWrite => {
       if (errWrite) throw errWrite;
@@ -43,4 +44,4 @@ readFile('metadata.json', (err, content) => {
   }
 });
 
-// Idea took from here `https://github.com/facebook/create-react-app/issues/1917#issuecomment-291468057`
+// The idea took from here `https://github.com/facebook/create-react-app/issues/1917#issuecomment-291468057`
