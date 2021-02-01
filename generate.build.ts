@@ -1,7 +1,7 @@
 // DESCRIPTION: Take the current version from the 'package.json', update build from 'metadata.json', combine it and save
 
 import { readFile, writeFile } from 'fs';
-import { safeJsonParse } from './utils';
+import { safeJsonParse } from './utils/common';
 import packageFile from './package.json';
 
 type TMetadata = {

@@ -1,5 +1,4 @@
 // Utils
-import { delay, delayCallback } from '@services/utils';
 import {
   TCredentials,
   TAuthSignInDispatch,
@@ -8,9 +7,8 @@ import {
   SIGN_IN,
   SIGN_OUT,
 } from '@actions/types';
-
-const validateCredentials = ({ email, password }: TCredentials): boolean =>
-  email === 'Us3r@gmail.com' && password === 'p@ssw0rd';
+import { delay, delayCallback } from '@services/utils';
+import { validateCredentials } from '@utils/validation';
 
 export const authSignIn = async (
   authSignInDispatch: TAuthSignInDispatch,
