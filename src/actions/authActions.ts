@@ -7,7 +7,7 @@ import {
   SIGN_IN,
   SIGN_OUT,
 } from '@actions/types';
-import { delay, delayCallback } from '@services/utils';
+import { delay, delayCallback } from '@utils/common';
 import { validateCredentials } from '@utils/validation';
 
 export const authSignIn = async (
