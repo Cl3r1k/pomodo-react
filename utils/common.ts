@@ -22,7 +22,7 @@ export const delay = (ms: number): Promise<void> =>
 export const delayCallback = (cb: (...args: unknown[]) => void, ms: number) =>
   setTimeout(cb, ms);
 
-// export const combineToQuery = (params, delimiter = '&') => {
+// export const combineToQuery = <T>(params: T, delimiter = '&') => {
 //   const keys = Object.keys(params);
 
 //   return keys.reduce((acc, key, idx) => {
