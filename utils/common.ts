@@ -34,12 +34,12 @@ export const delayCallback = (cb: (...args: unknown[]) => void, ms: number) =>
 //   }, '');
 // };
 
-// export const combineToParams = query => {
-//   const q = query.replace(/^\??\//, '');
+export const combineToParams = (query: string) => {
+  const q = query.replace(/^\??\//, '');
 
-//   return q.split('&').reduce((values, param) => {
-//     const [key, value] = param.split('=');
+  return q.split('&').reduce((values, param) => {
+    const [key, value] = param.split('=');
 
-//     return { ...values, [key]: value };
-//   }, {});
-// };
+    return { ...values, [key]: value };
+  }, {});
+};
