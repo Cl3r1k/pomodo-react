@@ -22,7 +22,7 @@ export const delayCallback = (cb: (...args: unknown[]) => void, ms: number) =>
   setTimeout(cb, ms);
 
 // export const combineToQuery = <T>(params: T, delimiter = '&'): string => {
-//   const keys = Object.keys(params);
+//   const keys: string[] = Object.keys(params);
 
 //   return keys.reduce((acc, key, idx) => {
 //     const param = `${acc}${key}=${params[key]}`;
