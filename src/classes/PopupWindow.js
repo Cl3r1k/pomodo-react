@@ -1,4 +1,9 @@
-import { combineToQuery, combineToParams } from 'services/utils';
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { combineToQuery, combineToParams } from '@utils/common';
 
 export class PopupWindow {
   static open(...args) {

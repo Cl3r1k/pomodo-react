@@ -121,6 +121,9 @@ Todos:
         ☐ JavaScript modules - `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules`
         ☐ A Deep Dive Into JavaScript Modules - `https://blog.bitsrc.io/a-deep-dive-into-javascript-modules-550ad88d8839`
         ☐ TypeScript and ECMAScript Modules - `https://fettblog.eu/typescript-and-es-modules/`
+        ☐ Using ES Modules (ESM) in Node.js: A Practical Guide (Part 1) - `https://gils-blog.tayar.org/posts/using-jsm-esm-in-nodejs-a-practical-guide-part-1/`
+        ☐ Using ES Modules (ESM) in Node.js: A Practical Guide (Part 2) - `https://gils-blog.tayar.org/posts/using-jsm-esm-in-nodejs-a-practical-guide-part-2/`
+        ☐ Using ES Modules (ESM) in Node.js: A Practical Guide (Part 3) - `https://gils-blog.tayar.org/posts/using-jsm-esm-in-nodejs-a-practical-guide-part-3/`
 
       ☐ Fullstack example (React, Vue, TypeScript, Express, Mongoose) - `https://habr.com/ru/post/534622/`
 
