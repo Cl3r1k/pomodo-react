@@ -5,6 +5,15 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { combineToQuery, combineToParams } from '@utils/common';
 
+// type TWindow = {
+//   top: {
+//     outerHeight: number;
+//     outerWidth: number;
+//     screenX: number;
+//     screenY: number;
+//   };
+// };
+
 export class PopupWindow {
   static open(...args) {
     const popup = new this(...args);
