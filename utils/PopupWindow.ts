@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -15,7 +18,8 @@ import { combineToQuery, combineToParams } from '@utils/common';
 // };
 
 export class PopupWindow {
-  static open(...args) {
+  static open(...args: any[]) {
+    // @ts-ignore
     const popup = new this(...args);
 
     popup.open();
@@ -26,17 +30,22 @@ export class PopupWindow {
 
   constructor(
     id = '',
-    url,
+    url: any,
     parentWindow = {},
     options = { width: 600, height: 400 }
   ) {
+    // @ts-ignore
     this.id = id;
+    // @ts-ignore
     this.url = url;
+    // @ts-ignore
     this.parentWindow = parentWindow;
+    // @ts-ignore
     this.options = options;
   }
 
   open() {
+    // @ts-ignore
     const { url, id, parentWindow, options } = this;
     const { top } = parentWindow;
     const { height, width } = options;
@@ -44,6 +53,7 @@ export class PopupWindow {
     const y = top ? top.outerHeight / 2 + top.screenY - height / 2 : 0;
     const x = top ? top.outerWidth / 2 + top.screenX - width / 2 : 0;
 
+    // @ts-ignore
     this.window = window.open(
       url,
       id,
@@ -53,13 +63,17 @@ export class PopupWindow {
 
   close() {
     this.cancel();
+    // @ts-ignore
     this.window.close();
   }
 
   poll() {
+    // @ts-ignore
     this.promise = new Promise((resolve, reject) => {
+      // @ts-ignore
       this.iid = window.setInterval(() => {
         try {
+          // @ts-ignore
           const popup = this.window;
 
           if (!popup || popup.closed !== false) {
@@ -71,6 +85,7 @@ export class PopupWindow {
           }
 
           if (
+            // @ts-ignore
             popup.location.href === this.url ||
             popup.location.pathname === 'blank'
           ) {
@@ -97,17 +112,22 @@ export class PopupWindow {
   }
 
   cancel() {
+    // @ts-ignore
     if (this.iid) {
+      // @ts-ignore
       clearInterval(this.iid);
+      // @ts-ignore
       this.iid = null;
     }
   }
 
-  then(...args) {
+  then(...args: any[]) {
+    // @ts-ignore
     return this.promise.then(...args);
   }
 
-  catch(...args) {
+  catch(...args: any[]) {
+    // @ts-ignore
     return this.promise.then(...args);
   }
 }
