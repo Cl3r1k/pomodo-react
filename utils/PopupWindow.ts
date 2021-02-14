@@ -7,17 +7,17 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { combineToQuery, combineToParams } from '@utils/common';
-
-// type TWindow = {
-//   top: {
-//     outerHeight: number;
-//     outerWidth: number;
-//     screenX: number;
-//     screenY: number;
-//   };
-// };
+import { TOptions, TParentWindow } from '@utils/types';
 
 export class PopupWindow {
+  id: string;
+  url: string;
+  parentWindow: TParentWindow | Window;
+  options: TOptions;
+  iid: number | null;
+  promise: Promise<Record<string, string> | undefined> | null;
+  window: Window | null;
+
   static open(...args: any[]) {
     // @ts-ignore
     const popup = new this(...args);
@@ -30,22 +30,21 @@ export class PopupWindow {
 
   constructor(
     id = '',
-    url: any,
+    url = '',
     parentWindow = {},
     options = { width: 600, height: 400 }
   ) {
-    // @ts-ignore
     this.id = id;
-    // @ts-ignore
     this.url = url;
-    // @ts-ignore
     this.parentWindow = parentWindow;
-    // @ts-ignore
     this.options = options;
+
+    this.iid = null;
+    this.promise = null;
+    this.window = null; // @TODO: Check first this line, if something with popup works incorrectly
   }
 
   open() {
-    // @ts-ignore
     const { url, id, parentWindow, options } = this;
     const { top } = parentWindow;
     const { height, width } = options;
@@ -53,7 +52,6 @@ export class PopupWindow {
     const y = top ? top.outerHeight / 2 + top.screenY - height / 2 : 0;
     const x = top ? top.outerWidth / 2 + top.screenX - width / 2 : 0;
 
-    // @ts-ignore
     this.window = window.open(
       url,
       id,
@@ -63,17 +61,13 @@ export class PopupWindow {
 
   close() {
     this.cancel();
-    // @ts-ignore
-    this.window.close();
+    this.window?.close();
   }
 
   poll() {
-    // @ts-ignore
     this.promise = new Promise((resolve, reject) => {
-      // @ts-ignore
       this.iid = window.setInterval(() => {
         try {
-          // @ts-ignore
           const popup = this.window;
 
           if (!popup || popup.closed !== false) {
@@ -85,7 +79,6 @@ export class PopupWindow {
           }
 
           if (
-            // @ts-ignore
             popup.location.href === this.url ||
             popup.location.pathname === 'blank'
           ) {
@@ -112,22 +105,17 @@ export class PopupWindow {
   }
 
   cancel() {
-    // @ts-ignore
     if (this.iid) {
-      // @ts-ignore
       clearInterval(this.iid);
-      // @ts-ignore
       this.iid = null;
     }
   }
 
   then(...args: any[]) {
-    // @ts-ignore
-    return this.promise.then(...args);
+    return this.promise?.then(...args);
   }
 
   catch(...args: any[]) {
-    // @ts-ignore
-    return this.promise.then(...args);
+    return this.promise?.then(...args);
   }
 }
