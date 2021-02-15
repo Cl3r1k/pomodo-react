@@ -1,11 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/restrict-plus-operands */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { combineToQuery, combineToParams } from '@utils/common';
 import { TOptions, TParentWindow } from '@utils/types';
 
@@ -18,8 +10,15 @@ export class PopupWindow {
   promise: Promise<Record<string, string> | undefined> | null;
   window: Window | null;
 
-  static open(...args: any[]) {
-    // @ts-ignore
+  static open(
+    ...args: [
+      id: string,
+      url: string,
+      parentWindow: TParentWindow | Window,
+      options: TOptions,
+      ...rest: unknown[]
+    ]
+  ): PopupWindow {
     const popup = new this(...args);
 
     popup.open();
@@ -31,8 +30,9 @@ export class PopupWindow {
   constructor(
     id = '',
     url = '',
-    parentWindow = {},
-    options = { width: 600, height: 400 }
+    parentWindow: TParentWindow | Window = {},
+    options: TOptions = { width: 600, height: 400 },
+    ..._: unknown[]
   ) {
     this.id = id;
     this.url = url;
@@ -44,7 +44,7 @@ export class PopupWindow {
     this.window = null; // @TODO: Check first this line, if something with popup works incorrectly
   }
 
-  open() {
+  open(): void {
     const { url, id, parentWindow, options } = this;
     const { top } = parentWindow;
     const { height, width } = options;
@@ -59,13 +59,13 @@ export class PopupWindow {
     );
   }
 
-  close() {
+  close(): void {
     this.cancel();
     this.window?.close();
   }
 
-  poll() {
-    this.promise = new Promise((resolve, reject) => {
+  poll(): void {
+    this.promise = new Promise((resolve, reject, ..._: unknown[]) => {
       this.iid = window.setInterval(() => {
         try {
           const popup = this.window;
@@ -104,18 +104,18 @@ export class PopupWindow {
     });
   }
 
-  cancel() {
+  cancel(): void {
     if (this.iid) {
       clearInterval(this.iid);
       this.iid = null;
     }
   }
 
-  then(...args: any[]) {
+  then(...args: [res: () => void, rej: () => void]): Promise<void> | void {
     return this.promise?.then(...args);
   }
 
-  catch(...args: any[]) {
+  catch(...args: [res: () => void, rej: () => void]): Promise<void> | void {
     return this.promise?.then(...args);
   }
 }
