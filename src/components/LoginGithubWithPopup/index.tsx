@@ -1,29 +1,30 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React, { useState, useEffect } from 'react';
 
 // Hooks
-import { useAuthState } from 'hooks/useAuthState';
+import { useAuthState } from '@hooks/useAuthState';
 
 // Utils
-import { combineToQuery } from 'services/utils';
-import { PopupWindow } from 'classes/PopupWindow';
+import { combineToQuery } from '@utils/common';
+import { PopupWindow } from '@utils/PopupWindow';
+import { TResolveData, TRejectError } from '@utils/types';
 
 // Constants
-import {
-  clientIdGithub,
-  redirectUri,
-  scope,
-  proxyUrl,
-} from 'constants/api.config';
+import { config } from '@config/index';
 
 // Styles
 import styles from './styles.module.scss';
 
-export const LoginGithubWithPopup = () => {
+export const LoginGithubWithPopup: React.FC = () => {
   const { isAuthenticated } = useAuthState();
   const [authGhData, setAuthGhData] = useState({
     isLoading: false,
     errorMessage: '',
   });
+  const { clientIdGithub, redirectUri, scope, proxyUrl } = config;
 
   useEffect(() => {
     // alert(
@@ -39,7 +40,7 @@ export const LoginGithubWithPopup = () => {
     }
   }, []);
 
-  const handleSuccessAuth = ({ code }) => {
+  const handleSuccessAuth = ({ code }: TResolveData) => {
     console.info('handleSuccessAuth() popup.then() code: ', code);
     // console.info('handleSuccessAuth() authGhData: ', authGhData);
     // Here we should use our proxy-server to perform 'login/oauth/access_token' request and then
@@ -69,7 +70,7 @@ export const LoginGithubWithPopup = () => {
     }
   };
 
-  const handleErrorAuth = error => {
+  const handleErrorAuth = ({ error }: TRejectError): void => {
     console.info('handleErrorAuth() popup.then() error: ', error);
     // console.info('handleErrorAuth() authGhData: ', authGhData);
     setAuthGhData({
@@ -80,10 +81,10 @@ export const LoginGithubWithPopup = () => {
 
   // TODO: Used example https://github.com/checkr/react-github-login/blob/master/src/GitHubLogin.js
   // Replication: https://codesandbox.io/s/festive-mclaren-ovr4f?file=/src/PopupWindow.js
-  const handleOnClickLogin = () => {
+  const handleOnClickLogin = (): void => {
     console.info('handleOnClickLogin() called');
 
-    setAuthGhData({ isLoading: true });
+    setAuthGhData({ ...authGhData, isLoading: true });
 
     console.info('authGhData: ', authGhData);
 
@@ -105,8 +106,8 @@ export const LoginGithubWithPopup = () => {
     console.info('popup: ', popup);
 
     popup.then(
-      data => handleSuccessAuth(data),
-      error => handleErrorAuth(error)
+      (data: TResolveData) => handleSuccessAuth(data),
+      (error: TRejectError) => handleErrorAuth(error)
     );
   };
 

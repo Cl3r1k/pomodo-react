@@ -1,5 +1,10 @@
 import { combineToQuery, combineToParams } from '@utils/common';
-import { TOptions, TParentWindow } from '@utils/types';
+import {
+  TOptions,
+  TParentWindow,
+  TResolveData,
+  TRejectError,
+} from '@utils/types';
 
 export class PopupWindow {
   id: string;
@@ -65,7 +70,7 @@ export class PopupWindow {
   }
 
   poll(): void {
-    this.promise = new Promise((resolve, reject, ..._: unknown[]) => {
+    this.promise = new Promise((resolve, reject) => {
       this.iid = window.setInterval(() => {
         try {
           const popup = this.window;
@@ -73,7 +78,7 @@ export class PopupWindow {
           if (!popup || popup.closed !== false) {
             this.close();
 
-            reject(new Error('The popup was closed'));
+            reject({ error: 'The popup was closed' });
 
             return undefined;
           }
@@ -97,6 +102,7 @@ export class PopupWindow {
            * Ignore DOMException: Blocked a frame with origin from accessing a
            * cross-origin frame
            */
+          reject({ error: 'Something went wrong!' });
         }
 
         return undefined;
@@ -111,11 +117,16 @@ export class PopupWindow {
     }
   }
 
-  then(...args: [res: () => void, rej: () => void]): Promise<void> | void {
-    return this.promise?.then(...args);
+  then(
+    res: (data: TResolveData) => void,
+    rej: (error: TRejectError) => void
+  ): Promise<void> | void {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    return this.promise?.then(res, rej);
   }
 
-  catch(...args: [res: () => void, rej: () => void]): Promise<void> | void {
-    return this.promise?.then(...args);
+  catch(res: () => void, rej: () => void): Promise<void> | void {
+    return this.promise?.then(res, rej);
   }
 }

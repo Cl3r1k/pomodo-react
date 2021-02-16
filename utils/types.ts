@@ -11,3 +11,11 @@ export type TParentWindow = {
     outerWidth: number;
   };
 };
+
+export type TResolveData = {
+  code?: string;
+};
+
+export type TRejectError = {
+  error: string;
+};
