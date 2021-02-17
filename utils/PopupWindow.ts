@@ -12,7 +12,7 @@ export class PopupWindow {
   parentWindow: TParentWindow | Window;
   options: TOptions;
   iid: number | null;
-  promise: Promise<Record<string, string> | undefined> | null;
+  promise: Promise<Record<string, string>> | null;
   window: Window | null;
 
   static open(
@@ -118,11 +118,9 @@ export class PopupWindow {
   }
 
   then(
-    res: (data: TResolveData) => void,
-    rej: (error: TRejectError) => void
+    res: (value: TResolveData) => Promise<void> | void,
+    rej: (error: TRejectError) => Promise<void> | void
   ): Promise<void> | void {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     return this.promise?.then(res, rej);
   }
 

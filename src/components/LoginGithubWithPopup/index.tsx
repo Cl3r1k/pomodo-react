@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React, { useState, useEffect } from 'react';
 
 // Hooks
@@ -40,7 +37,7 @@ export const LoginGithubWithPopup: React.FC = () => {
     }
   }, []);
 
-  const handleSuccessAuth = ({ code }: TResolveData) => {
+  const handleSuccessAuth = ({ code }: TResolveData): void => {
     console.info('handleSuccessAuth() popup.then() code: ', code);
     // console.info('handleSuccessAuth() authGhData: ', authGhData);
     // Here we should use our proxy-server to perform 'login/oauth/access_token' request and then
@@ -60,11 +57,11 @@ export const LoginGithubWithPopup: React.FC = () => {
           console.info('Successfull data: ', data);
           setAuthGhData({ isLoading: false, errorMessage: '' });
         })
-        .catch(err => {
+        .catch((err: Error) => {
           console.info('Failed from proxyServer: err: ', err);
           setAuthGhData({
             isLoading: false,
-            errorMessage: `Login failed (proxy): error: ${err}`,
+            errorMessage: `Login failed (proxy): error: ${err.message}`,
           });
         });
     }
