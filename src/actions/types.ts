@@ -20,4 +20,8 @@ export type TAuthSignOutDispatch = React.Dispatch<TAuthSignOut>;
 
 export type TAuthCallback = () => void;
 
-export type TReducibleActions = TAuthSignIn | TAuthSignOut;
+export type TReducibleAuthActions = TAuthSignIn | TAuthSignOut;
+
+export type TReducibleAuthDispatchers =
+  | TAuthSignInDispatch
+  | TAuthSignOutDispatch;
