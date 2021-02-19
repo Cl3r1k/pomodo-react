@@ -53,6 +53,7 @@ module.exports = {
      * @description rules of 'eslint-plugin-react'
      */
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tx', '.tsx'] }],    // Allow file extensions that may contain JSX
+    'react/prop-types': 'off',                                                              // Prevent missing props validation in a React component definition
 
     /**
      * @description rules of @typescript-eslint

@@ -1,18 +1,20 @@
 import React, { useReducer } from 'react';
-import PropTypes from 'prop-types';
 
 // Context
-import { AuthStateContext, AuthDispatchContext } from 'context/AuthContext';
+import { AuthStateContext, AuthDispatchContext } from '@context/AuthContext';
 
 // Reducers
-import { authReducer } from 'reducers/authReducer';
+import { authReducer } from '@reducers/authReducer';
 
-const initialState = {
+// Types
+import { TAuthState } from '@context/types';
+
+const initialState: TAuthState = {
   isAuthenticated: false,
   user: null,
 };
 
-export const AuthContextProvider = ({ children }) => {
+export const AuthContextProvider: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
 
   return (
@@ -22,12 +24,4 @@ export const AuthContextProvider = ({ children }) => {
       </AuthDispatchContext.Provider>
     </AuthStateContext.Provider>
   );
-};
-
-AuthContextProvider.propTypes = {
-  children: PropTypes.element,
-};
-
-AuthContextProvider.defaultProps = {
-  children: undefined,
 };
