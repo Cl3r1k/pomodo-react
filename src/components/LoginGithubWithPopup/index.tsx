@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { useState, useEffect } from 'react';
 
 // Hooks

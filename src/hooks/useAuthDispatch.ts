@@ -1,7 +1,12 @@
 import { useContext } from 'react';
-import { AuthDispatchContext } from 'context/AuthContext';
 
-export const useAuthDispatch = () => {
+// Context
+import { AuthDispatchContext } from '@context/AuthContext';
+
+// Types
+import { TReducibleAuthDispatchers } from '@actions/types';
+
+export const useAuthDispatch = (): TReducibleAuthDispatchers => {
   const authDispatch = useContext(AuthDispatchContext);
 
   if (authDispatch === undefined) {
