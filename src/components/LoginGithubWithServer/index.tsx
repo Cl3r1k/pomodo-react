@@ -1,24 +1,28 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
 // Hooks
-import { useAuthState } from 'hooks/useAuthState';
-import { useAuthDispatch } from 'hooks/useAuthDispatch';
+import { useAuthState } from '@hooks/useAuthState';
+import { useAuthDispatch } from '@hooks/useAuthDispatch';
 
 // Constants
-import {
+import { config } from '@config/index';
+
+// Assets
+import { ReactComponent as GithubIcon } from '@assets/github-logo.svg';
+import styles from './styles.module.scss';
+
+const {
   clientIdGithub,
   clientSecretGithub,
   proxyUrl,
   redirectUri,
   scope,
-} from 'constants/api.config';
+} = config;
 
-// Assets
-import { ReactComponent as GithubIcon } from 'assets/github-logo.svg';
-import styles from './styles.module.scss';
-
-export const LoginGithubWithServer = () => {
+export const LoginGithubWithServer: React.FC = () => {
   const { isAuthenticated } = useAuthState();
   const authDispatch = useAuthDispatch();
   const [authGhData, setAuthGhData] = useState({
@@ -39,7 +43,7 @@ export const LoginGithubWithServer = () => {
 
       // alert('<LoginGithubWithServer /> hasCode url: ', url);
 
-      window.history.pushState({}, null, newUrl[0]);
+      window.history.pushState({}, '', newUrl[0]);
       setAuthGhData({ ...authGhData, isLoading: true });
 
       const requestData = {
@@ -75,7 +79,9 @@ export const LoginGithubWithServer = () => {
           };
 
           authDispatch({
+            // @ts-ignore
             type: 'SIGN_IN',
+            // @ts-ignore
             payload: userData,
           });
         })
@@ -91,7 +97,7 @@ export const LoginGithubWithServer = () => {
 
   // console.info('clientIdGithub:', clientIdGithub, 'redirectUri: ', redirectUri);
 
-  const handleOnClick = () => {
+  const handleOnClick = (): void => {
     setAuthGhData({ ...authGhData, isLoading: true });
   };
 
