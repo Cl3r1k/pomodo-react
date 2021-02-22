@@ -88,6 +88,8 @@ Todos:
       
       ☐ Replace 'node-sass' (LibSass and Node Sass are deprecated `https://sass-lang.com/blog/libsass-is-deprecated`) (for example with 'dart-sass' `https://sass-lang.com/dart-sass`)
 
+      ☐ Consider to improve 'safeJsonParse' with generics, it should looks like safeJsonParse<T>(data); - e.g. without creation additional check function
+
 
       ☐ Node.js with Typescript
         ✔ Import statements in TypeScript: which syntax to use - `https://blog.atomist.com/typescript-imports/` @done(20-10-31 10:44)

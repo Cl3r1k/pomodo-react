@@ -7,12 +7,12 @@ export type TCredentials = {
 };
 
 export type TAuthSignIn = {
-  type: typeof SIGN_IN;
+  type: string;
   payload: string;
 };
 
 export type TAuthSignOut = {
-  type: typeof SIGN_OUT;
+  type: string;
 };
 
 export type TAuthSignInDispatch = React.Dispatch<TAuthSignIn>;

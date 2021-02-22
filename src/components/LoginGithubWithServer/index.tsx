@@ -1,11 +1,13 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
 // Hooks
 import { useAuthState } from '@hooks/useAuthState';
 import { useAuthDispatch } from '@hooks/useAuthDispatch';
+
+// Utils
+import { safeJsonParse } from '@utils/common';
 
 // Constants
 import { config } from '@config/index';
@@ -21,6 +23,22 @@ const {
   redirectUri,
   scope,
 } = config;
+
+type TGithubResponse = {
+  login: string;
+  id: string;
+  avatar_url: string;
+  public_repos: string;
+};
+
+const isTGithubResponse = (obj: any): obj is TGithubResponse => {
+  return (
+    'login' in obj &&
+    'id' in obj &&
+    'avatar_url' in obj &&
+    'public_repos' in obj
+  );
+};
 
 export const LoginGithubWithServer: React.FC = () => {
   const { isAuthenticated } = useAuthState();
@@ -64,12 +82,18 @@ export const LoginGithubWithServer: React.FC = () => {
         .then(data => {
           console.info('Successful login data: ', data);
 
+          const parsedJson = safeJsonParse(isTGithubResponse)(data);
+
+          if (parsedJson.hasError) {
+            return;
+          }
+
           const {
             login,
             id,
             avatar_url: avatarUrl,
             public_repos: publicRepos,
-          } = JSON.parse(data);
+          } = parsedJson.parsed;
 
           const userData = {
             login,
@@ -79,7 +103,6 @@ export const LoginGithubWithServer: React.FC = () => {
           };
 
           authDispatch({
-            // @ts-ignore
             type: 'SIGN_IN',
             // @ts-ignore
             payload: userData,
