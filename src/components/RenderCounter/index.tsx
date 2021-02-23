@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import React, { useRef } from 'react';
 
 // Component to track renders amount
@@ -7,7 +6,8 @@ import React, { useRef } from 'react';
 // used inline styles to reduce amount of splitting
 // Don't forget, that this component affects on DOM by placing container
 // e.g. it will affect on flex of Grids elements
-export const RenderCounter = () => {
+
+export const RenderCounter: React.FC = () => {
   const renderRef = useRef(0);
 
   return (

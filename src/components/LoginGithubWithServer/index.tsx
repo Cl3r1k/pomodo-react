@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
@@ -85,7 +84,7 @@ export const LoginGithubWithServer: React.FC = () => {
           const parsedJson = safeJsonParse(isTGithubResponse)(data);
 
           if (parsedJson.hasError) {
-            return;
+            throw new Error('Failed to parse response!');
           }
 
           const {
@@ -104,7 +103,6 @@ export const LoginGithubWithServer: React.FC = () => {
 
           authDispatch({
             type: 'SIGN_IN',
-            // @ts-ignore
             payload: userData,
           });
         })

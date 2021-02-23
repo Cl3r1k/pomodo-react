@@ -143,6 +143,9 @@ Todos:
       ☐ Consider to use Babel with TS - `https://iamturns.com/typescript-babel/`
 
 
+      ☐ Consider to use 'React Hook Form' - `https://dev.to/bluebill1049/what-s-coming-in-react-hook-form-version-7-4bfa`
+
+
       ✔ Add autoincrement build on commit @done(20-07-03 08:47)
         ✔ Implement autoincrement build @done(20-06-23 09:05)
           (`https://itnext.io/how-to-automate-versioning-and-publication-of-an-npm-package-233e8757a526`)

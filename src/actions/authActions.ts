@@ -24,7 +24,7 @@ export const authSignIn = async (
     // Emulate async action
     delayCallback(authCallBack, 100);
 
-    authSignInDispatch({ type: SIGN_IN, payload: 'some user data???' });
+    authSignInDispatch({ type: SIGN_IN, payload: { login: 'user', id: 'id' } });
   }
 
   throw new Error('Not found user with this email or password');
