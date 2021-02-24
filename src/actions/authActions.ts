@@ -1,8 +1,7 @@
 // Utils
 import {
   TCredentials,
-  TAuthSignInDispatch,
-  TAuthSignOutDispatch,
+  TReducibleAuthDispatchers,
   TAuthCallback,
   SIGN_IN,
   SIGN_OUT,
@@ -11,7 +10,7 @@ import { delay, delayCallback } from '@utils/common';
 import { validateCredentials } from '@utils/validation';
 
 export const authSignIn = async (
-  authSignInDispatch: TAuthSignInDispatch,
+  authSignInDispatch: TReducibleAuthDispatchers,
   credentials: TCredentials,
   authCallBack: TAuthCallback
 ): Promise<void> => {
@@ -33,7 +32,7 @@ export const authSignIn = async (
 };
 
 export const authSignOut = (
-  authSignOutDispatch: TAuthSignOutDispatch,
+  authSignOutDispatch: TReducibleAuthDispatchers,
   authCallBack: TAuthCallback
 ): void => {
   // Send request to sign-out probably

@@ -8,7 +8,7 @@ export type TCredentials = {
 
 export type TAuthSignIn = {
   type: string;
-  payload: {
+  payload?: {
     login: string;
     id: string;
     avatarUrl?: string;

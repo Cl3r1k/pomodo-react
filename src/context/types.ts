@@ -1,4 +1,9 @@
 export type TAuthState = {
   isAuthenticated: boolean;
-  user: string | null;
+  user: {
+    login: string;
+    id: string;
+    avatarUrl?: string;
+    publicRepos?: string;
+  };
 };

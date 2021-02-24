@@ -2,16 +2,16 @@ import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 // Hooks
-import { useAuthState } from 'hooks/useAuthState';
-import { useAuthDispatch } from 'hooks/useAuthDispatch';
+import { useAuthState } from '@hooks/useAuthState';
+import { useAuthDispatch } from '@hooks/useAuthDispatch';
 
 // Actions
-import { authActionSignOut } from 'actions/authActions';
+import { authSignOut } from '@actions/authActions';
 
 // Components
-import { RenderCounter } from 'components/RenderCounter';
+import { RenderCounter } from '@components/RenderCounter';
 
-export const NavBar = () => {
+export const NavBar: React.FC = () => {
   const history = useHistory();
   const { isAuthenticated, user } = useAuthState();
   const authDispatch = useAuthDispatch();
@@ -19,10 +19,10 @@ export const NavBar = () => {
   console.info('isAuthenticated: ', isAuthenticated);
   console.info('user: ', user);
 
-  const handleOnClickSignOut = () => {
+  const handleOnClickSignOut = (): void => {
     // Perform sign-out logic
     // authContext.signOut(() => history.replace('/'));
-    authActionSignOut(authDispatch, () => history.push('/'));
+    authSignOut(authDispatch, () => history.push('/'));
     // authDispatch({ type: 'SIGN_OUT' });
     // history.push('/');
   };
@@ -35,7 +35,7 @@ export const NavBar = () => {
         <div>
           <div>
             <div>Welcome, Authenticated user</div>
-            <img src={user?.avatarUrl} alt="Avatar" />
+            <img src={user?.avatarUrl || ''} alt="Avatar" />
             <span>Login: {user?.login}</span>
             <span>Public repos: {user?.publicRepos}</span>
           </div>
