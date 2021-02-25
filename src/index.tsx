@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // ContextProviders
-import { AuthContextProvider } from 'context/AuthContextProvider';
+import { AuthContextProvider } from '@context/AuthContextProvider';
 
 // Components
-import { App } from 'App';
+import { App } from './App';
 
 // Modules
 import * as serviceWorker from './serviceWorker';

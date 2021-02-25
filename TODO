@@ -80,6 +80,7 @@ Todos:
       ☐ Update CRA and React to latest version
         ✔ Update CRA to version 4.0.1 @done(21-01-12 09:13)
         ☐ Update React to version 17.0.0
+          - Upgrading to React 17 and Webpack 5: `https://blog.bitsrc.io/upgrading-to-react-17-and-webpack-5-89eef0f41ae5`
 
 
       ☐ Migrate to TS <========================================================= CURRENT TASK
@@ -227,6 +228,7 @@ Todos:
                 The subtleties of authorization: an overview of OAuth 2.0 technology: `https://habr.com/ru/company/dododev/blog/520046/`
                 Sign-in form best practices: `https://web.dev/sign-in-form-best-practices/`
                 How to Build HTML Forms Right: Security: `https://austingil.com/how-to-build-html-forms-right-security/`
+                Where to Store your JWTs – Cookies vs HTML5 Web Storage: `https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage`
 
         ☐ Implement Google authentication
           ☐ Bump `minor` version after implement Google authentication

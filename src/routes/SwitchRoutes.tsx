@@ -2,16 +2,16 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // Routes
-import { PrivateRoute } from 'routes/PrivateRoute';
+import { PrivateRoute } from '@routes/PrivateRoute';
 
 // Pages
-import { HomePage } from 'pages/HomePage';
-import { AboutPage } from 'pages/AboutPage';
-import { DashboardPage } from 'pages/DashboardPage';
-import { NotFoundPage } from 'pages/NotFoundPage';
-import { LoginPage } from 'pages/LoginPage';
+import { HomePage } from '@pages/HomePage';
+import { AboutPage } from '@pages/AboutPage';
+import { DashboardPage } from '@pages/DashboardPage';
+import { NotFoundPage } from '@pages/NotFoundPage';
+import { LoginPage } from '@pages/LoginPage';
 
-export const useRoutes = () => {
+export const SwitchRoutes: React.FC = () => {
   return (
     <Switch>
       <Route exact path="/">
