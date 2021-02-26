@@ -2,9 +2,9 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 // Components
-import { RenderCounter } from 'components/RenderCounter';
+import { RenderCounter } from '@components/RenderCounter';
 
-export const NotFoundPage = () => {
+export const NotFoundPage: React.FC = () => {
   const { pathname } = useLocation();
 
   return (

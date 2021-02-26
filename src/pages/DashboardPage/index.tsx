@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Components
-import { RenderCounter } from 'components/RenderCounter';
+import { RenderCounter } from '@components/RenderCounter';
 
-export const DashboardPage = () => {
+export const DashboardPage: React.FC = () => {
   return (
     <div>
       <RenderCounter />
