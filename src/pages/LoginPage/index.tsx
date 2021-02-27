@@ -2,45 +2,55 @@ import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
 // Hooks
-import { useAuthDispatch } from 'hooks/useAuthDispatch';
+import { useAuthDispatch } from '@hooks/useAuthDispatch';
 
 // Actions
-import { authActionSignIn } from 'actions/authActions';
+import { authSignIn } from '@actions/authActions';
 
 // Components
-import { RenderCounter } from 'components/RenderCounter';
-import { LoginGithubWithServer } from 'components/LoginGithubWithServer';
-import { LoginGithubWithPopup } from 'components/LoginGithubWithPopup';
+import { RenderCounter } from '@components/RenderCounter';
+import { LoginGithubWithServer } from '@components/LoginGithubWithServer';
+import { LoginGithubWithPopup } from '@components/LoginGithubWithPopup';
 
-export const LoginPage = () => {
+// Types
+import { TCredentials } from '@actions/types';
+import { TLocationParams } from '@routes/types';
+
+export const LoginPage: React.FC = () => {
   const history = useHistory();
   const location = useLocation();
   const authDispatch = useAuthDispatch();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const { from } = location.state || { from: { pathname: '/' } };
-  const handleOnSubmitSignIn = async evt => {
-    evt.preventDefault();
+  const { from } = (location.state as TLocationParams) || {
+    from: { pathname: '/' },
+  };
+
+  const handleOnSubmitSignIn = async (
+    e: React.SyntheticEvent
+  ): Promise<void> => {
+    e.preventDefault();
 
     setLoading(true);
     setError('');
 
-    const formElements = evt.target.elements;
-    // console.info('formElements: ', formElements);
-    const userDetails = {
-      email: formElements.email.value,
-      password: formElements.password.value,
+    const target = e.target as typeof e.target & {
+      email: { value: string };
+      password: { value: string };
+    };
+
+    const userDetails: TCredentials = {
+      email: target.email.value,
+      password: target.password.value,
     };
     // console.info('userDetails: ', userDetails);
 
     try {
-      await authActionSignIn(authDispatch, userDetails, () =>
-        history.replace(from)
-      );
+      await authSignIn(authDispatch, userDetails, () => history.replace(from));
     } catch (err) {
-      setError(err);
       // console.info('error: ', error);
+      setError('Something went wrong!');
       setLoading(false);
     }
   };
@@ -63,7 +73,7 @@ export const LoginPage = () => {
 
           <button type="submit">Sign in</button>
 
-          {error && <span>{error.message}</span>}
+          {error && <span>{error}</span>}
         </fieldset>
       </form>
 

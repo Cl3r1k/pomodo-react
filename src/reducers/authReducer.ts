@@ -1,5 +1,10 @@
 // Types
-import { SIGN_IN, SIGN_OUT, TReducibleAuthActions } from '@actions/types';
+import {
+  SIGN_IN,
+  SIGN_OUT,
+  TReducibleAuthActions,
+  TAuthSignIn,
+} from '@actions/types';
 import { TAuthState } from '@context/types';
 
 export const authReducer = (
@@ -8,7 +13,11 @@ export const authReducer = (
 ): TAuthState => {
   switch (action.type) {
     case SIGN_IN:
-      return { ...state, isAuthenticated: true, user: action.payload };
+      return {
+        ...state,
+        isAuthenticated: true,
+        user: (action as TAuthSignIn).payload || null,
+      };
 
     case SIGN_OUT:
       return { ...state, isAuthenticated: false, user: null };
