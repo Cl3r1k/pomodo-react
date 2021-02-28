@@ -1,7 +1,7 @@
 // DESCRIPTION: Take the current version from the 'package.json', update build from 'metadata.json', combine it and save
 
 import { readFile, writeFile } from 'fs';
-import { safeJsonParse } from './utils/common';
+import { safeJsonParse, safeJsonParseObject } from './utils/common';
 import packageFile from './package.json';
 
 type TMetadata = {
@@ -17,6 +17,17 @@ const packageVersion = packageFile.version;
 
 readFile('metadata.json', (err, content) => {
   if (err) throw err;
+
+  // **** To delete ****
+  if (!packageVersion) {
+    const content = '{"build":"1576","version":"0.2.0.1576"}';
+
+    const parsedJson = safeJsonParseObject<TMetadata>(content);
+    console.info('parsedJson: ', parsedJson);
+
+    return;
+  }
+  // **** End to delete ****
 
   const parsedJson = safeJsonParse(isTMetadata)(content.toString());
 

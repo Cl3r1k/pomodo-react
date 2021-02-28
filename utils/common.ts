@@ -1,3 +1,19 @@
+const isDesiredType = <TObj>(obj: any): obj is TObj => {
+  return 'build' in obj && 'version' in obj;
+};
+
+export const safeJsonParseObject = <T>(text: string): ParseResult<T> => {
+  try {
+    const parsed: unknown = JSON.parse(text);
+
+    return isDesiredType<T>(parsed)
+      ? { parsed, hasError: false }
+      : { hasError: true };
+  } catch (error) {
+    return { hasError: true, error: error };
+  }
+};
+
 type ParseResult<T> =
   | { parsed: T; hasError: false; error?: undefined }
   | { parsed?: undefined; hasError: true; error?: unknown };
