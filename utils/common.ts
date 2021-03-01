@@ -2,7 +2,9 @@ const isDesiredType = <TObj>(obj: any): obj is TObj => {
   return 'build' in obj && 'version' in obj;
 };
 
-export const safeJsonParseObject = <T>(text: string): ParseResult<T> => {
+export const safeJsonParseObject = <T extends Record<string, string>>(
+  text: string
+): ParseResult<T> => {
   try {
     const parsed: unknown = JSON.parse(text);
 

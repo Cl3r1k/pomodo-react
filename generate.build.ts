@@ -9,6 +9,12 @@ type TMetadata = {
   version: string;
 };
 
+type TDesiredData = {
+  build: string;
+  version: string;
+  isAvailable: string;
+};
+
 function isTMetadata(obj: any): obj is TMetadata {
   return 'build' in obj && 'version' in obj;
 }
@@ -22,7 +28,7 @@ readFile('metadata.json', (err, content) => {
   if (!packageVersion) {
     const content = '{"build":"1576","version":"0.2.0.1576"}';
 
-    const parsedJson = safeJsonParseObject<TMetadata>(content);
+    const parsedJson = safeJsonParseObject<TDesiredData>(content);
     console.info('parsedJson: ', parsedJson);
 
     return;
