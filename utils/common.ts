@@ -1,5 +1,11 @@
-const isDesiredType = <TObj>(obj: any): obj is TObj => {
-  return 'build' in obj && 'version' in obj;
+const isDesiredType = <TObj>(obj: unknown): obj is TObj => {
+  // const keys = Object.keys(obj as Record<string, string>);
+  // console.info('keys: ', keys);
+
+  return (
+    'build' in (obj as Record<string, string>) &&
+    'version' in (obj as Record<string, string>)
+  );
 };
 
 export const safeJsonParseObject = <T extends Record<string, string>>(
