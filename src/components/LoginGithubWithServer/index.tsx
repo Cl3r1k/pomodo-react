@@ -30,12 +30,12 @@ type TGithubResponse = {
   public_repos: string;
 };
 
-const isTGithubResponse = (obj: any): obj is TGithubResponse => {
+const isTGithubResponseGuard = (obj: unknown): obj is TGithubResponse => {
   return (
-    'login' in obj &&
-    'id' in obj &&
-    'avatar_url' in obj &&
-    'public_repos' in obj
+    'login' in (obj as TGithubResponse) &&
+    'id' in (obj as TGithubResponse) &&
+    'avatar_url' in (obj as TGithubResponse) &&
+    'public_repos' in (obj as TGithubResponse)
   );
 };
 
@@ -81,7 +81,9 @@ export const LoginGithubWithServer: React.FC = () => {
         .then(data => {
           console.info('Successful login data: ', data);
 
-          const parsedJson = safeJsonParse(isTGithubResponse)(data);
+          const parsedJson = safeJsonParse<TGithubResponse>(
+            isTGithubResponseGuard
+          )(data);
 
           if (parsedJson.hasError) {
             throw new Error('Failed to parse response!');

@@ -1,34 +1,10 @@
-const isDesiredType = <TObj>(obj: unknown): obj is TObj => {
-  // const keys = Object.keys(obj as Record<string, string>);
-  // console.info('keys: ', keys);
-
-  return (
-    'build' in (obj as Record<string, string>) &&
-    'version' in (obj as Record<string, string>)
-  );
-};
-
-export const safeJsonParseObject = <T extends Record<string, string>>(
-  text: string
-): ParseResult<T> => {
-  try {
-    const parsed: unknown = JSON.parse(text);
-
-    return isDesiredType<T>(parsed)
-      ? { parsed, hasError: false }
-      : { hasError: true };
-  } catch (error) {
-    return { hasError: true, error: error };
-  }
-};
-
 type ParseResult<T> =
   | { parsed: T; hasError: false; error?: undefined }
   | { parsed?: undefined; hasError: true; error?: unknown };
 
-export const safeJsonParse = <T>(typeGuard: (o: unknown) => o is T) => (
-  text: string
-): ParseResult<T> => {
+export const safeJsonParse = <T extends Record<string, string>>(
+  typeGuard: (o: unknown) => o is T
+) => (text: string): ParseResult<T> => {
   try {
     const parsed: unknown = JSON.parse(text);
     return typeGuard(parsed) ? { parsed, hasError: false } : { hasError: true };
