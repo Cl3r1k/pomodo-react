@@ -89,7 +89,7 @@ Todos:
       
       ☐ Replace 'node-sass' (LibSass and Node Sass are deprecated `https://sass-lang.com/blog/libsass-is-deprecated`) (for example with 'dart-sass' `https://sass-lang.com/dart-sass`)
 
-      ☐ Consider to improve 'safeJsonParse' with generics, it should looks like safeJsonParse<T>(data); - e.g. without creation additional check function
+      ✔✘ Consider to improve 'safeJsonParse' with generics, it should looks like safeJsonParse<T>(data); - e.g. without creation additional check function (Looks not quite possible, because types deleted after compile and in runtime we can't iterate thow passed type) @done(21-03-03 09:31)
 
 
       ☐ Node.js with Typescript

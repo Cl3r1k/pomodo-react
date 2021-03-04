@@ -2,8 +2,8 @@ import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import FormData from 'form-data';
 import fetch from 'node-fetch';
-import { TAuthenticationRequest } from '@server/types';
-import { config } from '@config/index';
+import { TAuthenticationRequest } from './types';
+import { config } from '../config/index';
 
 const app = express();
 
