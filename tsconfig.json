@@ -34,7 +34,6 @@
     "./**/*.spec.ts"
   ],
   "include": [
-    "assets",
     "config",
     "server",
     "src",
