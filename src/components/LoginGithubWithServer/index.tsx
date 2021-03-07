@@ -11,6 +11,12 @@ import { safeJsonParse } from '@utils/common';
 // Constants
 import { config } from '@config/index';
 
+// Types
+import {
+  TGithubResponse,
+  isTGithubResponseGuard,
+} from '@components/LoginGithubWithServer/types';
+
 // Assets
 import { ReactComponent as GithubIcon } from '@assets/github-logo.svg';
 import styles from './styles.module.scss';
@@ -22,22 +28,6 @@ const {
   redirectUri,
   scope,
 } = config;
-
-type TGithubResponse = {
-  login: string;
-  id: string;
-  avatar_url: string;
-  public_repos: string;
-};
-
-const isTGithubResponseGuard = (obj: unknown): obj is TGithubResponse => {
-  return (
-    'login' in (obj as TGithubResponse) &&
-    'id' in (obj as TGithubResponse) &&
-    'avatar_url' in (obj as TGithubResponse) &&
-    'public_repos' in (obj as TGithubResponse)
-  );
-};
 
 export const LoginGithubWithServer: React.FC = () => {
   const { isAuthenticated } = useAuthState();
