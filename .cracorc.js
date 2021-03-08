@@ -9,8 +9,6 @@ module.exports = {
           constructor && constructor.name === 'ModuleScopePlugin'
       );
 
-      console.info('scopePluginIndex :', scopePluginIndex);
-
       console.info(
         'webpackConfig.resolve.plugins :',
         webpackConfig.resolve.plugins
