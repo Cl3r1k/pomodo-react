@@ -19,7 +19,7 @@ module.exports = {
       // console.info('after add to Set() webpackConfig.resolve.allowedFiles :', webpackConfig.resolve.plugins);
 
       webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
-        path.resolve('./config')
+        ...[path.resolve('./config'), path.resolve('./utils')]
       );
 
       console.info(
