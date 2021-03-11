@@ -18,9 +18,9 @@ module.exports = {
 
       // console.info('after add to Set() webpackConfig.resolve.allowedFiles :', webpackConfig.resolve.plugins);
 
-      webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
-        ...[path.resolve('./config'), path.resolve('./utils')]
-      );
+      // webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
+      // ...[path.resolve('./config'), path.resolve('./utils')]
+      // );
 
       console.info(
         'after push to [] webpackConfig.resolve.plugins.appSrcs :',
