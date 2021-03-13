@@ -27,7 +27,7 @@ module.exports = {
         webpackConfig.resolve.plugins
       );
 
-      console.info('after webpackConfig.resolve :', webpackConfig.resolve);
+      // console.info('after webpackConfig.resolve :', webpackConfig.resolve);
 
       // webpackConfig.resolve.plugins.splice(scopePluginIndex, 1);
 
