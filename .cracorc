@@ -9,6 +9,18 @@ module.exports = {
           constructor && constructor.name === 'ModuleScopePlugin'
       );
 
+      const reactRefreshPluginIndex = webpackConfig.plugins.findIndex(
+        ({ constructor }) =>
+          constructor && constructor.name === 'ReactRefreshPlugin'
+      );
+
+      // console.info('webpackConfig :', webpackConfig);
+      // console.info('webpackConfig.plugins :', webpackConfig.plugins);
+
+      console.info('reactRefreshPluginIndex: ', reactRefreshPluginIndex);
+
+      console.info('webpackConfig.plugins[reactRefreshPluginIndex]: ', webpackConfig.plugins[reactRefreshPluginIndex]);
+
       // console.info(
       //   'webpackConfig.resolve.plugins :',
       //   webpackConfig.resolve.plugins
@@ -16,7 +28,10 @@ module.exports = {
 
       // webpackConfig.resolve.plugins[scopePluginIndex].allowedFiles.add(path.resolve("./config.json"));
 
-      // console.info('after add to Set() webpackConfig.resolve.allowedFiles :', webpackConfig.resolve.plugins);
+      // console.info(
+      //   'after add to Set() webpackConfig.resolve.allowedFiles :',
+      //   webpackConfig.resolve.plugins
+      // );
 
       // webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
       // ...[path.resolve('./config'), path.resolve('./utils')]
