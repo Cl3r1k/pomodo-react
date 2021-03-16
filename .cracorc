@@ -19,7 +19,24 @@ module.exports = {
 
       console.info('reactRefreshPluginIndex: ', reactRefreshPluginIndex);
 
-      console.info('webpackConfig.plugins[reactRefreshPluginIndex]: ', webpackConfig.plugins[reactRefreshPluginIndex]);
+      console.info(
+        'webpackConfig.plugins[reactRefreshPluginIndex]: ',
+        webpackConfig.plugins[reactRefreshPluginIndex]
+      );
+      console.info(
+        'webpackConfig.plugins[reactRefreshPluginIndex].options.include: ',
+        webpackConfig.plugins[reactRefreshPluginIndex].options.include
+      );
+
+      // webpackConfig.plugins[reactRefreshPluginIndex].options.include = '';
+      // const include = webpackConfig.plugins[reactRefreshPluginIndex].options.include;
+      // webpackConfig.plugins[reactRefreshPluginIndex].options.include = [include, './utils', './config'];
+
+      // Look at https://webpack.js.org/concepts/#loaders
+      console.info(
+        'AFTER Change webpackConfig.plugins[reactRefreshPluginIndex].options.include: ',
+        webpackConfig.plugins[reactRefreshPluginIndex].options.include
+      );
 
       // console.info(
       //   'webpackConfig.resolve.plugins :',
@@ -33,14 +50,14 @@ module.exports = {
       //   webpackConfig.resolve.plugins
       // );
 
-      // webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
-      // ...[path.resolve('./config'), path.resolve('./utils')]
-      // );
+      webpackConfig.resolve.plugins[scopePluginIndex].appSrcs.push(
+      ...[path.resolve('./config'), path.resolve('./utils')]
+      );
 
-      // console.info(
-      //   'after push to [] webpackConfig.resolve.plugins.appSrcs :',
-      //   webpackConfig.resolve.plugins
-      // );
+      console.info(
+        'after push to [] webpackConfig.resolve.plugins.appSrcs :',
+        webpackConfig.resolve.plugins
+      );
 
       // console.info('after webpackConfig.resolve :', webpackConfig.resolve);
 
