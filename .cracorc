@@ -33,15 +33,31 @@ module.exports = {
       // webpackConfig.plugins[reactRefreshPluginIndex].options.include = [include, './utils', './config'];
 
       // Look at https://webpack.js.org/concepts/#loaders
-      console.info(
-        'AFTER Change webpackConfig.plugins[reactRefreshPluginIndex].options.include: ',
-        webpackConfig.plugins[reactRefreshPluginIndex].options.include
-      );
 
       // console.info(
-      //   'webpackConfig.resolve.plugins :',
-      //   webpackConfig.resolve.plugins
+      //   'AFTER Change webpackConfig.plugins[reactRefreshPluginIndex].options.include: ',
+      //   webpackConfig.plugins[reactRefreshPluginIndex].options.include
       // );
+
+      console.info('webpackConfig.module.rules :', webpackConfig.module.rules);
+      console.info('webpackConfig.module.rules[1] :', webpackConfig.module.rules[1]);
+
+      const { oneOf } = webpackConfig.module.rules[1];
+      console.info('oneOf :', oneOf);
+
+      // const babelLoader = oneOf[2];
+      // console.info('babelLoader :', babelLoader);
+      // console.info('typeof babelLoader.loader: ', typeof babelLoader.loader);
+
+      // Dig here deeper
+      // oneOf[2].include = path.resolve('./utils');
+
+      console.info('AFTER Change webpackConfig.module.rules[1] :', webpackConfig.module.rules[1]);
+
+      console.info(
+        'webpackConfig.resolve.plugins :',
+        webpackConfig.resolve.plugins
+      );
 
       // webpackConfig.resolve.plugins[scopePluginIndex].allowedFiles.add(path.resolve("./config.json"));
 
